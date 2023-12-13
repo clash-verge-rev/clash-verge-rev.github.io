@@ -1,0 +1,14 @@
+[book]
+authors = ["Clash Verge Rev Team"]
+title = "Clash Verge Rev"
+description = "Continuation of Clash Verge - A Clash Meta GUI based on Tauri"
+language = "zh-CN"
+src = "src"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "coal"
+no-section-label = true
+git-repository-url = "https://github.com/clash-verge-rev/clash-verge-rev"
+git-repository-icon = "fa-github"
+edit-url-template = "https://github.com/clash-verge-rev/clash-verge-rev.github.io/edit/main/{path}"
