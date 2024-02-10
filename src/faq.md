@@ -36,11 +36,14 @@ windows请使用管理员模式运行，或安装服务模式。mac/linux请在�
 
 原因是开发者没有Apple Developer Program会员资格，请到终端执行命令授权：
 
+`sudo xattr -r -d com.apple.quarantine /Applications/Clash\ Verge.app`
+
+![image](https://github.com/clash-verge-rev/clash-verge-rev/assets/96291150/4974387f-7001-43ce-9e3e-a9a820e62a66)
+
 #### mac系统打开软件页面空白
 
 请升级macos到11或以上版本，不支持macos 10。
 
-`sudo xattr -r -d com.apple.quarantine /Applications/Clash\ Verge.app`
 
 #### 日志过大，占满磁盘
 
