@@ -55,7 +55,12 @@ windows请使用管理员模式运行，或安装服务模式。mac/linux请在�
 
 ### 我应该下载什么版本？
 
-看项目首页Install章节。
+- Windows: x64-setup.exe
+- Windows Arm芯片: arm64-setup.exe
+- MacOS Intel芯片: x64.dmg
+- MacOS Apple M芯片: aarch64.dmg
+- Linux x64架构: amd64.AppImage/amd64.deb
+- Windows便携板: x64_portable.zip （不推荐使用，无法自动更新）
 
 ---
 
