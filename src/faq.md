@@ -44,6 +44,9 @@ windows请使用管理员模式运行，或安装服务模式。mac/linux请在�
 
 请升级macos到11或以上版本，不支持macos 10。
 
+### 修改GUI日志显示级别，用于debug
+
+打开软件clash verge菜单“设置”-> 拉倒最下面点开“应用目录”，文本编辑器编辑verge.yaml文件，把app_log_level: 修改为 app_log_level: debug
 
 ### 日志过大，占满磁盘
 
