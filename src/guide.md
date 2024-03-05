@@ -26,8 +26,6 @@
 - append-proxy-groups：类型和 `clash proxy-groups` 配置一致，内容合并到 proxy-groups 后
 - 其他 clash 的字段：5 个默认使用的字段(`rules`, `proxies`, `proxy-groups`, `proxy-providers`, `rule-providers`)以及其他 clash-meta 支持的字段，直接设置这些字段将直接覆盖 profile 对应字段的内容。
 
-> 注意：需要使用其他字段时，例如 dns,tun 等，需要在设置页 - Clash Field(Clash 字段)里勾选对应的字段，不勾选的字段将被忽略。
-
 ### Script 脚本处理
 
 该配置类型提供编写 JS 脚本修改配置的能力，JS 运行时为 `quickjs`。该 idea 源于 CFW 配置预处理中的 Mixin/parser。启用方法：`右键 - 启用`，在修改了文件之后，点击刷新重置配置文件。
