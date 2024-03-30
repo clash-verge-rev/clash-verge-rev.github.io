@@ -87,3 +87,8 @@ net start hns
 ![image_2023-12-15_11-51-02](https://github.com/clash-verge-rev/clash-verge-rev/assets/96291150/8ba1e0c8-a711-4b78-97db-bc947e25f499)
 
 卸载重装。
+
+### Linux使用思源黑体或NOTO显示日文字形：
+
+1.只安装符合简体中文国标标准的字体，例如思源字体的简体中文变体包adobe-source-han-sans-cn-fonts包和adobe-source-han-serif-cn-fonts包，或noto-fonts-sc。
+2.在clash-verge-rev中指定使用Noto Sans CJK SC字体。
