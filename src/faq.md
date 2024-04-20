@@ -70,6 +70,14 @@ C:\Users\你的用户名\AppData\Roaming\io.github.clash-verge-rev.clash-verge-r
 
 32位1.4.11及以前版本下的已知bug，请下载更新最新版。
 
+### Linux 无法显示界面/闪退
+
+添加 `WEBKIT_DISABLE_COMPOSITING_MODE=1` 环境变量
+
+### Linux 花屏
+
+添加 `WEBKIT_DISABLE_COMPOSITING_MODE=1` 环境变量
+
 ---
 
 ## 其他奇怪异常：
