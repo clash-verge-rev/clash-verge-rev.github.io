@@ -1,0 +1,90 @@
+site_name: Clash Verge Rev Docs
+repo_name: clash-verge-rev
+repo_url: https://github.com/clash-verge-rev/clash-verge-rev
+copyright: Copyright &copy 2023 clash-verge-rev
+edit_uri: 'https://github.com/MetaCubeX/Meta-Docs/blob/main/docs/'
+
+# dev服务器监听地址
+dev_addr: 127.0.0.1:7788
+
+# 导航设置
+nav:
+  - 简介: index.md
+  - 安装: install.md
+  - 使用教程:
+      - 常见名词: guide/term.md
+      - 订阅导入: guide/profile.md
+      - Merge配置: guide/merge.md
+      - Script配置: guide/script.md
+      - 代理绕过: guide/bypass.md
+  - 常见问题:
+      - 安装问题: faq/install.md
+      - 订阅问题: faq/subscribe.md
+      - 文件问题: faq/file.md
+      - 服务问题: faq/service.md
+      - 其他问题: faq/other.md
+
+# 主题设置
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  features:
+    - search.highlight
+    - navigation.tracking
+    - navigation.instant
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+    - navigation.tabs
+    - navigation.sections
+    - toc.follow
+    - content.action.edit
+    - content.code.copy
+  # 亮色/深色模式
+  palette:
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: white
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: 切换至深色模式
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: 切换至亮色模式
+
+# markdown特性设置
+markdown_extensions:
+  - admonition # 提醒框、警告框等
+  - md_in_html # 支持嵌入HTML代码
+  - pymdownx.details # 支持<details>折叠标签
+  - pymdownx.tilde # 支持~表示删除的文本
+  - pymdownx.magiclink # 自动将URL转换为可点击的链接
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+      toc_depth: 3
+      anchorlink: true
+  # mermaid渲染
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra:
+  generator: false # 去除页脚广告
+  social: # 页脚链接
+    - icon: fontawesome/brands/github
+      link: https://github.com/clash-verge-rev/clash-verge-rev
+    - icon: material/file-document
+      link: https://github.com/MetaCubeX/Meta-Docs
