@@ -10,12 +10,30 @@
 - 脚本语言为 `javascript`， 使用 `boa_engine` 作为执行器。
 - Tauri 使用 `WebView2` 作为浏览器引擎，支持 `ES6` 语法。
 - 程序的入口为 `main` 函数，接受一个 `params` 参数（参数名不限制），并返回修改后的该参数。
+- params为 `object` 类型，属性值为 `yaml` 配置文件内容转 `JSON` 后对应的 `object` 对象。
 
 ```javascript
 function main(params) {
   return params;
 }
 ```
+
+### 支持的API
+
+> 作用域支持以下API，不支持网络IO、文件IO操作。
+
+| API类型                  | API范围                                                      |
+| ------------------------ | ------------------------------------------------------------ |
+| 常量                     | Infinity、NaN、undefined                                     |
+| 基本函数和对象           | Function、Object、Math、JSON、Array、Proxy                   |
+| 数据类型和数组           | ArrayBuffer、SharedArrayBuffer、BigInt、Boolean、Date、DataView、Map、TypedArray、Int8Array、Uint8Array、Uint8ClampedArray、Int16Array、Uint16Array、Int32Array、Uint32Array、BigInt64Array、BigUint64Array、Float32Array、Float64Array |
+| 字符串、正则表达式和符号 | String、RegExp、Symbol                                       |
+| 错误对象                 | Error、RangeError、ReferenceError、TypeError、SyntaxError、EvalError、URIError、AggregateError |
+| 反射和异步               | Reflect、Promise                                             |
+| 编码和解码               | encodeURI、encodeURIComponent、decodeURI、decodeURIComponent |
+| 弱引用                   | WeakRef、WeakMap、WeakSet                                    |
+| 原子操作                 | Atomics                                                      |
+| 控制台输出               | console                                                      |
 
 ## 脚本示例
 
