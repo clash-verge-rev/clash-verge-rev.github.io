@@ -52,6 +52,8 @@ Windows Registry Editor Version 5.00
 ![本地配置](../assets/guide/profile/local_config.gif)
 
 本地配置如无特殊需求，一般无需配置更新间隔。
+
+<!-- prettier-ignore -->
 !!! info
     选择文件不是必须的，直接保存会生成一份空配置文件。
     选择使用的文件会被复制一份到 `profiles` 目录，原文件被删除不会有影响。
