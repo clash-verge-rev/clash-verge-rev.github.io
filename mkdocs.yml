@@ -2,7 +2,7 @@ site_name: Clash Verge Rev Docs
 repo_name: clash-verge-rev
 repo_url: https://github.com/clash-verge-rev/clash-verge-rev
 copyright: Copyright &copy 2023 clash-verge-rev
-edit_uri: 'https://github.com/clash-verge-rev/clash-verge-rev.github.io'
+edit_uri: "https://github.com/clash-verge-rev/clash-verge-rev.github.io"
 
 # dev服务器监听地址
 dev_addr: 127.0.0.1:7788
@@ -28,7 +28,7 @@ nav:
 theme:
   name: material
   logo: assets/logo.png
-  favicon: assets/logo.png
+  favicon: assets/favicon.ico
   features:
     - search.highlight
     - navigation.tracking
@@ -44,14 +44,14 @@ theme:
     - content.code.copy
   # 亮色/深色模式
   palette:
-    - media: '(prefers-color-scheme: light)'
+    - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: white
       accent: blue
       toggle:
         icon: material/brightness-7
         name: 切换至深色模式
-    - media: '(prefers-color-scheme: dark)'
+    - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: indigo
       accent: deep purple
