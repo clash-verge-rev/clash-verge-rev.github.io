@@ -17,6 +17,7 @@ nav:
       - Merge配置: guide/merge.md
       - Script配置: guide/script.md
       - 代理绕过: guide/bypass.md
+      - 设置代理组图标: guide/group_icon.md
   - 常见问题:
       - 安装问题: faq/install.md
       - 订阅问题: faq/subscribe.md
