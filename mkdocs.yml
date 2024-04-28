@@ -2,7 +2,7 @@ site_name: Clash Verge Rev Docs
 repo_name: clash-verge-rev
 repo_url: https://github.com/clash-verge-rev/clash-verge-rev
 copyright: Copyright &copy 2023 clash-verge-rev
-edit_uri: https://github.com/clash-verge-rev/clash-verge-rev.github.io
+edit_uri: https://github.com/clash-verge-rev/clash-verge-rev.github.io/tree/main/docs
 
 # dev服务器监听地址
 dev_addr: 127.0.0.1:7788
