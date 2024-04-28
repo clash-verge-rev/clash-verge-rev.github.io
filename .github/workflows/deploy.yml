@@ -18,7 +18,7 @@ jobs:
       - name: Build mkdocs
         run: mkdocs build
       - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           name: site
           path: site/
@@ -35,6 +35,6 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
         with:
           artifact_name: site
