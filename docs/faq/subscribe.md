@@ -1,8 +1,16 @@
-## 导入订阅报错
+## 导入订阅报错 401
 
-![导入订阅报错：](../assets/faq/subscibe/subscibe_import_error.png)
+![导入订阅报错](../assets/faq/subscibe/subscibe_import_error.png)
 
 解决方案: 卸载重装。
+
+## 导入订阅报错 无效的证书
+
+> error trying to connect: invalid peer certificate: UnknownIssuer
+
+![无效的证书](../assets/faq/subscibe/certificate.png)
+
+解决方案: 勾选 `允许无效证书（危险）`。
 
 ## Windows 无法选中订阅
 

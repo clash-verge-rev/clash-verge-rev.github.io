@@ -1,6 +1,8 @@
 ## Verge 无法正常启动
 
-修复、卸载、重新安装 [webview2](https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/#download)
+> 提示异常代码: 0xc0000409
+
+修复、卸载、重新安装 [Webview2](https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/#download)
 
 ## Webview2 无法正常安装
 
