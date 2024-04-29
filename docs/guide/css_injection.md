@@ -21,16 +21,3 @@ header p {
     font-size: 58px !important;
 }
 ```
-
-## CSS 配置位置
-
-CSS 配置存储在`应用目录`下的`verge.yaml`文件中。
-
-<!-- prettier-ignore -->
-!!! warning
-    如果直接修改该文件，请重启软件使配置生效。
-
-```yaml
-theme_setting:
-  css_injection: 'span {     font-family: ''幼圆'' !important; } header p {     background-color: red !important;     font-size: 58px !important; }'
-```
