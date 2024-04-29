@@ -1,3 +1,11 @@
+## Meta 内核
+
+- 一般指`Clash Meta`，也称 `Meta`、 `Mihomo` 内核。区别于 `Clash Premium` 为闭源内核，`Meta` 为开源内核。
+
+## Alpha 内核
+
+- 一般指`Clash Meta Alpha`，是 `Clash Meta` 内核的测试版本。更新频率高，通常可以得到最新的 bug 修复或新特性。
+
 ## UA
 
 - 指 `User Agent`，是一个请求头字段。服务端会根据 `UA` 判断客户端类型，从而做出不同的响应（例如根据不同的 `UA` 下发不同的配置）。
@@ -20,6 +28,10 @@
   | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
   | Github Release | <a href='https://github.com/MetaCubeX/ClashMetaForAndroid/releases/latest' target="_blank"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/MetaCubeX/ClashMetaForAndroid"></a> |
   | Google Play    | <a href='https://play.google.com/store/apps/details?id=com.github.metacubex.clash.meta' target="_blank">com.github.metacubex.clash.meta</a>                                                           |
+
+## OC
+
+- 一般指`Open Clash`，是 嵌入式 平台的基于 `Clash` 内核的代理软件。
 
 ## WARP
 

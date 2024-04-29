@@ -4,6 +4,10 @@
 
 ### 订阅链接导入
 
+<!-- prettier-ignore -->
+!!! info
+    如果通过`订阅链接导入`的方式提示 `Client Error`，请尝试其他导入方式。
+
 ![订阅链接导入](../assets/guide/profile/remote_url.gif)
 
 ### 订阅链接配置
