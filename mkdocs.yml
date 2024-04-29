@@ -25,6 +25,7 @@ nav:
       - 文件问题: faq/file.md
       - 服务问题: faq/service.md
       - 其他问题: faq/other.md
+  - 友情链接: friendship.md
 
 # 主题设置
 theme:
