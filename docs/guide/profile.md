@@ -6,11 +6,15 @@
 
 <!-- prettier-ignore -->
 !!! info
-    如果通过`订阅链接导入`的方式提示 `Client Error`，请尝试其他导入方式。
+    如果通过`订阅链接导入`的方式提示 `client error(Connect)`，请尝试其他导入方式。
 
 ![订阅链接导入](../assets/guide/profile/remote_url.gif)
 
 ### 订阅链接配置
+
+<!-- prettier-ignore -->
+!!! warning
+    如果通过`订阅链接配置`的方式仍然提示 `client error(Connect)`，请尝试勾选 `允许无效证书（危险）`，并保存重试。
 
 ![订阅链接配置](../assets/guide/profile/remote_config.gif)
 
