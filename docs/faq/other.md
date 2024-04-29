@@ -29,3 +29,18 @@ export WEBKIT_DISABLE_COMPOSITING_MODE=1
 ```bash
 source ~/.bashrc
 ```
+
+## 无法访问公司内网域名
+
+> 无法访问公司内网的域名，而 IP 可以正常访问。
+
+- 问题原因: 配置中启用了内核的 `DNS` 模块，却未正确配置 DNS 服务器，导致无法解析内网的主机名/域名（由于内网主机名/域名不公开，即便根域名服务器也无法查到记录）。
+- 解决办法: 修改配置文件，添加 `nameserver-policy`配置，为内网域名指定 DNS 服务器（一般为内网网关）。
+
+假设你的 IP 为 `10.10.10.123` ，网关为 `10.10.10.1`，要访问的域名为 `www.helloworld.com`。
+
+```yaml
+dns:
+  nameserver-policy:
+    '+.helloworld.com': '10.10.10.1'
+```
