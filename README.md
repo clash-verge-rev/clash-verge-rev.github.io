@@ -4,7 +4,7 @@
 2. `pip` 安装依赖
 
 ```
-pip install mkdocs-material
+pip install -r requirements.txt
 ```
 
 3. 运行本地服务器
