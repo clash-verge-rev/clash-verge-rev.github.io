@@ -84,6 +84,10 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 
+plugins:
+  - search:
+      separator: '[\s\u200b\-]'
+
 extra:
   generator: false # 去除页脚广告
   social: # 页脚链接

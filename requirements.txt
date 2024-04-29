@@ -1,0 +1,4 @@
+# Material for MkDocs
+mkdocs-material
+# Chinese text segmentation library
+jieba
