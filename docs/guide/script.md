@@ -210,8 +210,7 @@ function main(config) {
       "type": "select",
       "proxies": ["延迟选优", "故障转移", "负载均衡(散列)", "负载均衡(轮询)"],
       "include-all": true,
-      "icon":
-        "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"
+      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg"
     },
     {
       ...group_base_option,
@@ -219,16 +218,14 @@ function main(config) {
       "type": "url-test",
       "tolerance": 100,
       "include-all": true,
-      "icon":
-        "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/speed.svg"
+      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/speed.svg"
     },
     {
       ...group_base_option,
       "name": "故障转移",
       "type": "fallback",
       "include-all": true,
-      "icon":
-        "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/ambulance.svg"
+      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/ambulance.svg"
     },
     {
       ...group_base_option,
@@ -236,8 +233,7 @@ function main(config) {
       "type": "load-balance",
       "strategy": "consistent-hashing",
       "include-all": true,
-      "icon":
-        "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/merry_go.svg"
+      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/merry_go.svg"
     },
     {
       ...group_base_option,
@@ -245,8 +241,7 @@ function main(config) {
       "type": "load-balance",
       "strategy": "round-robin",
       "include-all": true,
-      "icon":
-        "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/balance.svg"
+      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/balance.svg"
     },
     {
       ...group_base_option,
@@ -254,8 +249,7 @@ function main(config) {
       "type": "select",
       "proxies": ["节点选择", "延迟选优", "故障转移", "负载均衡(散列)", "负载均衡(轮询)", "全局直连"],
       "include-all": true,
-      "icon":
-        "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/google.svg"
+      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/google.svg"
     },
     {
       ...group_base_option,
@@ -263,8 +257,7 @@ function main(config) {
       "type": "select",
       "proxies": ["节点选择", "延迟选优", "故障转移", "负载均衡(散列)", "负载均衡(轮询)", "全局直连"],
       "include-all": true,
-      "icon":
-        "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/youtube.svg"
+      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/youtube.svg"
     },
     {
       ...group_base_option,
@@ -272,8 +265,7 @@ function main(config) {
       "type": "select",
       "proxies": ["节点选择", "延迟选优", "故障转移", "负载均衡(散列)", "负载均衡(轮询)", "全局直连"],
       "include-all": true,
-      "icon":
-        "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/telegram.svg"
+      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/telegram.svg"
     },
     {
       ...group_base_option,
@@ -281,8 +273,7 @@ function main(config) {
       "type": "select",
       "proxies": ["全局直连", "节点选择", "延迟选优", "故障转移", "负载均衡(散列)", "负载均衡(轮询)"],
       "include-all": true,
-      "icon":
-        "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/microsoft.svg"
+      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/microsoft.svg"
     },
     {
       ...group_base_option,
@@ -290,8 +281,7 @@ function main(config) {
       "type": "select",
       "proxies": ["节点选择", "延迟选优", "故障转移", "负载均衡(散列)", "负载均衡(轮询)", "全局直连"],
       "include-all": true,
-      "icon":
-        "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/apple.svg"
+      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/apple.svg"
     },
     {
       ...group_base_option,
@@ -313,8 +303,7 @@ function main(config) {
       "name": "全局拦截",
       "type": "select",
       "proxies": ["REJECT", "DIRECT"],
-      "icon":
-        "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/block.svg"
+      "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/block.svg"
     },
     {
       ...group_base_option,

@@ -25,4 +25,4 @@
 
 - Cloudflare 旗下的一款免费 VPN 软件。与传统 VPN 不同的是，它结合了 Cloudflare 的全球边缘网络。
 - 使用 Wireguard 协议，是否能直连到 WARP 节点受运营商影响。
-- 对于托管在 Cloudflare 的网站，WARP 并不能隐藏 IP。
+- 对于托管在 Cloudflare 的网站，WARP **并不能隐藏 IP**。
