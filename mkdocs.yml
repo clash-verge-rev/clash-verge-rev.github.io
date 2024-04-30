@@ -6,6 +6,8 @@ edit_uri: https://github.com/clash-verge-rev/clash-verge-rev.github.io/tree/main
 
 # dev服务器监听地址
 dev_addr: 127.0.0.1:7788
+# 禁用路由导航方式
+use_directory_urls: false
 
 # 导航设置
 nav:
