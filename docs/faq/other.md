@@ -4,7 +4,7 @@
 
 ## proxy-providers 里的机场订阅中的 HY2 节点
 
-配置文件添加（版本号不重要，含有 `clash` 字样即可）。
+配置文件添加（版本号不重要，含有 `clash-verge` 字样即可）。
 
 ```yaml
 global-ua: clash-verge/v1.6.0
