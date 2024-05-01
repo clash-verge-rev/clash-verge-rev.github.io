@@ -39,8 +39,6 @@ function main(params) {
 
 > 如下是一个套用 Loyalsoldier 规则集的 Script 脚本示例（可点击复制按钮）。
 
-> 出于防止 DNS 泄露的目的，示例使用 DoH 进行 DNS 解析。出于谨慎考虑，为所有规则集添加了 `no-resolve` (如果你知道 `no-resolve` 的含义，可自行移除)。
-
 <!-- prettier-ignore -->
 !!! info
     你可以在脚本中的 `// 自定义规则` 下面自行添加规则。
@@ -83,73 +81,85 @@ const dns = {
 // 规则集
 const provider_common = {
   "type": "http",
-  "behavior": "domain",
   "format": "yaml",
   "interval": 86400
 };
 const rule_providers = {
   "reject": {
     ...provider_common,
+    "behavior": "domain",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt",
     "path": "./rulesets/loyalsoldier/reject.yaml"
   },
   "icloud": {
     ...provider_common,
+    "behavior": "domain",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt",
     "path": "./rulesets/loyalsoldier/icloud.yaml"
   },
   "apple": {
     ...provider_common,
+    "behavior": "domain",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt",
     "path": "./rulesets/loyalsoldier/apple.yaml"
   },
   "google": {
     ...provider_common,
+    "behavior": "domain",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt",
     "path": "./rulesets/loyalsoldier/google.yaml"
   },
   "proxy": {
     ...provider_common,
+    "behavior": "domain",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt",
     "path": "./rulesets/loyalsoldier/proxy.yaml"
   },
   "direct": {
     ...provider_common,
+    "behavior": "domain",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt",
     "path": "./rulesets/loyalsoldier/direct.yaml"
   },
   "private": {
     ...provider_common,
+    "behavior": "domain",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt",
     "path": "./rulesets/loyalsoldier/private.yaml"
   },
   "gfw": {
     ...provider_common,
+    "behavior": "domain",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt",
     "path": "./rulesets/loyalsoldier/gfw.yaml"
   },
   "tld-not-cn": {
     ...provider_common,
+    "behavior": "domain",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt",
     "path": "./rulesets/loyalsoldier/tld-not-cn.yaml"
   },
   "telegramcidr": {
     ...provider_common,
+    "behavior": "ipcidr",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt",
     "path": "./rulesets/loyalsoldier/telegramcidr.yaml"
   },
   "cncidr": {
     ...provider_common,
+    "behavior": "ipcidr",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt",
     "path": "./rulesets/loyalsoldier/cncidr.yaml"
   },
   "lancidr": {
     ...provider_common,
+    "behavior": "ipcidr",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt",
     "path": "./rulesets/loyalsoldier/lancidr.yaml"
   },
   "applications": {
     ...provider_common,
+    "behavior": "classical",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt",
     "path": "./rulesets/loyalsoldier/applications.yaml"
   }
@@ -163,19 +173,19 @@ const rules = [
   "DOMAIN-SUFFIX,github.io,节点选择",
   "DOMAIN,v2rayse.com,节点选择",
   // Loyalsoldier 规则集
-  "RULE-SET,apple,苹果服务,no-resolve",
-  "RULE-SET,icloud,微软服务,no-resolve",
-  "RULE-SET,google,谷歌服务,no-resolve",
-  "RULE-SET,telegramcidr,电报消息,no-resolve",
-  "RULE-SET,gfw,节点选择,no-resolve",
-  "RULE-SET,proxy,节点选择,no-resolve",
-  "RULE-SET,tld-not-cn,节点选择,no-resolve",
-  "RULE-SET,direct,全局直连,no-resolve",
-  "RULE-SET,private,全局直连,no-resolve",
-  "RULE-SET,cncidr,全局直连,no-resolve",
+  "RULE-SET,reject,广告过滤",
+  "RULE-SET,icloud,微软服务",
+  "RULE-SET,apple,苹果服务",
+  "RULE-SET,google,谷歌服务",
+  "RULE-SET,proxy,节点选择",
+  "RULE-SET,gfw,节点选择",
+  "RULE-SET,tld-not-cn,节点选择",
+  "RULE-SET,applications,全局直连",
+  "RULE-SET,private,全局直连",
+  "RULE-SET,direct,全局直连",
   "RULE-SET,lancidr,全局直连,no-resolve",
-  "RULE-SET,applications,全局直连,no-resolve",
-  "RULE-SET,reject,广告过滤,no-resolve",
+  "RULE-SET,cncidr,全局直连,no-resolve",
+  "RULE-SET,telegramcidr,电报消息,no-resolve",
   // 其他规则
   "GEOIP,LAN,全局直连,no-resolve",
   "GEOIP,CN,全局直连,no-resolve",
