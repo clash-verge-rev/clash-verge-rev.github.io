@@ -1,7 +1,3 @@
-## 修改 GUI 日志显示级别，用于 debug
-
-打开软件 clash verge 菜单“设置”-> 拉倒最下面点开“应用目录”，文本编辑器编辑 verge.yaml 文件，把 app_log_level: 修改为 app_log_level: debug
-
 ## proxy-providers 里的机场订阅中的 HY2 节点
 
 配置文件添加（版本号不重要，含有 `clash-verge` 字样即可）。
