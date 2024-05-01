@@ -4,11 +4,11 @@
 !!! warning
     如果创建了多个 Merge 配置，按照启用顺序先后，链式执行
 
-![新增脚本](../assets/guide/merge/merge.gif)
-
 <!-- prettier-ignore -->
 !!! info
-    如果图片太小看不清，请右键图片在新标签页中打开。
+    如果图片太小看不清，请右键图片在新标签页中打开。如果图片文件较大，请耐心等待。
+
+![新增脚本](../assets/guide/merge/merge.gif)
 
 ## 配置说明
 
