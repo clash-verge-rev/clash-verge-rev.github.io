@@ -57,11 +57,15 @@ Windows Registry Editor Version 5.00
 
 ## 本地配置
 
-![本地配置](../assets/guide/profile/local_config.gif)
+### 新建配置文件导入
 
-本地配置如无特殊需求，一般无需配置更新间隔。
+![新建配置导入](../assets/guide/profile/local_config.gif)
 
 <!-- prettier-ignore -->
 !!! info
     选择文件不是必须的，直接保存会生成一份空配置文件。
     选择使用的文件会被复制一份到 `profiles` 目录，原文件被删除不会有影响。
+
+### 拖拽配置文件导入
+
+alpha 功能,待上线
