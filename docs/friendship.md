@@ -11,3 +11,11 @@
 | [ClashX.Meta](https://github.com/MetaCubeX/ClashX.Meta)                 | Meta    | <img width="32" src="./assets/icons/macos.svg" />                                                                                                                                                    | <a href='https://github.com/MetaCubeX/ClashX.Meta/releases/latest'><img src="https://img.shields.io/github/v/release/MetaCubeX/ClashX.Meta"></a>                               |
 | [ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid) | Meta    | <img width="32" src="./assets/icons/android.svg"/><a href='https://play.google.com/store/apps/details?id=com.github.metacubex.clash.meta'><img width="32" src="./assets/icons/google_play.svg"/></a> | <a href='https://github.com/MetaCubeX/ClashMetaForAndroid/releases/latest'><img src="https://img.shields.io/github/v/release/MetaCubeX/ClashMetaForAndroid"></a>               |
 | [ClashForAndroid](https://github.com/Kr328/ClashForAndroid)             | Premium | <img width="32" src="./assets/icons/android.svg"/>                                                                                                                                                   | <a href='https://github.com/clashdownload/Clash_for_Android/releases/latest'><img src="https://img.shields.io/github/v/release/clashdownload/Clash_for_Android?color=red"></a> |
+
+## 参考文档
+
+| 文档              | 地址                                                         | 用途                                                 |
+| ----------------- | ------------------------------------------------------------ | ---------------------------------------------------- |
+| `mihomo` 内核文档 | https://wiki.metacubex.one/config                            | 了解如何编写 clash 配置文件                          |
+| `geosite`清单     | https://github.com/MetaCubeX/meta-rules-dat/tree/meta/geo/geosite | 配置`nameserver-policy`时，不清楚`geosite`支持哪些值 |
+| 公共`DNS`大全     | https://dns.iui.im                                           | 查询国内外公共`DNS` 服务器地址                       |
