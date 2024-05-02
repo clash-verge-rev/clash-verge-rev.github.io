@@ -15,13 +15,14 @@ nav:
   - 安装: install.md
   - 使用教程:
       - 常见名词: guide/term.md
+      - 导出日志: guide/log.md
       - 订阅导入: guide/profile.md
       - Merge配置: guide/merge.md
       - Script配置: guide/script.md
       - 设置代理绕过: guide/bypass.md
       - 设置代理组图标: guide/group_icon.md
       - 自定义主题/样式: guide/css_injection.md
-      - 导出日志文件: guide/log.md
+      - URL Scheme: guide/url_scheme.md
   - 常见问题:
       - 安装问题: faq/install.md
       - 订阅问题: faq/subscribe.md

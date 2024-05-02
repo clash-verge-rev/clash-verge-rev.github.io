@@ -65,14 +65,3 @@ Windows Registry Editor Version 5.00
 !!! info
     选择文件不是必须的，直接保存会生成一份空配置文件。
     选择使用的文件会被复制一份到 `profiles` 目录，原文件被删除不会有影响。
-
-## 订阅响应头
-
-> 导入订阅时会根据请求的响应头，设置配置文件的各项属性
-
-| 响应头                  | 示例                                                              | 说明             | 备注                            |
-| ----------------------- | ----------------------------------------------------------------- | ---------------- | ------------------------------- |
-| subscription-userinfo   | upload=1234; download=2234; total=1024000; expire=2218532293      | 订阅流量信息     | 单位:字节                       |
-| profile-update-interval | 24                                                                | 订阅自动更新间隔 | 单位:小时                       |
-| profile-web-page-url    | https://example.com                                               | 订阅主页         | 请求 UA 含有“clash”字样才会返回 |
-| Content-Disposition     | attachment;filename\*=UTF-8''%E6%B5%8B%E8%AF%95%E8%AE%A2%E9%98%85 | 订阅文件名       |                                 |
