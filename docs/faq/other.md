@@ -16,7 +16,7 @@ global-ua: clash-verge/v1.6.0
 
 1.修改 `~/.bashrc` 文件，在文件的末尾添加以下行。
 
-```
+```bash
 export WEBKIT_DISABLE_COMPOSITING_MODE=1
 ```
 

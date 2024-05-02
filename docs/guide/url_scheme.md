@@ -19,7 +19,7 @@ HKEY_CLASSES_ROOT\clash\shell\open\command
 
 或者将下列配置保存为 `.reg` 文件，手动将配置添加进注册表（以管理员身份运行）。便携版请自行修改配置中的路径。
 
-```
+```ini
 Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\clash]
