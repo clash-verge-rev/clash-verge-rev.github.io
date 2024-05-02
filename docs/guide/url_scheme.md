@@ -43,4 +43,4 @@ profile-web-page-url: https://example.com
     - 一般要求请求的 `UA` 中含有 `clash` 字样才会返回该响应头。
     - 此功能要求Clash Verge Rev版本至少为 `v1.6.0`。
 
-![profile-web-page-url](../assets/guide/url_scheme/profile_web_page_url.gif)s
+![profile-web-page-url](../assets/guide/url_scheme/profile_web_page_url.gif)

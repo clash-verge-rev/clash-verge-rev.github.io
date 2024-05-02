@@ -21,6 +21,7 @@ nav:
       - Script配置: guide/script.md
       - 设置代理绕过: guide/bypass.md
       - 设置代理组图标: guide/group_icon.md
+      - 自定义托盘图标: guide/tray_icon.md
       - 自定义主题/样式: guide/css_injection.md
       - URL Scheme: guide/url_scheme.md
   - 常见问题:
