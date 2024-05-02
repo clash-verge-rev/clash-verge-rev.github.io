@@ -20,40 +20,11 @@
 
 ### URL Schemes
 
+<!-- prettier-ignore -->
+!!! warning
+    如果不能通过`URL Schemes`的方式导入，请查看[功能失效解决办法](./url_scheme.html#_3)。
+
 ![URL Schemes](../assets/guide/profile/remote_url_schemes.gif)
-
-该方式等价于访问如下地址。
-
-```
-clash://install-config?url=<URI编码后链接>
-```
-
-如果无法正常使用该功能，可能是由于使用其他 Clash 代理软件（如 CFW）卸载不完全。请检查下列注册表项指向的 exe 路径是否正确。
-
-```
-HKEY_CLASSES_ROOT\clash\shell\open\command
-```
-
-或者将下列配置保存为 `.reg` 文件，手动将配置添加进注册表（以管理员身份运行）。便携版请自行修改配置中的路径。
-
-```
-Windows Registry Editor Version 5.00
-
-[HKEY_CLASSES_ROOT\clash]
-"URL Protocol"=""
-@="URL:clash"
-
-[HKEY_CLASSES_ROOT\clash\DefaultIcon]
-@="C:\\Program Files\\Clash Verge\\Clash Verge.exe"
-
-[HKEY_CLASSES_ROOT\clash\shell]
-
-[HKEY_CLASSES_ROOT\clash\shell\open]
-
-[HKEY_CLASSES_ROOT\clash\shell\open\command]
-@="\"C:\\Program Files\\Clash Verge\\Clash Verge.exe\" \"%1\""
-
-```
 
 ## 本地配置
 
