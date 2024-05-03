@@ -2,7 +2,8 @@
 
 > 将自定义的 CSS 代码注入到文档中，实现自定义样式的效果。
 
-下列示例演示了修改部分字体、背景颜色、字体大小（如果层叠样式没有生效可以使用 `!important`）。
+- 下列示例演示了修改部分字体、背景颜色、字体大小（如果层叠样式没有生效可以使用 `!important`）。
+- `打开开发者工具` 要求 Clash Verge Rev 版本至少为 `v1.5.8`。
 
 <!-- prettier-ignore -->
 !!! info
@@ -14,10 +15,10 @@
 
 ```css
 span {
-    font-family: '幼圆' !important;
+  font-family: '幼圆' !important;
 }
 header p {
-    background-color: red !important;
-    font-size: 58px !important;
+  background-color: red !important;
+  font-size: 58px !important;
 }
 ```

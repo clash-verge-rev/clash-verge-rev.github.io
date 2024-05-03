@@ -1,6 +1,6 @@
 ## 远程订阅
 
-> 远程订阅支持三种方式导入: 订阅链接导入、订阅链接配置、URL Schemes
+> 远程订阅支持三种方式导入: 订阅链接导入、订阅链接配置、URL Schemes。
 
 ### 订阅链接导入
 
@@ -22,20 +22,22 @@
 
 <!-- prettier-ignore -->
 !!! warning
-    如果不能通过`URL Schemes`的方式导入，请查看[功能失效解决办法](./url_scheme.html#_3)。
+    如果不能通过`URL Schemes`的方式导入，请查看[URL Schemes 功能失效解决办法](./url_scheme.html#_3)。
 
 ![URL Schemes](../assets/guide/profile/remote_url_schemes.gif)
 
 ## 本地配置
 
-### 新建配置文件导入
+> 本地配置支持两种方式导入: 新建配置文件导入、拖拽配置文件导入。
 
-![新建配置导入](../assets/guide/profile/local_config.gif)
+### 新建配置文件导入
 
 <!-- prettier-ignore -->
 !!! info
-    选择文件不是必须的，直接保存会生成一份空配置文件。
-    选择使用的文件会被复制一份到 `profiles` 目录，原文件被删除不会有影响。
+    - 选择文件不是必须的，直接保存会生成一份空配置文件。
+    - 选择使用的文件会被复制一份到 `profiles` 目录，原文件被移动或删除不会有影响。
+
+![新建配置导入](../assets/guide/profile/local_config.gif)
 
 ### 拖拽配置文件导入
 
