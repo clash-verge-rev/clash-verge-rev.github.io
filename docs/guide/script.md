@@ -169,8 +169,8 @@ const ruleProviders = {
 const rules = [
   // 自定义规则
   "DOMAIN-SUFFIX,googleapis.cn,节点选择", // Google服务
-  "DOMAIN-SUFFIX,gstatic.com,节点选择", // Google内容分发
-  "DOMAIN-SUFFIX,xn--ngstr-lra8j.com,节点选择", //Google Play下载服务
+  "DOMAIN-SUFFIX,gstatic.com,节点选择", // Google静态资源
+  "DOMAIN-SUFFIX,xn--ngstr-lra8j.com,节点选择", // Google Play下载服务
   "DOMAIN-SUFFIX,github.io,节点选择", // Github Pages
   "DOMAIN,v2rayse.com,节点选择", // V2rayse节点工具
   // Loyalsoldier 规则集
