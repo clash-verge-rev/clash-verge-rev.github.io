@@ -2,7 +2,7 @@
 
 <!-- prettier-ignore -->
 !!! warning
-    - 如果创建了多个 Merge 配置，按照启用顺序先后，链式执行
+    - 如果创建了多个 Merge 配置，按照启用顺序先后，链式执行。
     - 配置修改后需要重新启用，生效时卡片有颜色标识（右键配置 `禁用` 再 `启用` ，也可以点击右上角的 🔥 按钮）。
 
 <!-- prettier-ignore -->
@@ -16,8 +16,8 @@
 <!-- prettier-ignore -->
 !!! info
     - 配置规则一般使用的是 `prepend-rules` 而非 `append-rules`（插入到原配置中的 `MATCH` 规则后面导致无效）。
-    - 配置语法请参考 [配置语法文档](https://wiki.metacubex.one/config/syntax/#_5)
-    - 规则配置请参考 [规则配置文档](https://wiki.metacubex.one/config/rules/)
+    - 配置语法请参考 [配置语法文档](https://wiki.metacubex.one/config/syntax/#_5)。
+    - 规则配置请参考 [规则配置文档](https://wiki.metacubex.one/config/rules/)。
 
 ```yaml
 # 前置规则
@@ -45,8 +45,8 @@ append-proxy-groups: []
 
 ## 配置示例
 
-- 让 `www.baidu.com` 走`日本节点`
-- 让 `www.google.com`，走 `韩国节点`
+- 让 `www.baidu.com` 走`日本节点` 。
+- 让 `www.google.com`，走 `韩国节点` 。
 
 ```yaml
 prepend-rules:

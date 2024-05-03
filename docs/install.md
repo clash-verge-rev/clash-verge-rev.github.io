@@ -2,9 +2,14 @@
 
 > Clash Verge Rev 目前仅通过 GitHub Release 发布，请注意辨别。
 
-| 下载方式       | 下载地址                                                                                                                                                                                                  |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Github Release | <a href='https://github.com/clash-verge-rev/clash-verge-rev/releases/latest' target="_blank"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/clash-verge-rev/clash-verge-rev"></a> |
+| 下载方式                  | 下载次数                                                                                                          | 下载地址                                                                                                                                                                                                     |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Github Release **正式版** | <img src="https://img.shields.io/github/downloads/clash-verge-rev/clash-verge-rev/latest/total?label=@latest">    | <a href='https://github.com/clash-verge-rev/clash-verge-rev/releases/latest' target="_blank"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/clash-verge-rev/clash-verge-rev"></a>    |
+| Github Release **测试版** | <img src="https://img.shields.io/github/downloads-pre/clash-verge-rev/clash-verge-rev/latest/total?label=@alpha"> | <a href='https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/alpha' target="_blank"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/clash-verge-rev/clash-verge-rev"></a> |
+
+## 安装问题
+
+如果安装/使用过程中遇到了问题，请参考文档的[常见问题](./faq/install.html)。
 
 ## 版本选择
 
@@ -14,12 +19,16 @@
 
 <!-- prettier-ignore -->
 !!! warning
-    不支持 Windows 7 操作系统。
+    不支持 `Windows 7` 操作系统。
 
-| 系统架构 | 文件名称                             |
-| -------- | ------------------------------------ |
-| x64      | Clash.Verge\_版本号\_x64-setup.exe   |
-| arm64    | Clash.Verge\_版本号\_arm64-setup.exe |
+<!-- prettier-ignore -->
+!!! tip
+    如果你不清楚你的电脑系统架构，请下载 `x64` 架构文件（目前多数 Windows 电脑使用该架构）。
+
+| 系统架构 | 文件名称                                 |
+| -------- | ---------------------------------------- |
+| x64      | Clash.Verge`_版本号_`**x64-setup.exe**   |
+| arm64    | Clash.Verge`_版本号_`**arm64-setup.exe** |
 
 ### Linux
 
@@ -31,19 +40,19 @@
 !!! warning
     仅提供 `deb` 和 `AppImage` 两种安装包。
 
-| 发行版本          | 安装方式                                                                     |
-| ----------------- | ---------------------------------------------------------------------------- |
-| Ubuntu/Debian     | 下载 `deb` 安装包                                                            |
-| ArchLinux/Manjaro | 通过 AUR 安装                                                                |
-| 其他发行版        | 方式 1: 解压 `deb` 包得到可执行文件，重新打包<br />方式 2: 直接使用 AppImage |
+| Linux 发行版本          | 安装方式                                                                       |
+| ----------------------- | ------------------------------------------------------------------------------ |
+| `Ubuntu` / `Debian`     | 下载 `deb` 安装包                                                              |
+| `ArchLinux` / `Manjaro` | 通过 `AUR` 安装                                                                |
+| 其他发行版              | 方式 1: 解压 `deb` 包得到可执行文件，重新打包<br />方式 2: 直接使用 `AppImage` |
 
 #### 文件选择
 
-| 系统架构 | 文件名称                                                                |
-| -------- | ----------------------------------------------------------------------- |
-| x64      | clash-verge\_版本号\_amd64.AppImage<br />clash-verge\_版本号\_amd64.deb |
-| arm64    | clash-verge\_版本号\_arm64.deb                                          |
-| armv7    | clash-verge\_版本号\_armhf.deb                                          |
+| 系统架构 | 文件名称                                                                        |
+| -------- | ------------------------------------------------------------------------------- |
+| x64      | clash-verge`_版本号_`**amd64.AppImage**<br />clash-verge`_版本号_`**amd64.deb** |
+| arm64    | clash-verge`_版本号_`**arm64.deb**                                              |
+| armv7    | clash-verge`_版本号_`**armhf.deb**                                              |
 
 ### MacOS
 
@@ -51,12 +60,12 @@
 
 <!-- prettier-ignore -->
 !!! warning
-    不支持 macos 10 操作系统，请升级 macos 到 11 或以上版本。
+    不支持 `macos` 10 操作系统，请升级 `macos` 到 11 或 更高版本。
 
-| 芯片类型     | 文件名称                         |
-| ------------ | -------------------------------- |
-| Intel 芯片   | Clash.Verge\_版本号\_x64.dmg     |
-| Apple M 芯片 | Clash.Verge\_版本号\_aarch64.dmg |
+| 芯片类型     | 文件名称                             |
+| ------------ | ------------------------------------ |
+| Intel 芯片   | Clash.Verge`_版本号_`**x64.dmg**     |
+| Apple M 芯片 | Clash.Verge`_版本号_`**aarch64.dmg** |
 
 ### Portable(便携版)
 
@@ -66,6 +75,5 @@
 !!! warning
     便携版无法使用应用内更新功能，需要手动下载新版本的**便携版**，并解压**覆盖**旧版本。
 
-便携版通过检测目录下的 `.config/PORTABLE` 文件来判断是否为便携版。
-
-如果你想要和安装版使用相同的配置文件路径，删除 `.config/PORTABLE` 文件即可。
+- 便携版通过检测目录下的 `.config/PORTABLE` 文件来判断是否为便携版。
+- 如果你想要和安装版使用相同的配置文件路径，删除 `.config/PORTABLE` 文件即可。

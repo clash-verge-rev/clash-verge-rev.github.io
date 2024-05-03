@@ -12,7 +12,7 @@
 
 > 如果你使用的是 TUN 模式, 你可以通过设置 TUN 流量排除配置来决定哪些不被 TUN 模式路由。
 
-TUN 配置请参考 [TUN 配置文档](https://wiki.metacubex.one/config/inbound/tun)
+TUN 配置请参考 [TUN 配置文档](https://wiki.metacubex.one/config/inbound/tun)。
 
 ## 自定义路由规则
 
@@ -29,4 +29,4 @@ rules:
   - DOMAIN-SUFFIX,baidu.com,流量出口名称
 ```
 
-规则配置请参考 [规则配置文档](https://wiki.metacubex.one/config/rules/)
+规则配置请参考 [规则配置文档](https://wiki.metacubex.one/config/rules/)。
