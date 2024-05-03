@@ -2,7 +2,8 @@
 
 <!-- prettier-ignore -->
 !!! warning
-    如果创建了多个 Script 配置，按照启用顺序先后，链式执行
+    - 如果创建了多个 Script 配置，按照启用顺序先后，链式执行
+    - 配置修改后需要重新启用，生效时卡片有颜色标识（右键配置 `禁用` 再 `启用` ，也可以点击右上角的 🔥 按钮）。
 
 ![新增脚本](../assets/guide/script/script.gif)
 
@@ -41,8 +42,8 @@ function main(params) {
 
 <!-- prettier-ignore -->
 !!! info
-    你可以在脚本中的 `// 自定义规则` 下面自行添加规则。
-    规则配置请参考 [规则配置文档](https://wiki.metacubex.one/config/rules/)
+    - 你可以在脚本中的 `// 自定义规则` 下面自行添加规则。
+    - 规则配置请参考 [规则配置文档](https://wiki.metacubex.one/config/rules/)
 
 ```javascript
 // 国内DNS服务器
