@@ -2,7 +2,7 @@
 
 ### 请求格式
 
-- 支持使用 `URL Scheme` 快速导入配置文件,该方式等价于访问如下地址。
+- 支持使用 `URL Schemes` 快速导入配置文件,该方式等价于访问如下地址。
 - 如果请求有额外的参数，如 `&flag=meta` ，请一并使用 URI 编码后添加到 `url` 参数中。
 
 ```
@@ -83,4 +83,4 @@ profile-web-page-url: https://example.com
     - 一般要求请求的 `UA` 中含有 `clash` 字样才会返回该响应头。
     - 此功能要求Clash Verge Rev版本至少为 `v1.6.0`。
 
-![profile-web-page-url](../assets/guide/url_scheme/profile_web_page_url.gif)
+![profile-web-page-url](../assets/guide/url_schemes/profile_web_page_url.gif)
