@@ -1,6 +1,6 @@
 ## Meta 内核
 
-- 一般指`Clash Meta`，也称 `Meta`、 `Mihomo` 内核。区别于 `Clash Premium` 为闭源内核，`Meta` 为开源内核。
+- 一般指`Clash Meta`，也称 `Meta`、 `Mihomo` 内核。区别于 `Clash Premium` 为闭源内核，`Clash Meta` 为开源内核。
 
 ## Alpha 内核
 

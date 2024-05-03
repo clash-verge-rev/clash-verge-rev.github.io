@@ -10,13 +10,13 @@
 
 ## TUN 流量排除
 
-> 如果你使用的是 TUN 模式, 你可以通过设置 TUN 流量排除配置来决定哪些请求不使用 TUN 模式。
+> 如果你使用的是 TUN 模式, 你可以通过设置 TUN 流量排除配置来决定哪些不被 TUN 模式路由。
 
-TUN 配置请参考 [TUN 配置文档](https://wiki.metacubex.one/config/inbound/tun/#inet4-route-exclude-address)
+TUN 配置请参考 [TUN 配置文档](https://wiki.metacubex.one/config/inbound/tun)
 
 ## 自定义路由规则
 
-> 另一种方式是自定义路由规则，决定请求流量如何被路由。
+> 自定义路由规则，决定请求流量如何被路由。
 
 示例:
 
