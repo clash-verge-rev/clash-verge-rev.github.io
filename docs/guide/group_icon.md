@@ -1,6 +1,6 @@
 ## 配置 icon
 
-需要配置代理组的 [icon](https://wiki.metacubex.one/config/proxy-groups/#icon) 字段
+需要配置代理组的 [icon](https://wiki.metacubex.one/config/proxy-groups/#icon) 字段。
 
 ```yaml
 proxy-groups:
@@ -16,7 +16,7 @@ proxy-groups:
 
 ## 支持的 icon 类型
 
-> 支持 `url图片地址` 、`Base64 编码字符串`、`svg文件内容` 三种类型
+> 支持 `url图片地址` 、`Base64 编码字符串`、`svg文件内容` 三种类型。
 
 - 使用 url 指定图片地址（支持常见图片格式，例如: `png`、`jpeg`、`gif` 以及 `svg`）。
 
@@ -42,6 +42,6 @@ icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 48 48\" width=\"4
 
 ## icon 缓存
 
-> 程序会对下载的 icon 进行缓存
+> 程序会对下载的 icon 进行缓存。
 
-缓存的目录为`应用目录`\icons\cache
+缓存的目录为`应用目录`\icons\cache 。
