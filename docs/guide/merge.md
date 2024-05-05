@@ -15,7 +15,6 @@
 
 <!-- prettier-ignore -->
 !!! info
-    - 配置规则一般使用的是 `prepend-rules` 而非 `append-rules`（插入到原配置中的 `MATCH` 规则后面导致无效）。
     - 配置语法请参考 [配置语法文档](https://wiki.metacubex.one/config/syntax/#_5)。
     - 规则配置请参考 [规则配置文档](https://wiki.metacubex.one/config/rules/)。
 
@@ -41,9 +40,23 @@ append-proxy-providers: {}
 # 后置代理组
 append-proxy-groups: []
 
+# 覆盖原配置(见示例)
 ```
 
+<!-- prettier-ignore -->
+!!! tip
+    - 配置除了可以往原配置中添加配置外，还可以覆盖原配置文件中的配置项。
+    - 需要**覆盖的配置项**和**原配置文件**中的书写方式一样。
+
 ## 配置示例
+
+### 自定义规则
+
+<!-- prettier-ignore -->
+!!! warning
+    配置规则一般使用的是 `prepend-rules` 而非 `append-rules`（使用 `append-rules` 插入到原配置中的 `MATCH` 规则后会导致插入的规则无效）。
+
+例如:
 
 - 让 `www.baidu.com` 走`日本节点` 。
 - 让 `www.google.com`，走 `韩国节点` 。
@@ -52,4 +65,57 @@ append-proxy-groups: []
 prepend-rules:
   - DOMAIN-SUFFIX,google.com,🇯🇵6日本-东部优化(hy2)
   - DOMAIN-SUFFIX,baidu.com,🇰🇷9韩国-全网优化(hy2)
+
+prepend-rule-providers: {}
+
+prepend-proxies: []
+
+prepend-proxy-providers: {}
+
+prepend-proxy-groups: []
+
+append-rules: []
+
+append-rule-providers: {}
+
+append-proxies: []
+
+append-proxy-providers: {}
+
+append-proxy-groups: []
+```
+
+### 覆盖原配置
+
+<!-- prettier-ignore -->
+!!! warning
+    - 由 Clash Verge 进行覆写的配置无法被覆写成功。程序需要保证这部分配置受程序控制，以此保证程序功能正常可用（如`mixed-port`、`log-level`、`external-controller`等）。
+    - 配置项未配置进去的其他部分配置，会保持原配置不变。
+
+例如: 假设原配置文件中 DNS 启用了 `ipv6` ，现在需要禁用该功能。
+
+```yaml
+prepend-rules: []
+
+prepend-rule-providers: {}
+
+prepend-proxies: []
+
+prepend-proxy-providers: {}
+
+prepend-proxy-groups: []
+
+append-rules: []
+
+append-rule-providers: {}
+
+append-proxies: []
+
+append-proxy-providers: {}
+
+append-proxy-groups: []
+
+# 覆盖DNS配置
+dns:
+  ipv6: false
 ```
