@@ -58,13 +58,17 @@ append-proxy-groups: []
 
 例如:
 
-- 让 `www.baidu.com` 走`日本节点` 。
-- 让 `www.google.com`，走 `韩国节点` 。
+- 网站 `www.baidu.com`， 走节点 `🇯🇵6日本-东部优化(hy2)` 。
+- 网站 `www.google.com`， 走节点 `🇰🇷9韩国-全网优化(hy2)` 。
+- 网站 `www.youtube.com`， 走策略组 `♻️自动选择` 。
+- 网段 `10.11.12.0/24`，走直连策略组 `DIRECT` 。
 
 ```yaml
 prepend-rules:
-  - DOMAIN-SUFFIX,google.com,🇯🇵6日本-东部优化(hy2)
-  - DOMAIN-SUFFIX,baidu.com,🇰🇷9韩国-全网优化(hy2)
+  - DOMAIN-SUFFIX,baidu.com,🇯🇵6日本-东部优化(hy2)
+  - DOMAIN-SUFFIX,google.com,🇰🇷9韩国-全网优化(hy2)
+  - DOMAIN-SUFFIX,youtube.com,♻️自动选择
+  - IP-CIDR,10.11.12.0/24,DIRECT,no-resolve
 
 prepend-rule-providers: {}
 
