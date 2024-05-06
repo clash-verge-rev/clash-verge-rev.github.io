@@ -11,9 +11,11 @@
 
 === ":material-microsoft-windows: Windows"
 
+    ### 安装版
     <!-- prettier-ignore -->
     !!! warning
-        不支持 `Windows 7` 操作系统。
+        - 不支持 `Windows 7` 操作系统。
+        - 带有 `fix_webview2` 字样的安装包为内置 `Webview2` 环境版本。文件体积较大，仅在[无法安装WebView2](./faq/install.md#_1)时使用。
 
     <!-- prettier-ignore -->
     !!! tip
@@ -21,8 +23,18 @@
 
     | 系统架构 | 文件名称                                 |
     | -------- | ---------------------------------------- |
+    | x86      | Clash.Verge`_版本号_`**x86-setup.exe**   |
     | x64      | Clash.Verge`_版本号_`**x64-setup.exe**   |
     | arm64    | Clash.Verge`_版本号_`**arm64-setup.exe** |
+
+    ### 便携版
+    <!-- prettier-ignore -->
+    !!! warning
+        - 带有 `portable` 字样的 zip 压缩包是便携版，下载后解压即可使用。
+        - 便携版无法使用应用内更新功能，需要手动下载新版本的**便携版**，并解压**覆盖**旧版本。
+
+    - 便携版通过检测目录下的 `.config/PORTABLE` 文件来判断是否为便携版。
+    - 如果你想要和安装版使用相同的配置文件路径，删除 `.config/PORTABLE` 文件即可。
 
 === ":material-linux: Linux"
 
@@ -55,16 +67,6 @@
     | ------------ | ------------------------------------ |
     | Intel 芯片   | Clash.Verge`_版本号_`**x64.dmg**     |
     | Apple M 芯片 | Clash.Verge`_版本号_`**aarch64.dmg** |
-
-=== ":material-bag-suitcase: 便携版"
-
-    <!-- prettier-ignore -->
-    !!! warning
-        - 带有 `portable` 字样的 zip 压缩包是便携版，下载后解压即可使用。
-        - 便携版无法使用应用内更新功能，需要手动下载新版本的**便携版**，并解压**覆盖**旧版本。
-
-    - 便携版通过检测目录下的 `.config/PORTABLE` 文件来判断是否为便携版。
-    - 如果你想要和安装版使用相同的配置文件路径，删除 `.config/PORTABLE` 文件即可。
 
 ## 安装问题
 
