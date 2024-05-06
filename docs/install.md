@@ -11,12 +11,12 @@
 
 === ":material-microsoft-windows: Windows"
 
-    ### 安装版
     <!-- prettier-ignore -->
     !!! warning
         - 不支持 `Windows 7` 操作系统。
-        - 带有 `fix_webview2` 字样的安装包为内置 `Webview2` 环境版本。文件体积较大，仅在[无法安装WebView2](./faq/install.md#_1)时使用。
+        - 带有 `fix_webview2` 字样的安装包为内置 `Webview2` 环境版本（该文件体积比普通安装包大，仅用于当系统缺少且[无法安装WebView2](./faq/install.md#_1)环境时使用）。
 
+    ### 安装版
     <!-- prettier-ignore -->
     !!! tip
         如果你不清楚你的电脑系统架构，请下载 `x64` 架构文件（目前多数 Windows 电脑使用该架构）。
