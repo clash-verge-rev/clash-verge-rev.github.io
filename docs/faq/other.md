@@ -34,7 +34,7 @@ dns:
 
 > 代理界面一片空白，不显示任何节点信息，而代理运行正常。
 
-日志中提示: `External controller listen error: listen tcp 127.0.0.1:9097: bind: An attempt was made to access a socket in a way forbidden by its access permissions.`
+日志提示: `External controller listen error: listen tcp 127.0.0.1:9097: bind: An attempt was made to access a socket in a way forbidden by its access permissions.`
 
-- 问题原因: 外部控制端口被其他程序占用
-- 解决办法: `Clash设置` -> `外部控制` -> 修改 `外部控制监听地址`中的端口并保存，然后退出并重启程序。
+- 问题原因: 外部控制端口被其他程序占用，或者外部控制访问密钥含有中文字符。
+- 解决办法: `Clash设置` -> `外部控制` -> 修改 `外部控制监听地址` 中的端口并保存，然后退出并重启程序。
