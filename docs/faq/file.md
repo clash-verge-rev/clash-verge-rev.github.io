@@ -4,15 +4,11 @@
 
 ![文件已损坏](../assets/faq/file/mac_file_corrupted.png)
 
-- 问题原因: 开发者没有 **Apple Developer Program** 会员资格。
-- 解决方案: 请打开终端并执行下列命令进行授权。
-
-<!-- prettier-ignore -->
-!!! warning
-    macOS `14.5` 版本移除了 `-r` 参数（提示 `option -r not recognized` ），请根据你的系统版本自行将命令中 `-r` 参数删除后再执行。
+- 问题原因: 由于应用没有签名，所以可能会显示开发者无法验证或应用已损坏，需要授予开发者**Apple Developer Program** 会员资格。
+- 解决方案:点击 `取消` 按钮，然后去 `设置` -> `隐私与安全性` 页面，点击 `仍要打开` 按钮，然后在弹出窗口里点击 `打开` 按钮即可。如果在 `隐私与安全性` 页面中找不到以上选项，或启动时提示文件损坏。打开终端，并执行下列命令进行授权。
 
 ```bash
-sudo xattr -r -d com.apple.quarantine /Applications/Clash\ Verge.app
+sudo xattr -d com.apple.quarantine /Applications/Clash\ Verge.app
 ```
 
 ## 找不到系统文件 os error
