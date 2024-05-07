@@ -19,11 +19,6 @@
     - 规则配置请参考 [规则配置文档](https://wiki.metacubex.one/config/rules/)。
 
 <!-- prettier-ignore -->
-!!! warning
-    - 如果创建了多个 Merge 配置，按照启用顺序先后，链式执行。
-    - 配置修改后需要重新启用，生效时卡片有颜色标识（右键配置 `禁用` 再 `启用` ，也可以点击右上角的 🔥 按钮）。
-
-<!-- prettier-ignore -->
 !!! failure
     - `v1.6.2` 版本移除了 `prepend-rule-providers`、`prepend-proxy-providers`、`append-rule-providers`、`append-proxy-providers`。
     - 请使用 `rule-providers`、`proxy-providers` 代替（效果等价于 `append-rule-providers`、`append-proxy-providers`）。
