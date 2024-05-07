@@ -19,7 +19,7 @@
     - 规则配置请参考 [规则配置文档](https://wiki.metacubex.one/config/rules/)。
 
 <!-- prettier-ignore -->
-!!! failure
+!!! danger "Changelog"
     - `v1.6.2` 版本移除了 `prepend-rule-providers`、`prepend-proxy-providers`、`append-rule-providers`、`append-proxy-providers`。
     - 请使用 `rule-providers`、`proxy-providers` 代替（效果等价于 `append-rule-providers`、`append-proxy-providers`）。
 
@@ -47,11 +47,6 @@ append-proxy-groups: []
 
 # 覆盖原配置(见示例)
 ```
-
-<!-- prettier-ignore -->
-!!! tip
-    - 配置除了可以往原配置中添加配置外，还可以覆盖原配置文件中的配置项。
-    - 需要**覆盖的配置项**和**原配置文件**中的书写方式一样。
 
 ## 配置示例
 
@@ -91,7 +86,12 @@ append-proxy-groups: []
 <!-- prettier-ignore -->
 !!! warning
     - 由 Clash Verge 进行覆写的配置无法被覆写成功。程序需要保证这部分配置受程序控制，以此保证程序功能正常可用（如`mixed-port`、`log-level`、`external-controller`等）。
-    - 配置项未配置进去的其他部分配置，会保持原配置不变（**要求 Clash Verge Rev 版本至少为 `v1.6.2`** 。`v1.6.2` 之前的版本，配置项未配置进去的其他部分配置，将会被视为空并覆盖）。
+    - 需要**覆盖的配置项**和**原配置文件**中的书写方式一样。
+
+<!-- prettier-ignore -->
+!!! danger "Changelog"
+    - 被覆写的配置中的未配置的**其他配置项**，会**保持原配置不变**（ `v1.6.2` 版本以上）。
+    - 被覆写的配置中的未配置的**其他配置项**，会**视为没有被配置**（ `v1.6.2` 版本之前）。
 
 例如: 假设原配置文件中 DNS 启用了 `ipv6` ，现在需要禁用该功能。
 
