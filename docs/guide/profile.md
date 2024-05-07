@@ -41,4 +41,8 @@
 
 ### 拖拽配置文件导入
 
-alpha 功能,待上线。
+<!-- prettier-ignore -->
+!!! warning
+    要求 Clash Verge Rev 版本至少为 `v1.6.2`。
+
+![拖拽配置文件导入](../assets/guide/profile/local_drag.gif)
