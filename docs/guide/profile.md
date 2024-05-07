@@ -5,7 +5,7 @@
 ### 订阅链接导入
 
 <!-- prettier-ignore -->
-!!! info
+!!! warning
     如果通过`订阅链接导入`的方式提示 `client error(Connect)`，请尝试其他导入方式。
 
 ![订阅链接导入](../assets/guide/profile/remote_url.gif)
