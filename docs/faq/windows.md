@@ -47,7 +47,7 @@
 
 到 `内核目录` 中找到 `uninstall-service.exe`，以管理员权限执行。
 
-![uninstall-service](../assets/faq/windows/uninstall-service.png)
+![uninstall-service](../assets/faq/windows/uninstall_service.png)
 
 ## 静默启动失效
 

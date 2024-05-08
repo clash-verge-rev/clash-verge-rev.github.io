@@ -73,3 +73,36 @@ dns:
 
 - 问题原因: 外部控制端口被其他程序占用，或者外部控制访问密钥含有中文字符。
 - 解决办法: `Clash设置` -> `外部控制` -> 修改 `外部控制监听地址` 中的端口并保存，然后退出并重启程序。
+
+## 使用 Watt Toolkit（Steam++）冲突
+
+> 使用 Watt Toolkit 和 Clash Verge 会导致无法访问 Steam 服务，而 Clash For Windows 正常。
+
+问题原因:
+
+- Watt Toolkit 是基于 `hosts` 文件工作的，通过修改本地 `hosts` 文件将地址解析到加速 IP。
+- Clash For Windows 使用的 `Premium` 内核并不会查询本地 hosts 文件，而 Clash 使用的 `Meta` 内核默认会。这会导致**使用代理节点去连接使用本地 `hosts` 文件解析出来的加速 IP**。
+- 如果代理节点访问加速 IP 效果不佳的话，就会出现无法访问的情况。
+
+解决办法:
+
+<!-- prettier-ignore -->
+!!! warning
+    首先确保你的内核版本至少为`v1.18.5`（或为最新 `alpha` 版本）。
+
+- 如果你了解配置文件、`Merge`/`Srcipt`，只需要按照你接受的方式，**将配置中[use-system-hosts](https://wiki.metacubex.one/config/dns/#use-system-hosts)修改为`false`即可，下面的方案均基于此**。
+- 如果你的 Clash Verge 版本为 `v1.6.2`及以上。在订阅页面新建一个 Merge 配置，文件使用以下内容保存并右键`启用`。
+
+```yaml
+dns:
+  use-system-hosts: false
+```
+
+- 如果你的 Clash Verge 版本为 `v1.6.2`以下。在订阅页面新建一个 Script 配置，文件使用以下内容保存并右键`启用`。
+
+```javascript
+function main(config) {
+  config.dns = { ...config.dns, "use-system-hosts": false };
+  return config;
+}
+```
