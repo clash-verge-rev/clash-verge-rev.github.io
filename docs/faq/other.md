@@ -1,3 +1,38 @@
+## TUN 模式无法开启
+
+- Tun 模式需要管理员权限，请先安装并开启服务模式后再使用 Tun 模式。
+- Mac/Linux 用户也可以在`设置`->`Clash 内核`,点击 ⚙️ 图标，点击"授权"。
+
+## 找不到系统文件 os error
+
+问题原因:
+
+1. 内核文件损坏，没找到内核。
+2. 内核文件被杀毒软件删除或添加到了隔离列表。
+
+解决方案:
+
+1. 如果文件损坏，删除老配置，卸载老版本，重新安装。
+2. 如果被杀毒软件误伤，请将文件手动恢复并添加到白名单。
+
+## 日志过大，占满磁盘
+
+解决方案: 可以将日志等级设置为 `Silent` 或 `Error`，并在 `杂项设置` 中设置自动清理日志间隔。
+
+## 导入订阅报错 401
+
+![导入订阅报错](../assets/faq/other/subscibe_import_error.png)
+
+解决方案: 卸载重装。
+
+## 导入订阅报错 无效的证书
+
+> error trying to connect: invalid peer certificate: UnknownIssuer
+
+![无效的证书](../assets/faq/other/certificate.png)
+
+解决方案: 勾选 `允许无效证书（危险）`。
+
 ## proxy-providers 里的机场订阅中的 HY2 节点
 
 配置文件添加（版本号不重要，含有 `clash-verge` 字样即可）。
