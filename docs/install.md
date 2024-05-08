@@ -13,8 +13,8 @@
 
     <!-- prettier-ignore -->
     !!! warning
-        - 不支持 `Windows 7` 操作系统。
-        - 带有 `fix_webview2` 字样的安装包为内置 `Webview2` 环境版本（该文件体积比普通安装包大，仅用于当系统缺少且[无法安装WebView2](./faq/install.md#_1)环境时使用）。
+        - Windows 7 用户请先查看相关[FAQ](./faq/windows.html#windows-7)。
+        - 带有 `fix_webview2` 字样的安装包为内置 `Webview2` 环境版本（该文件体积比普通安装包大，仅用于当系统缺少且[无法安装WebView2](./faq/windows.html#webview2)环境时使用）。
 
     ### 安装版
     <!-- prettier-ignore -->
