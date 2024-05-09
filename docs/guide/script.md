@@ -66,7 +66,7 @@ const dnsConfig = {
   "dns": true,
   "listen": 1053,
   "ipv6": true,
-  "use-hosts": true,
+  "use-system-hosts": false,
   "cache-algorithm": "arc",
   "enhanced-mode": "fake-ip",
   "fake-ip-range": "198.18.0.1/16",
