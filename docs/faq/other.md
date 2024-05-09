@@ -74,17 +74,18 @@ dns:
 - 问题原因: 外部控制端口被其他程序占用，或者外部控制访问密钥含有中文字符。
 - 解决办法: `Clash设置` -> `外部控制` -> 修改 `外部控制监听地址` 中的端口并保存，然后退出并重启程序。
 
-## Watt Toolkit（Steam++）冲突
+## Watt Toolkit（原 Steam++） 冲突
 
-> 使用 Watt Toolkit 和 Clash Verge 会导致无法访问 Steam 服务，而 Clash For Windows 正常。
+> 使用 Watt Toolkit 和 Clash Verge 会导致无法访问被加速服务（如 Steam、Github 等），而 Clash For Windows 正常。
 
 问题原因:
 
-- Watt Toolkit 是基于 `hosts` 文件工作的，通过修改本地 `hosts` 文件将地址解析到加速 IP。
-- Clash For Windows 使用的 `Premium` 内核并不会查询本地 hosts 文件，而 Clash 使用的 `Meta` 内核默认会。这会导致**使用代理节点去连接使用本地 `hosts` 文件解析出来的加速 IP**。
-- 如果代理节点访问加速 IP 效果不佳的话，就会出现无法访问的情况。
+- Watt Toolkit 是基于 `hosts` 文件工作的，通过修改系统 `hosts` 文件将被加速的域名解析到加速 IP。
+- `Clash For Windows` 使用的 `Premium` 内核并不会查询系统 `hosts` 文件。
+- `Clash Verge` 使用的 `Meta` 内核默认会查询系统 `hosts` 文件。
+- 这将导致**使用代理节点去连接**使用本地 `hosts` 文件解析出来的**加速 IP**。如果代理节点访问加速 IP 效果不佳的话，可能出现无法访问的情况。
 
-解决办法: 禁用查询系统 `hosts` 的行为。
+解决办法: 禁用内核查询系统 `hosts` 的行为。
 
 <!-- prettier-ignore -->
 !!! info
