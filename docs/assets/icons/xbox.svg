@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+    <radialGradient id="2Jwv7LuZrao5GsFL~0k11a" cx="24" cy="18.435" r="40.735"
+        gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#dfe9f2" />
+        <stop offset=".543" stop-color="#d6e0e9" />
+        <stop offset="1" stop-color="#bfc8d1" />
+    </radialGradient>
+    <path fill="url(#2Jwv7LuZrao5GsFL~0k11a)"
+        d="M44,24c0,4.37-1.4,8.41-3.79,11.7c-0.66,0.93-1.41,1.8-2.23,2.59C34.37,41.82,29.44,44,24,44	s-10.37-2.18-13.98-5.71C9.2,37.5,8.45,36.63,7.79,35.7C5.4,32.41,4,28.37,4,24c0-5.69,2.37-10.81,6.18-14.45	c1-0.96,2.1-1.81,3.28-2.54C16.52,5.1,20.13,4,24,4s7.48,1.1,10.54,3.01c1.18,0.73,2.28,1.58,3.28,2.54C41.63,13.19,44,18.31,44,24z" />
+    <radialGradient id="2Jwv7LuZrao5GsFL~0k11b" cx="23.891" cy="14.717" r="19.79"
+        gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#4caf50" />
+        <stop offset=".489" stop-color="#4aaf50" />
+        <stop offset=".665" stop-color="#43ad50" />
+        <stop offset=".79" stop-color="#38aa50" />
+        <stop offset=".892" stop-color="#27a550" />
+        <stop offset=".978" stop-color="#11a050" />
+        <stop offset="1" stop-color="#0a9e50" />
+    </radialGradient>
+    <path fill="url(#2Jwv7LuZrao5GsFL~0k11b)"
+        d="M40.21,35.7c-0.66,0.93-1.41,1.8-2.23,2.59c-0.07-0.61-0.31-2.47-0.98-3.79	c-1.5-3-8-11-13-14.5c-5,3.5-11.5,11.5-13,14.5c-0.67,1.32-0.91,3.18-0.98,3.79C9.2,37.5,8.45,36.63,7.79,35.7	C7.76,35.08,7.8,34.2,8,33c0.74-4.47,8.5-16,11-18c-3.4-3.4-6.8-4.91-8.82-5.45c1-0.96,2.1-1.81,3.28-2.54	C19.15,7.1,22.05,9.03,24,10c1.95-0.97,4.85-2.9,10.54-2.99c1.18,0.73,2.28,1.58,3.28,2.54C35.8,10.09,32.4,11.6,29,15	c2.5,2,10.26,13.53,11,18C40.2,34.2,40.24,35.08,40.21,35.7z" />
+</svg>
