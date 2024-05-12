@@ -2,8 +2,8 @@
 
 <!-- prettier-ignore -->
 !!! warning
-    - 如果创建了多个 Merge 配置，按照启用顺序先后，链式执行。
-    - 配置修改后需要重新启用，生效时卡片有颜色标识（右键配置 `禁用` 再 `启用` ，也可以点击右上角的 🔥 按钮）。
+    - 如果创建了多个 Merge 配置，按照启用顺序先后，**链式执行**。
+    - **<font color="red">配置修改后需要重新启用</font>**，生效时卡片有颜色标识（右键配置 `禁用` 再 `启用` ，也可以点击右上角的 🔥 按钮）。
 
 <!-- prettier-ignore -->
 !!! info
@@ -85,7 +85,7 @@ append-proxy-groups: []
 
 <!-- prettier-ignore -->
 !!! warning
-    - 由 Clash Verge 进行覆写的配置无法被覆写成功。程序需要保证这部分配置受程序控制，以此保证程序功能正常可用（如`mixed-port`、`log-level`、`external-controller`等）。
+    - 由 Clash Verge 进行覆写的配置无法被覆写成功。程序需要保证这部分配置受程序控制，以此保证程序功能正常可用（如`mixed-port`、`log-level`、`external-controller`、TUN 模式强制 `dns.enable = true` 等）。
     - 需要**覆盖的配置项**和**原配置文件**中的书写方式一样。
 
 <!-- prettier-ignore -->
