@@ -22,7 +22,7 @@ proxy-groups:
 
 <!-- prettier-ignore -->
 !!! tip
-    附录中有常用 `SVG` 图标和国旗 `SVG` 图标。
+    附录中有图标集、常用 `SVG` 图标和国旗 `SVG` 图标。
 
 ```yaml
 icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/google.svg
