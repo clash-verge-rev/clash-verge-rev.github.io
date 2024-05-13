@@ -16,13 +16,14 @@ proxy-groups:
 
 ### 支持类型
 
+<!-- prettier-ignore -->
+!!! tip
+    - [附录](#_4)有图标集(彩色、亮色、暗色)、常见 `SVG` 图标。
+    - 右键图片可以选择 `复制图片地址` 。
+
 > 支持 `url图片地址` 、`Base64 编码字符串`、`svg文件内容` 三种类型。
 
 - 使用 url 指定图片地址（支持常见图片格式，例如: `png`、`jpeg`、`gif` 以及 `svg`）。
-
-<!-- prettier-ignore -->
-!!! tip
-    附录中有图标集、常见 `SVG` 图标。
 
 ```yaml
 icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/google.svg
@@ -58,12 +59,12 @@ icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 48 48\" width=\"4
 
 <!-- prettier-ignore -->
 !!! tip
-    Clash Verge 的代理组图标大小为 **`32 * 32`** ，并为图标添加**圆角样式**。
+    Clash Verge 的代理组图标大小为 **`32 * 32`** 像素，并会为图标添加**圆角样式**。
 
-| 图标集                                      | 仓库地址                                                                                                                                               | 图标格式 | 图标集信息           | 预览                                                                                                                                                                                                                                                                                                                                                                                                           |
+| 图标集                                      | 仓库地址                                                                                                                                               | 图标格式 | 图标集信息           | 图标预览                                                                                                                                                                                                                                                                                                                                                                                                       |
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Qure](./icon_sets/Qure.md)                 | <a href="https://github.com/Koolson/Qure" target="_blank"><img src="https://img.shields.io/github/stars/Koolson/Qure"></a>                             | `png`    | 彩色、亮色、暗色图标 | <img src="https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png" width="48"/> <img src="https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png" width="48"/> <img src="https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png" width="48"/>                                                                                   |
-| [mini](./icon_sets/mini.md)                 | <a href="https://github.com/Orz-3/mini" target="_blank"><img src="https://img.shields.io/github/stars/Orz-3/mini"></a>                                 | `png`    | 彩色图标、暗色图标   | <img src="https://fastly.jsdelivr.net/gh/Orz-3/mini@master/Color/Google.png" width="48"/> <img src="https://fastly.jsdelivr.net/gh/Orz-3/mini@master/Color/HK.png" width="48"/> <img src="https://fastly.jsdelivr.net/gh/Orz-3/mini@master/Color/US.png" width="48"/>                                                                                                                                          |
+| [mini](./icon_sets/mini.md)                 | <a href="https://github.com/Orz-3/mini" target="_blank"><img src="https://img.shields.io/github/stars/Orz-3/mini"></a>                                 | `png`    | 彩色、暗色图标       | <img src="https://fastly.jsdelivr.net/gh/Orz-3/mini@master/Color/Google.png" width="48"/> <img src="https://fastly.jsdelivr.net/gh/Orz-3/mini@master/Color/HK.png" width="48"/> <img src="https://fastly.jsdelivr.net/gh/Orz-3/mini@master/Color/US.png" width="48"/>                                                                                                                                          |
 | [flag-icons](./icon_sets/flag-icons.md)     | <a href="https://github.com/lipis/flag-icons" target="_blank"><img src="https://img.shields.io/github/stars/lipis/flag-icons"></a>                     | `svg`    | 标准 3:2 国旗图标    | <img src="https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/hk.svg" width="48"/> <img src="https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/us.svg" width="48"/> <img src="https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/tw.svg" width="48"/> |
 | [WHATSINStash](./icon_sets/WHATSINStash.md) | <a href="https://github.com/shindgewongxj/WHATSINStash" target="_blank"><img src="https://img.shields.io/github/stars/shindgewongxj/WHATSINStash"></a> | `png`    | 彩色图标             | <img src="https://fastly.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/google.png" width="48"/> <img src="https://fastly.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/youtube.png" width="48"/> <img src="https://fastly.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/telegram.png" width="48"/>                                                                                  |
 
