@@ -20,7 +20,7 @@ nav:
       - Merge配置: guide/merge.md
       - Script配置: guide/script.md
       - 设置代理绕过: guide/bypass.md
-      - 设置代理组图标: guide/group_icon.md
+      - 设置代理组图标: guide/group_icon/group_icon.md
       - 自定义托盘图标: guide/tray_icon.md
       - 自定义主题/样式: guide/css_injection.md
       - URL Schemes: guide/url_schemes.md
@@ -86,9 +86,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format:
-            !!python/name:pymdownx.superfences.fence_code_format # emoji图标
-
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
