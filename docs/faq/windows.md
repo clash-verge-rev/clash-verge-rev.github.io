@@ -79,7 +79,7 @@ net start hns
 或者手动打开服务设置，重新启动 `Hot Network Service`。
 ![Hot Network Service](../assets/faq/windows/hot_network_service.png)
 
-## 应用内更新后自动安装到了 C 盘默认目录
+## 应用内更新后自动安装到了 C 盘默认目录/应用内更新后仍然是旧版本
 
 问题原因
 
