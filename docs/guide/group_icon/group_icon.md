@@ -16,12 +16,12 @@ proxy-groups:
 
 ### 支持类型
 
+> 支持 `url图片地址` 、`Base64 编码字符串`、`svg文件内容` 三种类型。
+
 <!-- prettier-ignore -->
 !!! tip
     - [附录](#_4)有图标集(彩色、亮色、暗色)、常见 `SVG` 图标。
     - 右键图片可以选择 `复制图片地址` 。
-
-> 支持 `url图片地址` 、`Base64 编码字符串`、`svg文件内容` 三种类型。
 
 - 使用 url 指定图片地址（支持常见图片格式，例如: `png`、`jpeg`、`gif` 以及 `svg`）。
 
@@ -29,7 +29,7 @@ proxy-groups:
 icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/google.svg
 ```
 
-- 使用 Base64 编码后的图片。[图片转 Base64 编码](https://www.jyshare.com/front-end/59/)。
+- 使用将[图片转 Base64 编码](https://www.jyshare.com/front-end/59/)后的文本。
 
 ```yaml
 icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgd2lkdGg9IjQ4cHgiIGhlaWdodD0iNDhweCI+DQogICAgPHBhdGggZmlsbD0iI2ZiYzAyZCINCiAgICAgICAgZD0iTTQzLjYxMSwyMC4wODNINDJWMjBIMjR2OGgxMS4zMDNjLTEuNjQ5LDQuNjU3LTYuMDgsOC0xMS4zMDMsOGMtNi42MjcsMC0xMi01LjM3My0xMi0xMglzNS4zNzMtMTIsMTItMTJjMy4wNTksMCw1Ljg0MiwxLjE1NCw3Ljk2MSwzLjAzOWw1LjY1Ny01LjY1N0MzNC4wNDYsNi4wNTMsMjkuMjY4LDQsMjQsNEMxMi45NTUsNCw0LDEyLjk1NSw0LDI0czguOTU1LDIwLDIwLDIwCXMyMC04Ljk1NSwyMC0yMEM0NCwyMi42NTksNDMuODYyLDIxLjM1LDQzLjYxMSwyMC4wODN6IiAvPg0KICAgIDxwYXRoIGZpbGw9IiNlNTM5MzUiDQogICAgICAgIGQ9Ik02LjMwNiwxNC42OTFsNi41NzEsNC44MTlDMTQuNjU1LDE1LjEwOCwxOC45NjEsMTIsMjQsMTJjMy4wNTksMCw1Ljg0MiwxLjE1NCw3Ljk2MSwzLjAzOQlsNS42NTctNS42NTdDMzQuMDQ2LDYuMDUzLDI5LjI2OCw0LDI0LDRDMTYuMzE4LDQsOS42NTYsOC4zMzcsNi4zMDYsMTQuNjkxeiIgLz4NCiAgICA8cGF0aCBmaWxsPSIjNGNhZjUwIg0KICAgICAgICBkPSJNMjQsNDRjNS4xNjYsMCw5Ljg2LTEuOTc3LDEzLjQwOS01LjE5MmwtNi4xOS01LjIzOEMyOS4yMTEsMzUuMDkxLDI2LjcxNSwzNiwyNCwzNgljLTUuMjAyLDAtOS42MTktMy4zMTctMTEuMjgzLTcuOTQ2bC02LjUyMiw1LjAyNUM5LjUwNSwzOS41NTYsMTYuMjI3LDQ0LDI0LDQ0eiIgLz4NCiAgICA8cGF0aCBmaWxsPSIjMTU2NWMwIg0KICAgICAgICBkPSJNNDMuNjExLDIwLjA4M0w0My41OTUsMjBMNDIsMjBIMjR2OGgxMS4zMDNjLTAuNzkyLDIuMjM3LTIuMjMxLDQuMTY2LTQuMDg3LDUuNTcxCWMwLjAwMS0wLjAwMSwwLjAwMi0wLjAwMSwwLjAwMy0wLjAwMmw2LjE5LDUuMjM4QzM2Ljk3MSwzOS4yMDUsNDQsMzQsNDQsMjRDNDQsMjIuNjU5LDQzLjg2MiwyMS4zNSw0My42MTEsMjAuMDgzeiIgLz4NCjwvc3ZnPg==
@@ -61,7 +61,7 @@ icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 48 48\" width=\"4
 !!! tip
     Clash Verge 的代理组图标大小为 **`32 * 32`** 像素，并会为图标添加**圆角样式**。
 
-| 图标集                                      | 仓库地址                                                                                                                                               | 图标格式 | 图标集信息           | 图标预览                                                                                                                                                                                                                                                                                                                                                                                                       |
+| 图标集                                      | 项目地址                                                                                                                                               | 图标格式 | 图标集信息           | 图标预览                                                                                                                                                                                                                                                                                                                                                                                                       |
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Qure](./icon_sets/Qure.md)                 | <a href="https://github.com/Koolson/Qure" target="_blank"><img src="https://img.shields.io/github/stars/Koolson/Qure"></a>                             | `png`    | 彩色、亮色、暗色图标 | <img src="https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png" width="48"/> <img src="https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png" width="48"/> <img src="https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png" width="48"/>                                                                                   |
 | [mini](./icon_sets/mini.md)                 | <a href="https://github.com/Orz-3/mini" target="_blank"><img src="https://img.shields.io/github/stars/Orz-3/mini"></a>                                 | `png`    | 彩色、暗色图标       | <img src="https://fastly.jsdelivr.net/gh/Orz-3/mini@master/Color/Google.png" width="48"/> <img src="https://fastly.jsdelivr.net/gh/Orz-3/mini@master/Color/HK.png" width="48"/> <img src="https://fastly.jsdelivr.net/gh/Orz-3/mini@master/Color/US.png" width="48"/>                                                                                                                                          |

@@ -15,8 +15,8 @@
 
 <!-- prettier-ignore -->
 !!! info
-    - 配置语法请参考 [配置语法文档](https://wiki.metacubex.one/config/syntax/#_5)。
-    - 规则配置请参考 [规则配置文档](https://wiki.metacubex.one/config/rules/)。
+    - 配置语法请参考 [配置语法文档](https://wiki.metacubex.one/config/syntax/#_5)（**<font color="red">不懂配置文件语法必看！！！</font>**）。
+    - 规则配置请参考 [规则配置文档](https://wiki.metacubex.one/config/rules/)（**<font color="green">不懂该用哪个规则必看！！！</font>**）。
 
 <!-- prettier-ignore -->
 !!! danger "Changelog"
