@@ -10,3 +10,9 @@
 ```bash
 sudo xattr -d com.apple.quarantine /Applications/Clash\ Verge.app
 ```
+
+## Apple 无法检查 App 是否包含恶意软件
+
+![文件已损坏](../assets/faq/macos/mac_security_check.png)
+
+- 解决方案:详见[macOS 使用手册](https://support.apple.com/zh-cn/guide/mac-help/mchleab3a043/mac)，并选择对应 mac 版本的文档。

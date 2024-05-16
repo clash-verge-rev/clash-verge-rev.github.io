@@ -38,13 +38,13 @@ function main(params) {
 
 ## 脚本示例
 
-### 自定义规则集
+### 1. 自定义规则(集)
 
 > 如下是一个套用 Loyalsoldier 规则集的 Script 脚本示例（可点击复制按钮）。
 
 <!-- prettier-ignore -->
 !!! info
-    - 你可以在脚本中的 `// 自定义规则` 下面自行添加规则。
+    - 你可以在脚本中的 `// 自定义规则` 注释部分的下面，添加自定义的规则。
     - 规则配置请参考 [规则配置文档](https://wiki.metacubex.one/config/rules/)（**<font color="green">不懂该用哪个规则必看！！！</font>**）。
 
 ```javascript
@@ -351,13 +351,14 @@ function main(config) {
 }
 ```
 
-### 剔除高倍率节点
+### 2. 剔除高倍率节点
 
 > 如下是一个按倍率过滤代理组节点的 Script 脚本示例（可点击复制按钮）。
 
 <!-- prettier-ignore -->
 !!! info
-    通过配置每个代理组的**最大倍率**，将超过最大倍率的节点从代理组中**剔除**。
+    - 通过配置每个代理组的**最大倍率**，将超过最大倍率的节点从代理组中**剔除**。
+    - 本脚本的剔除**无法作用于**通过 `include-all`、`include-all-proxies`、`include-all-providers` 引入的节点。
 
 ```javascript
 // 代理组最大倍率
@@ -388,9 +389,9 @@ function main(config) {
     })
     .filter(Boolean);
   if (removed.length > 0) {
-    // 移除group的引用
+    // 移除代理组的引用
     config["proxy-groups"].forEach(group => {group["proxies"] = group["proxies"].filter(proxy => !removed.includes(proxy));});
-    // 移除rule的引用
+    // 移除规则的引用
     config["rules"] = (config["rules"] ?? []).filter(rule => rule && removed.every(name => !rule.endsWith(name) && !rule.endsWith(`${name},no-resolve`)));
   }
   return config;
