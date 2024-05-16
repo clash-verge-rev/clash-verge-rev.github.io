@@ -54,9 +54,10 @@ append-proxy-groups: []
 
 <!-- prettier-ignore -->
 !!! warning
-    - 规则的匹配顺序是**从上到下依次进行匹配**，匹配成功会提前结束匹配（** `MATCH` 规则一定会匹配成功**）。
-    - 基于上述，配置自定义规则**一般使用的是 `prepend-rules`** 而非 `append-rules`（使用 `append-rules` **插入到原配置中的 `MATCH` 规则后，会导致插入的规则无效**）。
-    - 基于上述，**使用 `prepend-rules` 通常不会使用 `MATCH` 规则**（使用 `prepend-rules` **插入 `MATCH` 规则到原配置规则前，会导致原配置的规则无效**）。
+    - 规则的匹配顺序是**从上到下依次进行匹配**，匹配成功会提前结束匹配。
+    - **`MATCH` 规则一定会匹配成功 **，因此配置文件的规则一般均以** `MATCH` 规则结尾**。
+    - 基于上述，配置自定义规则**一般使用的是 `prepend-rules`** 而非 `append-rules`（使用 `append-rules` **会插入规则到原配置中的 `MATCH` 规则后，会导致插入的规则无效**）。
+    - 基于上述，**使用 `prepend-rules` 一般不会插入 `MATCH` 规则**（使用 `prepend-rules` **插入 `MATCH` 规则到原配置规则前，会导致原配置的规则无效**）。
 
 例如:
 
