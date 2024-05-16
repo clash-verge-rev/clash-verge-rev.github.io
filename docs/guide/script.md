@@ -105,79 +105,79 @@ const ruleProviders = {
     ...ruleProviderCommon,
     "behavior": "domain",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt",
-    "path": "./rulesets/loyalsoldier/reject.yaml"
+    "path": "./ruleset/loyalsoldier/reject.yaml"
   },
   "icloud": {
     ...ruleProviderCommon,
     "behavior": "domain",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt",
-    "path": "./rulesets/loyalsoldier/icloud.yaml"
+    "path": "./ruleset/loyalsoldier/icloud.yaml"
   },
   "apple": {
     ...ruleProviderCommon,
     "behavior": "domain",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt",
-    "path": "./rulesets/loyalsoldier/apple.yaml"
+    "path": "./ruleset/loyalsoldier/apple.yaml"
   },
   "google": {
     ...ruleProviderCommon,
     "behavior": "domain",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt",
-    "path": "./rulesets/loyalsoldier/google.yaml"
+    "path": "./ruleset/loyalsoldier/google.yaml"
   },
   "proxy": {
     ...ruleProviderCommon,
     "behavior": "domain",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt",
-    "path": "./rulesets/loyalsoldier/proxy.yaml"
+    "path": "./ruleset/loyalsoldier/proxy.yaml"
   },
   "direct": {
     ...ruleProviderCommon,
     "behavior": "domain",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt",
-    "path": "./rulesets/loyalsoldier/direct.yaml"
+    "path": "./ruleset/loyalsoldier/direct.yaml"
   },
   "private": {
     ...ruleProviderCommon,
     "behavior": "domain",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt",
-    "path": "./rulesets/loyalsoldier/private.yaml"
+    "path": "./ruleset/loyalsoldier/private.yaml"
   },
   "gfw": {
     ...ruleProviderCommon,
     "behavior": "domain",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt",
-    "path": "./rulesets/loyalsoldier/gfw.yaml"
+    "path": "./ruleset/loyalsoldier/gfw.yaml"
   },
   "tld-not-cn": {
     ...ruleProviderCommon,
     "behavior": "domain",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt",
-    "path": "./rulesets/loyalsoldier/tld-not-cn.yaml"
+    "path": "./ruleset/loyalsoldier/tld-not-cn.yaml"
   },
   "telegramcidr": {
     ...ruleProviderCommon,
     "behavior": "ipcidr",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt",
-    "path": "./rulesets/loyalsoldier/telegramcidr.yaml"
+    "path": "./ruleset/loyalsoldier/telegramcidr.yaml"
   },
   "cncidr": {
     ...ruleProviderCommon,
     "behavior": "ipcidr",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt",
-    "path": "./rulesets/loyalsoldier/cncidr.yaml"
+    "path": "./ruleset/loyalsoldier/cncidr.yaml"
   },
   "lancidr": {
     ...ruleProviderCommon,
     "behavior": "ipcidr",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt",
-    "path": "./rulesets/loyalsoldier/lancidr.yaml"
+    "path": "./ruleset/loyalsoldier/lancidr.yaml"
   },
   "applications": {
     ...ruleProviderCommon,
     "behavior": "classical",
     "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt",
-    "path": "./rulesets/loyalsoldier/applications.yaml"
+    "path": "./ruleset/loyalsoldier/applications.yaml"
   }
 };
 // 规则
