@@ -22,7 +22,8 @@
 
 <!-- prettier-ignore -->
 !!! warning
-    如果不能通过`URL Schemes`的方式导入，请查看[URL Schemes 功能失效解决办法](./url_schemes.md#_3)。
+    - `macOS` 暂不支持通过 `URL Schemes` 的方式导入。
+    - `Windows` 如果不能通过 `URL Schemes` 的方式导入，请查看[URL Schemes 功能失效解决办法](./url_schemes.md#_3)。
 
 ![URL Schemes](../assets/guide/profile/remote_url_schemes.gif)
 

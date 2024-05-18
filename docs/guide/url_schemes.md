@@ -11,7 +11,7 @@ clash://install-config?url=<URI编码后url>
 
 ### 功能失效解决办法
 
-如果无法正常使用该功能，可能是由于使用其他 Clash 代理软件（如 CFW）卸载不完全。请检查下列注册表项指向的 exe 路径是否正确。
+`Windows` 如果无法正常使用该功能，可能是由于使用其他 Clash 代理软件（如 CFW）卸载不完全。请检查下列注册表项指向的 exe 路径是否正确。
 
 ```
 HKEY_CLASSES_ROOT\clash\shell\open\command
