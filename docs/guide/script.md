@@ -65,7 +65,7 @@ const foreignNameservers = [
 ];
 // DNS配置
 const dnsConfig = {
-  "dns": true,
+  "enable": true,
   "listen": "0.0.0.0:1053",
   "ipv6": true,
   "use-system-hosts": false,
@@ -189,6 +189,8 @@ const rules = [
   "DOMAIN-SUFFIX,github.io,节点选择", // Github Pages
   "DOMAIN,v2rayse.com,节点选择", // V2rayse节点工具
   // Loyalsoldier 规则集
+  "RULE-SET,applications,全局直连",
+  "RULE-SET,private,全局直连",
   "RULE-SET,reject,广告过滤",
   "RULE-SET,icloud,微软服务",
   "RULE-SET,apple,苹果服务",
@@ -196,8 +198,6 @@ const rules = [
   "RULE-SET,proxy,节点选择",
   "RULE-SET,gfw,节点选择",
   "RULE-SET,tld-not-cn,节点选择",
-  "RULE-SET,applications,全局直连",
-  "RULE-SET,private,全局直连",
   "RULE-SET,direct,全局直连",
   "RULE-SET,lancidr,全局直连,no-resolve",
   "RULE-SET,cncidr,全局直连,no-resolve",
