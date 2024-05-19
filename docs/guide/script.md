@@ -10,12 +10,12 @@
 ## 脚本说明
 
 - 脚本语言为 `javascript`， 使用 `boa_engine` 作为执行器。
-- 程序的入口为 `main` 函数，接受一个 `params` 参数（参数名不限制），并返回修改后的该参数。
-- params 为 `object` 类型，属性值为 `yaml` 配置文件内容转 `JSON` 后对应的 `object` 对象。
+- 程序的入口为 `main` 函数，接受一个 `config` 参数（参数名不限制），并返回修改后的该参数。
+- `config` 为 `object` 类型，属性值为 `yaml` 配置文件内容转 `JSON` 后对应的 `object` 对象。
 
 ```javascript
-function main(params) {
-  return params;
+function main(config) {
+  return config;
 }
 ```
 
@@ -66,7 +66,7 @@ const foreignNameservers = [
 // DNS配置
 const dnsConfig = {
   "dns": true,
-  "listen": ":0.0.0.0:1053",
+  "listen": "0.0.0.0:1053",
   "ipv6": true,
   "use-system-hosts": false,
   "cache-algorithm": "arc",
