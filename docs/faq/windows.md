@@ -89,13 +89,26 @@ net start hns
 
 - 手动卸载系统中存在的多个 Clash Verge Rev，然后重新安装最新版本，后续更新不会出现此类问题。
 
-## Wondows 自带的 UWP 应用(如微软商店等)无法使用代理
+## Windows 系统 UWP 应用(如微软商店等)无法使用代理
 
 问题原因
 
-Windows 系统 UWP 应用存在沙盒机制，正常情况下无法访问 localhost（即无法访问回环地址），而代理程序在本地端口监听请求。因此需要解除 UWP 应用的回环访问限制。
+- Windows 系统 UWP 应用存在沙盒机制，正常情况下无法访问 localhost（即无法访问回环地址），而代理程序在本地端口监听请求。因此需要解除 UWP 应用的回环访问限制。
 
 解决方案
 
 - 打开 `Clash 设置` -> `UWP 工具` ，找到需要解除限制的 UWP 程序。
 - 勾选需要解除限制的 UWP 程序后，点击工具顶部的 `Save Changes` 按钮保存修改。
+
+## Windows 宽带拨号无法使用系统代理
+
+> Windows 的 `Windows 设置` -> `网络和 Internet` -> `代理` 中显示系统代理已经开启，且指向了正确的端口。Clash Verge Rev 的 `设置` -> `系统代理` 小齿轮界面中，却显示当前系统代理的开启状态为 false。
+
+| ![系统代理状态为false](../assets/faq/windows/sysproxy_enabled.png) | ![系统代理状态为false](../assets/faq/windows/sysproxy_states_false.png) |
+| ------------------------------------------------------------------ | ----------------------------------------------------------------------- |
+
+解决办法
+
+- **删除**原有的宽带拨号设置，然后**重新创建**宽带拨号设置（<font color="red">连接名称不要使用中文</font>）。
+
+![连接名称默认中文](../assets/faq/windows/broadband_dialing_setting.png)
