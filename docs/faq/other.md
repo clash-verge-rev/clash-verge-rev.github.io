@@ -74,23 +74,23 @@ dns:
 - 问题原因: 外部控制端口被其他程序占用，或者外部控制访问密钥含有中文字符。
 - 解决办法: `Clash设置` -> `外部控制` -> 修改 `外部控制监听地址` 中的端口并保存，然后退出并重启程序。
 
-## Watt Toolkit（原 Steam++） 冲突
+## Watt Toolkit（原名 Steam++）/ steamcommunity 302 冲突
 
-> 使用 Watt Toolkit 和 Clash Verge Rev 会导致无法访问被加速服务（如 Steam、Github 等），而 Clash For Windows 正常。
+> 使用 Watt Toolkit 或 steamcommunity 302 和 Clash Verge Rev 会导致无法访问被加速服务（如 Steam、Github 等），而 Clash For Windows 正常。
 
 问题原因:
 
-- Watt Toolkit 是基于 `hosts` 文件工作的，通过修改系统 `hosts` 文件将被加速的域名解析到加速 IP。
-- `Clash For Windows` 使用的 `Premium` 内核并不会查询系统 `hosts` 文件。
-- `Clash Verge Rev` 使用的 `Meta` 内核默认会查询系统 `hosts` 文件。
-- 这将导致**使用代理节点去连接**使用本地 `hosts` 文件解析出来的**加速 IP**。如果代理节点访问加速 IP 效果不佳的话，可能出现无法访问的情况。
+- `Watt Toolkit` / `steamcommunity 302` 默认是基于 `hosts` 文件工作的，通过修改系统 `hosts` 将被加速站点的请求劫持到本地的 `80` 或 `443`端口，由在此端口上监听的代理程序代为访问。
+- `Clash For Windows` 使用的 `Premium` 内核并不会查询系统 `hosts` 文件。`Clash Verge Rev` 使用的 `Meta` 内核默认会查询系统 `hosts` 文件。
+- 根据使用的**代理模式**、**分流规则**配置、**流量嗅探**配置的不同，会出现不同的情况：使用代理节点访问 `127.0.0.1`、使用代理节点访问 `加速服务器`，再访问被代理网站。
+- 鉴于情况较为复杂，仅给出下列解决方案。**如不能解决，仅建议两者不要同时使用，不再列举所有情况的解决方案**。
 
 解决办法: 禁用内核查询系统 `hosts` 的行为。
 
 <!-- prettier-ignore -->
 !!! info
     - 如果你的内核版本至少为`v1.18.2`，可以将系统变量 `DISABLE_SYSTEM_HOSTS` 设置为 `1` 。
-    - 如果你的内核版本至少为`v1.18.5`（或最新 `alpha` 版本），可以使用下列方案。
+        - 如果你的内核版本至少为`v1.18.5`（或最新 `alpha` 版本），可以使用下列方案。
 
 - 如果你了解配置文件、`Merge`/`Srcipt`工作原理，只需按照你能够接受的方式，自行将** DNS 配置**中的[use-system-hosts](https://wiki.metacubex.one/config/dns/#use-system-hosts)修改为`false`即可。**下列方案均基于此原理**。
 - 如果你的 Clash Verge Rev 版本为 `v1.6.2`及以上。在订阅页面新建一个 Merge 配置，文件使用以下内容保存并右键`启用`。
