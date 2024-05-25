@@ -88,7 +88,7 @@ append-proxy-groups: []
 
 <!-- prettier-ignore -->
 !!! warning
-    - 由 Clash Verge 进行覆写的配置无法被覆写成功。程序需要保证这部分配置受程序控制，以此保证程序功能正常可用（如`mixed-port`、`log-level`、`external-controller`、TUN 模式强制 `dns.enable = true` 等）。
+    - 由 Clash Verge Rev 进行覆写的配置无法被覆写成功。程序需要保证这部分配置受程序控制，以此保证程序功能正常可用（如`mixed-port`、`log-level`、`external-controller`、TUN 模式强制 `dns.enable = true` 等）。
     - 需要**覆盖的配置项**和**原配置文件**中的书写方式一样。
 
 <!-- prettier-ignore -->

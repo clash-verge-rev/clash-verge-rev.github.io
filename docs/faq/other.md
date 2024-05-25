@@ -76,13 +76,13 @@ dns:
 
 ## Watt Toolkit（原 Steam++） 冲突
 
-> 使用 Watt Toolkit 和 Clash Verge 会导致无法访问被加速服务（如 Steam、Github 等），而 Clash For Windows 正常。
+> 使用 Watt Toolkit 和 Clash Verge Rev 会导致无法访问被加速服务（如 Steam、Github 等），而 Clash For Windows 正常。
 
 问题原因:
 
 - Watt Toolkit 是基于 `hosts` 文件工作的，通过修改系统 `hosts` 文件将被加速的域名解析到加速 IP。
 - `Clash For Windows` 使用的 `Premium` 内核并不会查询系统 `hosts` 文件。
-- `Clash Verge` 使用的 `Meta` 内核默认会查询系统 `hosts` 文件。
+- `Clash Verge Rev` 使用的 `Meta` 内核默认会查询系统 `hosts` 文件。
 - 这将导致**使用代理节点去连接**使用本地 `hosts` 文件解析出来的**加速 IP**。如果代理节点访问加速 IP 效果不佳的话，可能出现无法访问的情况。
 
 解决办法: 禁用内核查询系统 `hosts` 的行为。
@@ -93,14 +93,14 @@ dns:
     - 如果你的内核版本至少为`v1.18.5`（或最新 `alpha` 版本），可以使用下列方案。
 
 - 如果你了解配置文件、`Merge`/`Srcipt`工作原理，只需按照你能够接受的方式，自行将** DNS 配置**中的[use-system-hosts](https://wiki.metacubex.one/config/dns/#use-system-hosts)修改为`false`即可。**下列方案均基于此原理**。
-- 如果你的 Clash Verge 版本为 `v1.6.2`及以上。在订阅页面新建一个 Merge 配置，文件使用以下内容保存并右键`启用`。
+- 如果你的 Clash Verge Rev 版本为 `v1.6.2`及以上。在订阅页面新建一个 Merge 配置，文件使用以下内容保存并右键`启用`。
 
 ```yaml
 dns:
   use-system-hosts: false
 ```
 
-- 如果你的 Clash Verge 版本为 `v1.6.2`以下。在订阅页面新建一个 Script 配置，文件使用以下内容保存并右键`启用`。
+- 如果你的 Clash Verge Rev 版本为 `v1.6.2`以下。在订阅页面新建一个 Script 配置，文件使用以下内容保存并右键`启用`。
 
 ```javascript
 function main(config) {
@@ -121,3 +121,13 @@ function main(config) {
 解决办法: 主动点击 :fontawesome-solid-wifi: 按钮，并等待代理组内节点全部测试完成。
 
 ![代理右上角小图钉](../assets/faq/other/fixed.gif)
+
+## 测试界面异常超时
+
+> 测试界面进行测试时，国外网站延迟测试正常，但是国内网站延迟测试（直连）立马提示超时，实际上网站均可以正常访问。
+
+![无效证书](../assets/faq/other/invalid_certificate.png)
+
+- 可能原因: 杀毒软件（如火绒）对 HTTPS 连接进行加密，出现证书不一致的情况报错导致。可能还会伴随着实际体验延迟较大的情况。
+
+- 解决办法: 关闭杀毒软件（如火绒） Web 扫描加密功能（各厂商功能名称可能有差异），或将使用的 `二进制内核文件` 添加到信任程序名单中，并重启程序。
