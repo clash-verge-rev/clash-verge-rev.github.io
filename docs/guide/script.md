@@ -5,7 +5,9 @@
     - 如果创建了多个 Script 配置，按照启用顺序先后，**链式执行**。
     - **<font color="red">配置修改后需要重新启用</font>**，生效时卡片有颜色标识（右键配置 `禁用` 再 `启用` ，也可以点击右上角的 🔥 按钮）。
 
-![新增脚本](../assets/guide/script/script.gif)
+<video controls>
+  <source src="../assets/guide/script/script.webm">
+</video>
 
 ## 脚本说明
 

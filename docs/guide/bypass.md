@@ -6,7 +6,9 @@
 
 示例: 计划将发往 `10.1.2.*` 的请求绕过系统代理（本机环回地址和局域网也无需代理）。
 
-![系统代理绕过](../assets/guide/bypass/system_proxy_bypass.gif)
+<video controls>
+  <source src="../assets/guide/bypass/system_proxy_bypass.webm">
+</video>
 
 ## TUN 流量排除
 

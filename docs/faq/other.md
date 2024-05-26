@@ -120,7 +120,9 @@ function main(config) {
 
 解决办法: 主动点击 :fontawesome-solid-wifi: 按钮，并等待代理组内节点全部测试完成。
 
-![代理右上角小图钉](../assets/faq/other/fixed.gif)
+<video controls>
+  <source src="../assets/faq/other/fixed.webm">
+</video>
 
 ## 测试界面异常超时
 

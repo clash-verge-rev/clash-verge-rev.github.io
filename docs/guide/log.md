@@ -9,8 +9,6 @@
 !!! tip
     导出日志文件后，如果担心日志文件太大占用过多磁盘空间，可以将日志级别修改回 `INFO` 级别。
 
-<!-- prettier-ignore -->
-!!! info
-    如果图片太小看不清，请右键图片在新标签页中打开。如果图片文件较大，请耐心等待。
-
-![导出日志文件](../assets/guide/log/log.gif)
+<video controls>
+  <source src="../assets/guide/log/log.webm">
+</video>

@@ -5,11 +5,9 @@
     - 如果创建了多个 Merge 配置，按照启用顺序先后，**链式执行**。
     - **<font color="red">配置修改后需要重新启用</font>**，生效时卡片有颜色标识（右键配置 `禁用` 再 `启用` ，也可以点击右上角的 🔥 按钮）。
 
-<!-- prettier-ignore -->
-!!! info
-    如果图片太小看不清，请右键图片在新标签页中打开。如果图片文件较大，请耐心等待。
-
-![新增脚本](../assets/guide/merge/merge.gif)
+<video controls>
+  <source src="../assets/guide/merge/merge.webm">
+</video>
 
 ## 配置说明
 

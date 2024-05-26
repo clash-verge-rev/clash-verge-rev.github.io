@@ -10,8 +10,6 @@
 
 ## 操作方法
 
-<!-- prettier-ignore -->
-!!! info
-    如果图片太小看不清，请右键图片在新标签页中打开。如果图片文件较大，请耐心等待。
-
-![自定义托盘图标](../assets/guide/tray_icon/tray_icon.gif)
+<video controls>
+  <source src="../assets/guide/tray_icon/tray_icon.webm">
+</video>

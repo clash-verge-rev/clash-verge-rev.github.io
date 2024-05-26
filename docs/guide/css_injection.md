@@ -7,10 +7,11 @@
 
 <!-- prettier-ignore -->
 !!! info
-    - 本教程要求有一定的 `CSS` 代码基础，可参考[CSS文档](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/First_steps)。
-    - 如果图片太小看不清，请右键图片在新标签页中打开。如果图片文件较大，请耐心等待。
+    本教程要求有一定的 `CSS` 代码基础，可参考[CSS文档](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/First_steps)。
 
-![CSS 注入](../assets/guide/css_injection/css_injection.gif)
+<video controls>
+  <source src="../assets/guide/css_injection/css_injection.webm">
+</video>
 
 ## CSS 示例代码
 

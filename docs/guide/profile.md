@@ -8,7 +8,9 @@
 !!! warning
     如果通过`订阅链接导入`的方式提示 `client error(Connect)`，请尝试其他导入方式。
 
-![订阅链接导入](../assets/guide/profile/remote_url.gif)
+<video controls>
+  <source src="../assets/guide/profile/remote_url.webm">
+</video>
 
 ### 订阅链接配置
 
@@ -16,7 +18,9 @@
 !!! warning
     如果通过`订阅链接配置`的方式仍然提示 `client error(Connect)`，请尝试勾选 `允许无效证书（危险）`，并保存重试。
 
-![订阅链接配置](../assets/guide/profile/remote_config.gif)
+<video controls>
+  <source src="../assets/guide/profile/remote_config.webm">
+</video>
 
 ### URL Schemes
 
@@ -25,7 +29,9 @@
     - `macOS` 暂不支持通过 `URL Schemes` 的方式导入。
     - `Windows` 如果不能通过 `URL Schemes` 的方式导入，请查看[URL Schemes 功能失效解决办法](./url_schemes.md#_3)。
 
-![URL Schemes](../assets/guide/profile/remote_url_schemes.gif)
+<video controls>
+  <source src="../assets/guide/profile/remote_url_schemes.webm">
+</video>
 
 ## 本地配置
 
@@ -38,7 +44,9 @@
     - 选择文件不是必须的，直接保存会生成一份空配置文件。
     - 选择使用的文件会被复制一份到 `profiles` 目录，原文件被移动或删除不会有影响。
 
-![新建配置导入](../assets/guide/profile/local_config.gif)
+<video controls>
+  <source src="../assets/guide/profile/local_config.webm">
+</video>
 
 ### 拖拽配置文件导入
 
@@ -46,4 +54,6 @@
 !!! warning
     要求 Clash Verge Rev 版本至少为 `v1.6.2`。
 
-![拖拽配置文件导入](../assets/guide/profile/local_drag.gif)
+<video controls>
+  <source src="../assets/guide/profile/local_drag.webm">
+</video>
