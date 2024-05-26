@@ -112,3 +112,7 @@ net start hns
 - **删除**原有的宽带拨号设置，然后**重新创建**宽带拨号设置（<font color="red">连接名称不要使用中文</font>）。
 
 ![连接名称默认中文](../assets/faq/windows/broadband_dialing_setting.png)
+
+<video controls allowfullscreen>
+  <source id="mp4" src="../assets/faq/windows/test.mp4" type="video/mp4">
+</video>
