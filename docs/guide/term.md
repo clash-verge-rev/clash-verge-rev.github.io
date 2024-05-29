@@ -4,7 +4,7 @@
 
 ## Alpha 内核
 
-- 一般指`Clash Meta Alpha`，是 `Clash Meta` 内核的测试版本。更新频率高，通常可以得到最新的 bug 修复或新特性。
+- 一般指`Clash Meta Alpha`，是 `Clash Meta` 内核的测试版本。更新频率高，通常可以得到最新的 bug 修复 或 新特性。
 
 ## UA
 
@@ -22,12 +22,7 @@
 
 ## CMFA
 
-- 一般指`Clash Meta For Andriod`，是 Andriod 平台的基于 `Clash Meta` 内核的代理软件。
-
-  | 下载方式       | 下载地址                                                                                                                                                                                              |
-  | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | Github Release | <a href='https://github.com/MetaCubeX/ClashMetaForAndroid/releases/latest' target="_blank"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/MetaCubeX/ClashMetaForAndroid"></a> |
-  | Google Play    | <a href='https://play.google.com/store/apps/details?id=com.github.metacubex.clash.meta' target="_blank">com.github.metacubex.clash.meta</a>                                                           |
+- 一般指`Clash Meta For Andriod`，是 Andriod 平台的基于 `Clash Meta` 内核的代理软件。Google Play 已下架。
 
 ## OC
 
@@ -37,4 +32,4 @@
 
 - Cloudflare 旗下的一款免费 VPN 软件。与传统 VPN 不同的是，它结合了 Cloudflare 的全球边缘网络。
 - 使用 Wireguard 协议，是否能直连到 WARP 节点受运营商影响。
-- 对于托管在 Cloudflare 的网站，WARP **并不能隐藏 IP**。
+- 对于托管在 Cloudflare 的网站，WARP 并不能隐藏 IP。
