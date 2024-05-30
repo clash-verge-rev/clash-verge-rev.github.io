@@ -13,7 +13,7 @@ sudo xattr -d com.apple.quarantine /Applications/Clash\ Verge.app
 
 ## Apple 无法检查 App 是否包含恶意软件
 
-![文件已损坏](../assets/faq/macos/mac_security_check.png)
+![无法检查App是否包含恶意软件](../assets/faq/macos/mac_security_check.png)
 
 - 解决方案: 详见[macOS 使用手册](https://support.apple.com/zh-cn/guide/mac-help/mchleab3a043/mac)，并选择对应 mac 版本的文档。
 
@@ -22,4 +22,4 @@ sudo xattr -d com.apple.quarantine /Applications/Clash\ Verge.app
 ![菜单栏左上角图标重叠](../assets/faq/macos/mac_icon_duplicated.png)
 
 - 问题原因: macOS Sonoma 的系统 BUG。
-- 解决方案: 到设置-显示器，调整一下分辨率。再调回去就好了。
+- 解决方案: `系统偏好设置` -> `显示器`，调整一下显示器分辨率，然后再调回去。
