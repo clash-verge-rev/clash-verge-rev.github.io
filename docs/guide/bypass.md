@@ -16,7 +16,7 @@
 
 > 如果你使用的是系统代理的 PAC 模式，你可以通过编写 `javascript` 脚本来决定哪些请求不使用系统代理。
 
-示例: 计划将发往 `www.baidu.com`、`www.bilibili.com`、`10.11.12.13` 的请求直接直连，其余的发往代理程序进行二次规则分流(若代理程序未在 `mixed-port` 上监听则直连)。
+示例: 计划将发往 `www.baidu.com`、`www.bilibili.com`、`10.11.12.13` 的请求直接直连，其余的请求发往代理程序进行二次规则分流(若代理程序未在 `mixed-port` 上监听则直连)。
 
 ```javascript
 function FindProxyForURL(url, host) {
