@@ -120,10 +120,15 @@ dns:
 
 ### Loyalsoldier 规则集
 
+<video controls>
+  <source src="../assets/guide/merge/merge_loyalsoldier.webm">
+</video>
+
 <!-- prettier-ignore -->
 !!! warning
     - 自行将下方配置中的**代理出口(自行修改)**,替换成原配置中**存在的**代理名称或代理组名称（如🚀节点选择、♻️自动选择、:flag_us: 美国节点之类的）。
     - 如果你的 Clash Verge Rev 版本低于 `v1.6.2` ，本配置会**覆盖**原配置中的 `rule-providers` ，请知悉。
+    - 首次使用需要下载规则集文件，可能需要加载一段时间，请耐心等待。若等待过久可尝试多次重新激活配置，下载未下载完成的规则集文件。
 
 ```yaml
 prepend-rules:
