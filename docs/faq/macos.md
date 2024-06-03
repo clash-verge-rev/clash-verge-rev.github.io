@@ -17,6 +17,15 @@ sudo xattr -d com.apple.quarantine /Applications/Clash\ Verge.app
 
 - 解决方案: 详见[macOS 使用手册](https://support.apple.com/zh-cn/guide/mac-help/mchleab3a043/mac)，并选择对应 mac 版本的文档。
 
+## macOS 系统代理设置修改失败/开关无效
+
+> 点击系统代理开关启用/禁用系统代理，系统代理设置中实际上未能被修改。
+
+- 问题原因: 更改锁定的系统偏好设置需要管理员密码，当前可能处于普通权限。
+- 解决方案: `系统偏好设置` -> `安全性与隐私` -> `高级`，关闭 `访问系统范围偏好设置需要输入管理员密码` （不同系统版本的名称略有差异）。
+
+![访问系统范围偏好设置需要输入管理员密码](../assets/faq/macos/mac_ignore_password.png)
+
 ## macOS 菜单栏左上角图标重叠
 
 ![菜单栏左上角图标重叠](../assets/faq/macos/mac_icon_duplicated.png)
