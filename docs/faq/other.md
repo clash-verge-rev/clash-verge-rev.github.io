@@ -90,7 +90,7 @@ dns:
 <!-- prettier-ignore -->
 !!! info
     - 如果你的内核版本至少为`v1.18.2`，可以将系统变量 `DISABLE_SYSTEM_HOSTS` 设置为 `1` 。
-        - 如果你的内核版本至少为`v1.18.5`（或最新 `alpha` 版本），可以使用下列方案。
+    - 如果你的内核版本至少为`v1.18.5`（或最新 `alpha` 版本），可以使用下列方案。
 
 - 如果你了解配置文件、`Merge`/`Srcipt`工作原理，只需按照你能够接受的方式，自行将** DNS 配置**中的[use-system-hosts](https://wiki.metacubex.one/config/dns/#use-system-hosts)修改为`false`即可。**下列方案均基于此原理**。
 - 如果你的 Clash Verge Rev 版本为 `v1.6.2`及以上。在订阅页面新建一个 Merge 配置，文件使用以下内容保存并右键`启用`。
