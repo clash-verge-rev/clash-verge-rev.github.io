@@ -32,16 +32,16 @@
 
 ## Windows 7 无法使用
 
-问题原因
-
-- Verge 内置的 mihomo 内核使用 go1.21 编译，不支持 Windows 7。
-
 解决方案
 
-- 到 mihomo [Release](https://github.com/MetaCubeX/mihomo/releases/latest) 下载 go1.20 编译的内核（带有 `windows` 和 `go120` 字样）
-- 右键 Verge 托盘图标，打开目录-内核目录，删除其中的`clash-meta.exe`和`clash-meta-alpha.exe`
-- 将下载的内核解压到内核目录，重命名为`clash-meta.exe`和`clash-meta-alpha.exe`
-- 重启 Verge
+借助 [vxiiduu/VxKex](https://github.com/vxiiduu/VxKex) 项目运行，步骤：
+- 下载 [Releases](https://github.com/vxiiduu/VxKex/releases) 中的 KexSetup_Release_x_x_x_xxxx.exe 并安装
+- 进入 Clash Verge 主程序目录，右键打开下面文件的属性，找到 VxKex 选项卡，勾选 Enable VxKex for this program 及 Disable VxKex for child processes 选项
+  - Clash Verge.exe
+  - resources\clash-verge-service.exe
+  - resources\install-service.exe
+  - resources\uninstall-service.exe
+- 可正常运行 Clash Verge.exe
 
 ## 升级，卸载、重装、开启的时候“服务模式”相关报错
 
