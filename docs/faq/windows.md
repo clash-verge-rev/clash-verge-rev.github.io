@@ -35,13 +35,17 @@
 解决方案
 
 借助 [vxiiduu/VxKex](https://github.com/vxiiduu/VxKex) 项目运行，步骤：
-- 下载 [Releases](https://github.com/vxiiduu/VxKex/releases) 中的 KexSetup_Release_x_x_x_xxxx.exe 并安装
-- 进入 Clash Verge 主程序目录，右键打开下面文件的属性，找到 VxKex 选项卡，勾选 Enable VxKex for this program 及 Disable VxKex for child processes 选项
-  - Clash Verge.exe
-  - resources\clash-verge-service.exe
-  - resources\install-service.exe
-  - resources\uninstall-service.exe
-- 可正常运行 Clash Verge.exe
+
+- 下载 [Releases](https://github.com/vxiiduu/VxKex/releases) 中的 `KexSetup_Release_x_x_x_xxxx.exe` 并安装。
+
+- 进入 Clash Verge 主程序目录，右键打开下面文件的属性，找到 `VxKex` 选项卡，勾选 `Enable VxKex for this program` 及 `Disable VxKex for child processes` 选项，即可正常运行。
+
+  | 文件清单                          |
+  | --------------------------------- |
+  | Clash Verge.exe                   |
+  | resources\clash-verge-service.exe |
+  | resources\install-service.exe     |
+  | resources\uninstall-service.exe   |
 
 ## 升级，卸载、重装、开启的时候“服务模式”相关报错
 
