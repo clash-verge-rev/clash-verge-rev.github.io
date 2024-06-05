@@ -1,3 +1,8 @@
+## 找不到 VCRUNTIMEXXX.dll，无法继续执行代码
+
+- 问题原因：操作系统缺少 VC 运行环境所需的库。
+- 解决方案：下载并安装[微软常见运行库合集](https://github.com/clash-verge-rev/clash-verge-rev.github.io/releases/download/dependencies/VC_RUNTIME.exe)（傻瓜式安装，始终点击下一步即可）。
+
 ## 此应用无法在你的电脑上运行
 
 ![can_not_run](../assets/faq/windows/can_not_run.png)
