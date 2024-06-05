@@ -13,11 +13,11 @@
     !!! tip
         如果你不清楚你的电脑系统架构，请下载 `x64` 架构文件（目前多数 Windows 电脑使用该架构）。
 
-    | 系统架构 | 下载地址                                                                                                                                                                                                                                                                     |
-    | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-    | x64      | <list class="download-list"><item logo="windows" label="安装包" content="x64" keyword="x64-setup.exe" color="0078D7"></item><item logo="microsoftedge"label="内置 Webview2 安装包" content="x64" keyword="x64_fixed_webview2-setup.exe" color="4CCE66"><item></list>         |
-    | x86      | <list class="download-list"><item logo="windows" label="安装包" content="x86" keyword="x86-setup.exe" color="539CDE"></item><item logo="microsoftedge"label="内置 Webview2 安装包" content="x86" keyword="x86_fixed_webview2-setup.exe" color="75DB87"><item></list>         |
-    | arm64    | <list class="download-list"><item logo="windows" label="安装包" content="arm64" keyword="arm64-setup.exe" color="8BB2E5"></item><item logo="microsoftedge"label="内置 Webview2 安装包" content="arm64" keyword="arm64_fixed_webview2-setup.exe" color="A4E4AD"><item></list> |
+        | 系统架构 | 下载地址                                                                                                                                                                                                                                                                              |
+        | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+        | x64      | <list class="download-list"><item logo="windows" label="安装包" content="x64" keyword="x64-setup.exe" color="0078D7">加载中...</item><item logo="microsoftedge"label="内置 Webview2 安装包" content="x64" keyword="x64_fixed_webview2-setup.exe" color="4CCE66"><item></list>         |
+        | x86      | <list class="download-list"><item logo="windows" label="安装包" content="x86" keyword="x86-setup.exe" color="539CDE">加载中...</item><item logo="microsoftedge"label="内置 Webview2 安装包" content="x86" keyword="x86_fixed_webview2-setup.exe" color="75DB87"><item></list>         |
+        | arm64    | <list class="download-list"><item logo="windows" label="安装包" content="arm64" keyword="arm64-setup.exe" color="8BB2E5">加载中...</item><item logo="microsoftedge"label="内置 Webview2 安装包" content="arm64" keyword="arm64_fixed_webview2-setup.exe" color="A4E4AD"><item></list> |
 
     #### 便携版
     <!-- prettier-ignore -->
@@ -28,31 +28,35 @@
     - 便携版通过检测目录下的 `.config/PORTABLE` 文件来判断是否为便携版。
     - 如果你想要和安装版使用相同的配置文件路径，删除 `.config/PORTABLE` 文件即可。
 
-    | 系统架构 | 下载地址                                                                                                                                                                                                                                                                           |
-    | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-    | x64      | <list class="download-list"><item logo="windows" label="便携版" content="x64" keyword="x64_portable.zip" color="0078D7"></item><item logo="microsoftedge"label="内置 Webview2 便携版" content="x64" keyword="x64_fixed_webview2_portable.zip" color="4CCE66"><item></list>         |
-    | x86      | <list class="download-list"><item logo="windows" label="便携版" content="x86" keyword="x86_portable.zip" color="539CDE"></item><item logo="microsoftedge"label="内置 Webview2 便携版" content="x86" keyword="x86_fixed_webview2_portable.zip" color="75DB87"><item></list>         |
-    | arm64    | <list class="download-list"><item logo="windows" label="便携版" content="arm64" keyword="arm64_portable.zip" color="8BB2E5"></item><item logo="microsoftedge"label="内置 Webview2 便携版" content="arm64" keyword="arm64_fixed_webview2_portable.zip" color="A4E4AD"><item></list> |
+        | 系统架构 | 下载地址                                                                                                                                                                                                                                                                                    |
+        | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+        | x64      | <list class="download-list"><item logo="windows" label="便携版" content="x64" keyword="x64_portable.zip" color="0078D7">加载中...</item><item logo="microsoftedge"label="内置 Webview2 便携版" content="x64" keyword="x64_fixed_webview2_portable.zip" color="4CCE66"><item></list>         |
+        | x86      | <list class="download-list"><item logo="windows" label="便携版" content="x86" keyword="x86_portable.zip" color="539CDE">加载中...</item><item logo="microsoftedge"label="内置 Webview2 便携版" content="x86" keyword="x86_fixed_webview2_portable.zip" color="75DB87"><item></list>         |
+        | arm64    | <list class="download-list"><item logo="windows" label="便携版" content="arm64" keyword="arm64_portable.zip" color="8BB2E5">加载中...</item><item logo="microsoftedge"label="内置 Webview2 便携版" content="arm64" keyword="arm64_fixed_webview2_portable.zip" color="A4E4AD"><item></list> |
 
 === ":material-linux: Linux"
 
     === ":material-debian: Debian/Ubuntu/Deepin"
 
-        | 系统架构 | 下载地址 |
-        | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
-        | x64 | <list class="download-list"><item logo="debian" label="安装包" content="x64" keyword="amd64.deb" color="A80030"></item></list> |
-        | x86 | <list class="download-list"><item logo="debian" label="安装包" content="x86" keyword="i386.deb" color="C02B4A"></item></list> |
-        | arm64 | <list class="download-list"><item logo="debian" label="安装包" content="arm64" keyword="arm64.deb" color="D44E64"></item></list> |
-        | armv7 | <list class="download-list"><item logo="debian" label="安装包" content="armv7" keyword="armhf.deb" color="E9717E"></item></list> |
+        <!-- prettier-ignore -->
+        !!! warning
+            Ubuntu `24.04` 需要安装额外依赖，详见[常见问题](./faq/linux.md)。
+
+        | 系统架构 | 下载地址                                                                                                                                  |
+        | -------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+        | x64      | <list class="download-list"><item logo="debian" label="安装包" content="x64" keyword="amd64.deb" color="A80030">加载中...</item></list>   |
+        | x86      | <list class="download-list"><item logo="debian" label="安装包" content="x86" keyword="i386.deb" color="C02B4A">加载中...</item></list>    |
+        | arm64    | <list class="download-list"><item logo="debian" label="安装包" content="arm64" keyword="arm64.deb" color="D44E64">加载中...</item></list> |
+        | armv7    | <list class="download-list"><item logo="debian" label="安装包" content="armv7" keyword="armhf.deb" color="E9717E">加载中...</item></list> |
 
     === ":material-redhat: CentOS/Fedora/SUSE"
 
-        | 系统架构 | 下载地址                                                                                                                           |
-        | -------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-        | x64      | <list class="download-list"><item logo="redhat" label="安装包" content="x64" keyword="x86_64.rpm" color="CC0000"></item></list>    |
-        | x86      | <list class="download-list"><item logo="redhat" label="安装包" content="x86" keyword="i386.rpm" color="E63434"></item></list>      |
-        | arm64    | <list class="download-list"><item logo="redhat" label="安装包" content="arm64" keyword="aarch64.rpm" color="F14D4D"></item></list> |
-        | armv7    | <list class="download-list"><item logo="redhat" label="安装包" content="armv7" keyword="armhfp.rpm" color="FF6868"></item></list>  |
+        | 系统架构 | 下载地址                                                                                                                                    |
+        | -------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+        | x64      | <list class="download-list"><item logo="redhat" label="安装包" content="x64" keyword="x86_64.rpm" color="CC0000">加载中...</item></list>    |
+        | x86      | <list class="download-list"><item logo="redhat" label="安装包" content="x86" keyword="i386.rpm" color="E63434">加载中...</item></list>      |
+        | arm64    | <list class="download-list"><item logo="redhat" label="安装包" content="arm64" keyword="aarch64.rpm" color="F14D4D">加载中...</item></list> |
+        | armv7    | <list class="download-list"><item logo="redhat" label="安装包" content="armv7" keyword="armhfp.rpm" color="FF6868">加载中...</item></list>  |
 
     === ":material-arch: ArchLinux/Manjaro"
 
@@ -72,9 +76,13 @@
 
     === ":simple-linux: AppImage"
 
-        | 系统架构 | 下载地址                                                                                                                                                                                                                                 |
-        | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-        | x64      | <list class="download-list"><item logo="linux" label="安装包" content="x64" keyword="amd64.AppImage" color="1793D1"></item><item logo="linux" label="压缩包" content="x64" keyword="amd64.AppImage.tar.gz" color="1793D1"></item></list> |
+        <!-- prettier-ignore -->
+        !!! warning
+            因 `AppImage` 问题较多，不推荐使用 `AppImage` 安装。
+
+        | 系统架构 | 下载地址                                                                                                                                                                                                                                                   |
+        | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+        | x64      | <list class="download-list"><item logo="linux" label="安装包" content="x64" keyword="amd64.AppImage" color="1793D1">加载中...</item><item logo="linux" label="压缩包" content="x64" keyword="amd64.AppImage.tar.gz" color="1793D1">加载中...</item></list> |
 
 === ":material-apple: macOS"
 
@@ -82,10 +90,10 @@
     !!! warning
         不支持 `macos` 10 操作系统，请升级 `macos` 到 11 或 更高版本。
 
-    | 系统架构     | 下载地址                                                                                                                            |
-    | ------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
-    | Intel 芯片   | <list class="download-list"><item logo="apple" label="安装包" content="x64" keyword="x64.dmg" color="A8A8A8"></item></list>         |
-    | Apple M 芯片 | <list class="download-list"><item logo="apple" label="安装包" content="aarch64" keyword="aarch64.dmg" color="C4C4C4"></item></list> |
+        | 系统架构     | 下载地址                                                                                                                                     |
+        | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+        | Intel 芯片   | <list class="download-list"><item logo="apple" label="安装包" content="x64" keyword="x64.dmg" color="A8A8A8">加载中...</item></list>         |
+        | Apple M 芯片 | <list class="download-list"><item logo="apple" label="安装包" content="aarch64" keyword="aarch64.dmg" color="C4C4C4">加载中...</item></list> |
 
 ## 安装问题
 
