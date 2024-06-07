@@ -4,20 +4,17 @@
 
     <!-- prettier-ignore -->
     !!! warning
+	    - 如果你不清楚你的电脑系统架构，请下载 `x64` 架构文件（目前多数 Windows 电脑使用该架构）。
         - **Windows 7** 用户请先查看相关[FAQ](./faq/windows.md#windows-7)。
         - 带有 `fix_webview2` 字样的安装包为内置 `Webview2` 环境版本（该文件体积比普通安装包大，仅用于当系统缺少且[无法安装WebView2](./faq/windows.md#webview2)环境时使用）。
 
     #### 安装版
 
-    <!-- prettier-ignore -->
-    !!! tip
-        如果你不清楚你的电脑系统架构，请下载 `x64` 架构文件（目前多数 Windows 电脑使用该架构）。
-
-        | 系统架构 | 下载地址                                                                                                                                                                                                                                                                              |
-        | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-        | x64      | <list class="download-list"><item logo="windows" label="安装包" content="x64" keyword="x64-setup.exe" color="0078D7">加载中...</item><item logo="microsoftedge"label="内置 Webview2 安装包" content="x64" keyword="x64_fixed_webview2-setup.exe" color="4CCE66"><item></list>         |
-        | x86      | <list class="download-list"><item logo="windows" label="安装包" content="x86" keyword="x86-setup.exe" color="539CDE">加载中...</item><item logo="microsoftedge"label="内置 Webview2 安装包" content="x86" keyword="x86_fixed_webview2-setup.exe" color="75DB87"><item></list>         |
-        | arm64    | <list class="download-list"><item logo="windows" label="安装包" content="arm64" keyword="arm64-setup.exe" color="8BB2E5">加载中...</item><item logo="microsoftedge"label="内置 Webview2 安装包" content="arm64" keyword="arm64_fixed_webview2-setup.exe" color="A4E4AD"><item></list> |
+    | 系统架构 | 下载地址                                                                                                                                                                                                                                                                              |
+    | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | x64      | <list class="download-list"><item logo="windows" label="安装包" content="x64" keyword="x64-setup.exe" color="0078D7">加载中...</item><item logo="microsoftedge"label="内置 Webview2 安装包" content="x64" keyword="x64_fixed_webview2-setup.exe" color="4CCE66"><item></list>         |
+    | x86      | <list class="download-list"><item logo="windows" label="安装包" content="x86" keyword="x86-setup.exe" color="539CDE">加载中...</item><item logo="microsoftedge"label="内置 Webview2 安装包" content="x86" keyword="x86_fixed_webview2-setup.exe" color="75DB87"><item></list>         |
+    | arm64    | <list class="download-list"><item logo="windows" label="安装包" content="arm64" keyword="arm64-setup.exe" color="8BB2E5">加载中...</item><item logo="microsoftedge"label="内置 Webview2 安装包" content="arm64" keyword="arm64_fixed_webview2-setup.exe" color="A4E4AD"><item></list> |
 
     #### 便携版
     <!-- prettier-ignore -->
@@ -90,10 +87,10 @@
     !!! warning
         不支持 `macos` 10 操作系统，请升级 `macos` 到 11 或 更高版本。
 
-        | 系统架构     | 下载地址                                                                                                                                     |
-        | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-        | Intel 芯片   | <list class="download-list"><item logo="apple" label="安装包" content="x64" keyword="x64.dmg" color="A8A8A8">加载中...</item></list>         |
-        | Apple M 芯片 | <list class="download-list"><item logo="apple" label="安装包" content="aarch64" keyword="aarch64.dmg" color="C4C4C4">加载中...</item></list> |
+    | 系统架构     | 下载地址                                                                                                                                     |
+    | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+    | Intel 芯片   | <list class="download-list"><item logo="apple" label="安装包" content="x64" keyword="x64.dmg" color="A8A8A8">加载中...</item></list>         |
+    | Apple M 芯片 | <list class="download-list"><item logo="apple" label="安装包" content="aarch64" keyword="aarch64.dmg" color="C4C4C4">加载中...</item></list> |
 
 ## 安装问题
 
