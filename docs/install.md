@@ -4,7 +4,7 @@
 
     <!-- prettier-ignore -->
     !!! warning
-	    - 如果你不清楚你的电脑系统架构，请下载 `x64` 架构文件（目前多数 Windows 电脑使用该架构）。
+        - 如果你不清楚你的电脑系统架构，请下载 `x64` 架构文件（目前多数 Windows 电脑使用该架构）。
         - **Windows 7** 用户请先查看相关[FAQ](./faq/windows.md#windows-7)。
         - 带有 `fix_webview2` 字样的安装包为内置 `Webview2` 环境版本（该文件体积比普通安装包大，仅用于当系统缺少且[无法安装WebView2](./faq/windows.md#webview2)环境时使用）。
 
@@ -56,30 +56,37 @@
         | armv7    | <list class="download-list"><item logo="redhat" label="安装包" content="armv7" keyword="armhfp.rpm" color="FF6868">加载中...</item></list>  |
 
     === ":material-arch: ArchLinux/Manjaro"
+        === "paru"
 
-        1. 安装 AUR helper（如果未安装）。
+            1. 安装 `paru`。
 
-        ```bash
-        sudo pacman -S --needed git base-devel
-        git clone https://aur.archlinux.org/yay-git.git
-        cd yay-git
-        makepkg -si
-        ```
-        2. 安装 AUR 包。
+            ```bash
+            sudo pacman -S --needed base-devel
+            git clone https://aur.archlinux.org/paru.git
+            cd paru
+            makepkg -si
+            ```
+            2. 安装 `clash-verge-rev-bin`。
 
-        ```bash
-        yay -S clash-verge-rev-bin
-        ```
+            ```bash
+            paru -S clash-verge-rev-bin
+            ```
 
-    === ":simple-linux: AppImage"
+        === "yay"
 
-        <!-- prettier-ignore -->
-        !!! warning
-            因 `AppImage` 问题较多，不推荐使用 `AppImage` 安装。
+            1. 安装 `yay`。
 
-        | 系统架构 | 下载地址                                                                                                                                                                                                                                                   |
-        | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-        | x64      | <list class="download-list"><item logo="linux" label="安装包" content="x64" keyword="amd64.AppImage" color="1793D1">加载中...</item><item logo="linux" label="压缩包" content="x64" keyword="amd64.AppImage.tar.gz" color="1793D1">加载中...</item></list> |
+            ```bash
+            sudo pacman -Sy --needed git base-devel
+            git clone https://aur.archlinux.org/yay.git
+            cd yay
+            makepkg -si
+            ```
+            2. 安装 `clash-verge-rev-bin`。
+
+            ```bash
+            yay -S clash-verge-rev-bin
+            ```
 
 === ":material-apple: macOS"
 
