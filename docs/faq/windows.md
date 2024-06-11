@@ -129,7 +129,7 @@ net start hns
 
 ## Windows 宽带拨号无法使用系统代理
 
-> Windows 的 `Windows 设置` -> `网络和 Internet` -> `代理` 中显示系统代理已经开启，且指向了正确的端口。Clash Verge Rev 的 `设置` -> `系统代理` 小齿轮界面中，却显示当前系统代理的开启状态为 false。
+> Windows 的 `Windows 设置` -> `网络和 Internet` -> `代理` 中显示系统代理已经开启，且指向了正确的端口。Clash Verge Rev 的 `设置` -> `系统代理` 小齿轮界面中，当前系统代理的开启状态却显示为未启用。
 
 | ![系统代理状态为false](../assets/faq/windows/sysproxy_enabled.png) | ![系统代理状态为false](../assets/faq/windows/sysproxy_states_false.png) |
 | ------------------------------------------------------------------ | ----------------------------------------------------------------------- |

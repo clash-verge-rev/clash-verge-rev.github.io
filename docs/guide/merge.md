@@ -62,6 +62,7 @@ append-proxy-groups: []
 - 网站 `www.baidu.com`， 走节点 `🇯🇵6日本-东部优化(hy2)` 。
 - 网站 `www.google.com`， 走节点 `🇰🇷9韩国-全网优化(hy2)` 。
 - 网站 `www.youtube.com`， 走策略组 `♻️自动选择` 。
+- 网站 `www.bilibili.com`，走直连策略组 `DIRECT` 。
 - 网段 `10.11.12.0/24`，走直连策略组 `DIRECT` 。
 
 ```yaml
@@ -69,6 +70,7 @@ prepend-rules:
   - DOMAIN-SUFFIX,baidu.com,🇯🇵6日本-东部优化(hy2)
   - DOMAIN-SUFFIX,google.com,🇰🇷9韩国-全网优化(hy2)
   - DOMAIN-SUFFIX,youtube.com,♻️自动选择
+  - DOMAIN-SUFFIX,bilibili.com,DIRECT
   - IP-CIDR,10.11.12.0/24,DIRECT,no-resolve
 
 prepend-proxies: []
