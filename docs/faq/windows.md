@@ -49,7 +49,7 @@
 
 解决方案
 
-- 打开自动更新
+- 打开自动更新。
 
 - 若实在无法安装 WebView2，可以尝试在 [Release](https://github.com/clash-verge-rev/clash-verge-rev/releases/latest) 下载内置了 `WebView2` 的版本（带有 `fixed_webview2` 字样的安装包）。
 
@@ -110,7 +110,7 @@ net start hns
 
 问题原因
 
-- 之前的某些版本升级有 Break Change，如果从很旧的版本升级会导致无法识别已安装目录
+- 之前的某些版本升级有 Break Change，如果从很旧的版本升级会导致无法识别已安装目录。
 
 解决方案
 
