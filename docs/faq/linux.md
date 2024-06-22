@@ -1,6 +1,6 @@
 ## Ubuntu 24.04 版本无法正常安装
 
-Ubuntu `24.04` 需要额外安装 `libwebkit2gtk` 和 `libjavascriptcoregtk` 依赖，根据架构下载对应版本并安装。
+Ubuntu `24.04` 需要额外安装 `libwebkit2gtk` 和 `libjavascriptcoregtk` 依赖，根据架构下载对应版本并安装。其他 Debian 系操作系统类似。
 === "amd64"
 
     | 依赖                 | 下载地址                                                                                                                                                                           |
