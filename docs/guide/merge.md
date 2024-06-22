@@ -65,7 +65,35 @@ append-proxy-groups: []
 - 网站 `www.bilibili.com`，走直连策略组 `DIRECT` 。
 - 网段 `10.11.12.0/24`，走直连策略组 `DIRECT` 。
 
+#### 写法一
+
 ```yaml
+# Profile Enhancement Merge Template for Clash Verge
+
+prepend-rules: [
+  "DOMAIN-SUFFIX,baidu.com,🇯🇵6日本-东部优化(hy2)",
+  "DOMAIN-SUFFIX,google.com,🇰🇷9韩国-全网优化(hy2)",
+  "DOMAIN-SUFFIX,youtube.com,♻️自动选择",
+  "DOMAIN-SUFFIX,bilibili.com,DIRECT",
+  "IP-CIDR,10.11.12.0/24,DIRECT,no-resolve"
+]
+
+prepend-proxies: []
+
+prepend-proxy-groups: []
+
+append-rules: []
+
+append-proxies: []
+
+append-proxy-groups: []
+```
+
+#### 写法二
+
+```yaml
+# Profile Enhancement Merge Template for Clash Verge
+
 prepend-rules:
   - DOMAIN-SUFFIX,baidu.com,🇯🇵6日本-东部优化(hy2)
   - DOMAIN-SUFFIX,google.com,🇰🇷9韩国-全网优化(hy2)
