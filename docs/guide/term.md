@@ -46,6 +46,10 @@
 
 - 一般指[Clash Meta For Andriod](https://github.com/MetaCubeX/ClashMetaForAndroid/releases/latest)，是 Andriod 平台的基于 `Clash Meta` 内核的代理软件。Google Play 已下架。
 
+## XD
+
+- 一般指[metacubexd](https://github.com/MetaCubeX/metacubexd)，是一个基于 `Clash Meta` 的 WEB UI 面板。更多面板详见[友情链接](../friendship.md##web-ui)。
+
 ## OC
 
 - 一般指[Open Clash](https://github.com/vernesong/OpenClash)，是 嵌入式/Linux 平台的基于 `Clash` 内核的面板程序。
