@@ -306,6 +306,8 @@ function main(config) {
     },
     {
       ...groupBaseOption,
+      "url": "https://chatgpt.com",
+      "expected-status": "200",
       "name": "ChatGPT",
       "type": "select",
       "include-all": true,
