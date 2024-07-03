@@ -17,13 +17,15 @@ nav:
       - 常见名词: guide/term.md
       - 导出日志: guide/log.md
       - 订阅导入: guide/profile.md
-      - Merge配置: guide/merge.md
-      - Script配置: guide/script.md
+      - 扩展配置/脚本: guide/extend.md
       - 设置代理绕过: guide/bypass.md
       - 设置代理组图标: guide/group_icon/group_icon.md
       - 自定义托盘图标: guide/tray_icon.md
       - 自定义主题/样式: guide/css_injection.md
       - URL Schemes: guide/url_schemes.md
+      - 历史归档:
+          - Merge配置: guide/merge.md
+          - Script配置: guide/script.md
   - 常见问题:
       - Windows: faq/windows.md
       - MacOS: faq/macos.md
