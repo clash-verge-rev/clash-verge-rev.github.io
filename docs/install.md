@@ -61,14 +61,14 @@
             1. 安装 `paru`。
 
             在/etc/pacman.conf写入
-            ```bash
+            ```
             [archlinuxcn]
             #Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
             Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
             Server = https://mirrors.hit.edu.cn/archlinuxcn/$arch
             Server = https://repo.huaweicloud.com/archlinuxcn/$arch
             ```
-
+            在终端运行：
             ```bash
             sudo pacman-key --lsign-key "farseerfc@archlinux.org"
             sudo pacman -S archlinuxcn-keyring
@@ -84,14 +84,14 @@
 
             1. 安装 `yay`。
             在/etc/pacman.conf写入
-            ```bash
+            ```
             [archlinuxcn]
             #Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
             Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
             Server = https://mirrors.hit.edu.cn/archlinuxcn/$arch
             Server = https://repo.huaweicloud.com/archlinuxcn/$arch
             ```
-
+            终端运行：
             ```bash
             sudo pacman-key --lsign-key "farseerfc@archlinux.org"
             sudo pacman -S archlinuxcn-keyring
