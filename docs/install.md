@@ -60,11 +60,19 @@
 
             1. 安装 `paru`。
 
+            在/etc/pacman.conf写入
             ```bash
-            sudo pacman -S --needed base-devel
-            git clone https://aur.archlinux.org/paru.git
-            cd paru
-            makepkg -si
+            [archlinuxcn]
+            #Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
+            Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
+            Server = https://mirrors.hit.edu.cn/archlinuxcn/$arch
+            Server = https://repo.huaweicloud.com/archlinuxcn/$arch
+            ```
+
+            ```bash
+            sudo pacman-key --lsign-key "farseerfc@archlinux.org"
+            sudo pacman -S archlinuxcn-keyring
+            sudo pacman -S paru
             ```
             2. 安装 `clash-verge-rev-bin`。
 
