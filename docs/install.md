@@ -58,50 +58,55 @@
     === ":material-arch: ArchLinux/Manjaro/SteamDeck"
         === "paru"
 
-            1. 安装 `paru`。
-
-            在/etc/pacman.conf写入
-            ```
-            [archlinuxcn]
-            #Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
-            Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
-            Server = https://mirrors.hit.edu.cn/archlinuxcn/$arch
-            Server = https://repo.huaweicloud.com/archlinuxcn/$arch
-            ```
-            在终端运行：
-            ```bash
-            sudo pacman-key --lsign-key "farseerfc@archlinux.org"
-            sudo pacman -S archlinuxcn-keyring
-            sudo pacman -S paru
-            ```
-
-            2. 安装 `clash-verge-rev-bin`。
-
+            1.  安装 `paru`。
+            
+                1.1.  在 `/etc/pacman.conf` 文件中写入下列内容。
+            
+                ```
+                [archlinuxcn]
+                Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
+                Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
+                Server = https://mirrors.hit.edu.cn/archlinuxcn/$arch
+                Server = https://repo.huaweicloud.com/archlinuxcn/$arch
+                ```
+            
+                1.2. 在终端运行下列命令。
+            
+                ```bash
+                sudo pacman-key --lsign-key "farseerfc@archlinux.org"
+                sudo pacman -S archlinuxcn-keyring
+                sudo pacman -S paru
+                ```
+            
+            2.  安装 `clash-verge-rev-bin`。
+            
             ```bash
             paru -S clash-verge-rev-bin
             ```
 
         === "yay"
-
-            1. 安装 `yay`。
-
-            在/etc/pacman.conf写入
-            ```
-            [archlinuxcn]
-            #Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
-            Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
-            Server = https://mirrors.hit.edu.cn/archlinuxcn/$arch
-            Server = https://repo.huaweicloud.com/archlinuxcn/$arch
-            ```
-            在终端运行：
-            ```bash
-            sudo pacman-key --lsign-key "farseerfc@archlinux.org"
-            sudo pacman -S archlinuxcn-keyring
-            sudo pacman -S yay
-            ```
-
-            2. 安装 `clash-verge-rev-bin`。
-
+            1.  安装 `paru`。
+            
+                1.1.  在 `/etc/pacman.conf` 文件中写入下列内容。
+            
+                ```
+                [archlinuxcn]
+                Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
+                Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
+                Server = https://mirrors.hit.edu.cn/archlinuxcn/$arch
+                Server = https://repo.huaweicloud.com/archlinuxcn/$arch
+                ```
+            
+                1.2. 在终端运行下列命令。
+            
+                ```bash
+                sudo pacman-key --lsign-key "farseerfc@archlinux.org"
+                sudo pacman -S archlinuxcn-keyring
+                sudo pacman -S yay
+                ```
+            
+            2.  安装 `clash-verge-rev-bin`。
+            
             ```bash
             yay -S clash-verge-rev-bin
             ```
