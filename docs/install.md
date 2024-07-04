@@ -74,6 +74,7 @@
             sudo pacman -S archlinuxcn-keyring
             sudo pacman -S paru
             ```
+
             2. 安装 `clash-verge-rev-bin`。
 
             ```bash
@@ -83,6 +84,7 @@
         === "yay"
 
             1. 安装 `yay`。
+
             在/etc/pacman.conf写入
             ```
             [archlinuxcn]
@@ -98,6 +100,7 @@
             sudo pacman -S yay
             ```
             ```bash
+
             2. 安装 `clash-verge-rev-bin`。
 
             ```bash
