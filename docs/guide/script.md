@@ -15,8 +15,12 @@
 - 程序的入口为 `main` 函数，接受一个 `config` 参数（参数名不限制），并返回修改后的该参数。
 - `config` 为 `object` 类型，属性值为 `yaml` 配置文件内容转 `JSON` 后对应的 `object` 对象。
 
+<!-- prettier-ignore -->
+!!! danger "Changelog"
+    `v1.7.3` 版本新增 `string` 类型参数 `profileName` （参数名不限制），属性值为当前处理的配置文件名。
+
 ```javascript
-function main(config) {
+function main(config, profileName) {
   return config;
 }
 ```
