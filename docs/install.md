@@ -55,7 +55,7 @@
         | arm64    | <list class="download-list"><item logo="redhat" label="安装包" content="arm64" keyword="aarch64.rpm" color="F14D4D">加载中...</item></list> |
         | armv7    | <list class="download-list"><item logo="redhat" label="安装包" content="armv7" keyword="armhfp.rpm" color="FF6868">加载中...</item></list>  |
 
-    === ":material-arch: ArchLinux/Manjaro"
+    === ":material-arch: ArchLinux/Manjaro/SteamDeck"
         === "paru"
 
             1. 安装 `paru`。
