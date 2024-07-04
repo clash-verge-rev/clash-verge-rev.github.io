@@ -93,13 +93,12 @@
             Server = https://mirrors.hit.edu.cn/archlinuxcn/$arch
             Server = https://repo.huaweicloud.com/archlinuxcn/$arch
             ```
-            终端运行：
+            在终端运行：
             ```bash
             sudo pacman-key --lsign-key "farseerfc@archlinux.org"
             sudo pacman -S archlinuxcn-keyring
             sudo pacman -S yay
             ```
-            ```bash
 
             2. 安装 `clash-verge-rev-bin`。
 
