@@ -34,7 +34,7 @@ dns:
 
 # 订阅C
 dns:
-  enable: fasle
+  enable: false
 find-process-mode: strict
 
 ```
