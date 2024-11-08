@@ -26,7 +26,7 @@
 
 <!-- prettier-ignore -->
 !!! warning
-    - `macOS` 暂不支持通过 `URL Schemes` 的方式导入。
+    - Verge 2.0版以后，`macOS` 已支持通过 `URL Schemes` 的方式导入。
     - `Windows` 如果不能通过 `URL Schemes` 的方式导入，请查看[URL Schemes 功能失效解决办法](./url_schemes.md#_3)。
 
 <video controls>

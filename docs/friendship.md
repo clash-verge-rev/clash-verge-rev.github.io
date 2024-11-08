@@ -44,7 +44,7 @@
 | 客户端 | 内核 | 平台 | 下载地址 |
 | ----- | ----| ---- | ------ |
 | [ShellCrash](https://github.com/juewuy/ShellCrash) | Meta、sing-box | <img width="32" src="./assets/icons/linux.svg" /> | [![img](https://img.shields.io/github/v/release/juewuy/ShellCrash?label=正式版)](https://github.com/juewuy/ShellCrash/releases/latest) |
-| [OpenClash](https://github.com/vernesong/OpenClash) | Premium、Meta  | <img width="32" src="./assets/icons/openwrt.svg" /> | [![img](https://img.shields.io/github/v/tag/vernesong/OpenClash?label=测试版)](https://github.com/vernesong/OpenClash/releases/latest) |
+| [OpenClash](https://github.com/vernesong/OpenClash) | Premium、Meta | <img width="32" src="./assets/icons/openwrt.svg" /> | [![img](https://img.shields.io/github/v/tag/vernesong/OpenClash?label=测试版)](https://github.com/vernesong/OpenClash/releases/latest) |
 
 ## 参考文档
 
@@ -52,6 +52,5 @@
 | --- | --- | ----- |
 | `clash meta` 内核文档| https://wiki.metacubex.one/config | clash meta 配置文件参考 |
 | `clash premium`内核文档| https://clash.wiki | clash premium 配置文件参考 |
-| `CFW`文档教程 | https://docs.gtk.pw | |
 | `geosite`清单 | https://github.com/MetaCubeX/meta-rules-dat/tree/meta/geo/geosite | 配置`nameserver-policy`时，不清楚`geosite`支持哪些值 |
 | 公共`DNS`大全 | https://dns.iui.im | 查询国内外公共`DNS` 服务器地址 |

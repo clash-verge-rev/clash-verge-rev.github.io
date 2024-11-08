@@ -31,7 +31,7 @@
 [狗狗加速 —— 技术流机场 Doggygo VPN](https://vergedoc.dginv.click/#/register?code=Lo3NuUK1)
 
 - 高性能海外机场，免费试用，优惠套餐，解锁流媒体，全球首家支持 Hysteria 协议。
-- 使用 Clash Verge 专属邀请链接注册送 3 天，每天 1G 流量免费试用：[点此注册]https://vergedoc.dginv.click/#/register?code=Lo3NuUK1
+- 使用 Clash Verge 专属邀请链接注册送 3 天，每天 1G 流量免费试用：[点此注册](https://vergedoc.dginv.click/#/register?code=Lo3NuUK1)
 - Clash Verge 专属 8 折优惠码: verge20 (仅有 500 份)
 - 优惠套餐每月仅需 15.8 元，160G 流量，年付 8 折
 - 海外团队，无跑路风险，高达 50% 返佣
@@ -44,7 +44,7 @@
 
 Clash Verge rev 项目基于/借鉴如下项目:
 
-| 项目地址                                                              | 项目简介                                                                         |
+| 项目地址                                                               | 项目简介                                                                          |
 | --------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
 | [clash-verge](https://github.com/zzzgydi/clash-verge)                 | A Clash GUI based on tauri. Supports Windows, macOS and Linux.                   |
 | [Clash.Meta(mihomo)](https://github.com/MetaCubeX/mihomo)             | A rule-based tunnel in Go.                                                       |
