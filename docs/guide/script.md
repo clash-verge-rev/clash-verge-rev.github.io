@@ -29,18 +29,18 @@ function main(config, profileName) {
 
 > 作用域支持以下 API，不支持网络 IO、文件 IO 操作。
 
-| API 类型                 | API 范围                                                                                                                                                                                                                                |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 常量                     | Infinity、NaN、undefined                                                                                                                                                                                                                |
-| 基本函数和对象           | Function、Object、Math、JSON、Array、Proxy                                                                                                                                                                                              |
-| 数据类型和数组           | ArrayBuffer、SharedArrayBuffer、BigInt、Boolean、Date、DataView、Map、TypedArray、Int8Array、Uint8Array、Uint8ClampedArray、Int16Array、Uint16Array、Int32Array、Uint32Array、BigInt64Array、BigUint64Array、Float32Array、Float64Array |
-| 字符串、正则表达式和符号 | String、RegExp、Symbol                                                                                                                                                                                                                  |
-| 错误对象                 | Error、RangeError、ReferenceError、TypeError、SyntaxError、EvalError、URIError、AggregateError                                                                                                                                          |
-| 反射和异步               | Reflect、Promise                                                                                                                                                                                                                        |
-| 编码和解码               | encodeURI、encodeURIComponent、decodeURI、decodeURIComponent                                                                                                                                                                            |
-| 弱引用                   | WeakRef、WeakMap、WeakSet                                                                                                                                                                                                               |
-| 原子操作                 | Atomics                                                                                                                                                                                                                                 |
-| 控制台输出               | console                                                                                                                                                                                                                                 |
+| API 类型 | API 范围 |
+| --------| -------- |
+| 常量 | Infinity、NaN、undefined |
+| 基本函数和对象 | Function、Object、Math、JSON、Array、Proxy |
+| 数据类型和数组 | ArrayBuffer、SharedArrayBuffer、BigInt、Boolean、Date、DataView、Map、TypedArray、Int8Array、Uint8Array、Uint8ClampedArray、Int16Array、Uint16Array、Int32Array、Uint32Array、BigInt64Array、BigUint64Array、Float32Array、Float64Array |
+| 字符串、正则表达式和符号 | String、RegExp、Symbol |
+| 错误对象 | Error、RangeError、ReferenceError、TypeError、SyntaxError、EvalError、URIError、AggregateError |
+| 反射和异步 | Reflect、Promise |
+| 编码和解码 | encodeURI、encodeURIComponent、decodeURI、decodeURIComponent |
+| 弱引用 | WeakRef、WeakMap、WeakSet |
+| 原子操作 | Atomics |
+| 控制台输出 | console |
 
 ## 脚本示例
 
