@@ -28,6 +28,8 @@ nav:
       - 自定义托盘图标: guide/tray_icon.md
       - 自定义主题/样式: guide/css_injection.md
       - URL Schemes: guide/url_schemes.md
+      - 负载均衡: guide/load_balance.md
+      - PAC: guide/pac.md
       - 历史归档:
           - Merge配置: guide/merge.md
           - Script配置: guide/script.md
