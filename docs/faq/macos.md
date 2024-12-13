@@ -1,14 +1,19 @@
+## 无法正常启动，闪退等
+
+- 问题原因: 公司电脑安装有如下类似的安全软件，禁止软件安装服务
+
+![Mac安全软件禁止安装verge服务](../assets/faq/macos/mac_safety_app.png)
+
+- 解决方案: 关闭安全软件或找管理员把verge加入白名单
+
 ## 每次重启登陆打开提示 “‘osascript’想要进行更改”
 
 ![‘osascript’想要进行更改](../assets/faq/macos/mac_osascript.png)
 
-- 问题原因1: 系统中有安全软件阻止安装服务
-- 解决方案: 关闭安全软件或加入白名单
-
-- 问题原因2: Login Items中的`won fen`启动项被禁用
+- 问题原因: Login Items中的`won fen`启动项被禁用
 - 解决方案: 系统设置中找到登录选项，打开`won fen`名称的服务启动项
 
-![‘osascript’想要进行更改](../assets/faq/macos/mac_login_item.png)
+![打开Login Items中的`won fen`名称的服务启动项](../assets/faq/macos/mac_login_item.png)
 
 ## macOS 系统代理设置修改失败/开关无效
 
