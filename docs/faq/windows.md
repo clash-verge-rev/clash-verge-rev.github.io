@@ -3,7 +3,7 @@
 - 问题原因：操作系统缺少 VC 运行环境所需的库。
 - 解决方案：下载并安装 VC 运行库。
 
-=== "x64" 
+=== "x64"
 
     | 运行库 | 下载地址 |
     | ----- | ------- |
@@ -63,7 +63,7 @@
 
 - 进入 Clash Verge 主程序目录，右键打开下面文件的属性，找到 `VxKex` 选项卡，勾选 `Enable VxKex for this program` 及 `Disable VxKex for child processes` 选项，即可正常运行。
 
-  | 文件清单 |
+  | 文件清单                          |
   | --------------------------------- |
   | Clash Verge.exe                   |
   | resources\clash-verge-service.exe |
@@ -127,12 +127,12 @@ net start hns
 - 打开 `Clash 设置` -> `UWP 工具` ，找到需要解除限制的 UWP 程序。
 - 勾选需要解除限制的 UWP 程序后，点击工具顶部的 `Save Changes` 按钮保存修改。
 
-## Windows 宽带拨号无法使用系统代理（2.0版以后无此问题）
+## Windows 宽带拨号无法使用系统代理（2.0 版以后无此问题）
 
 > Windows 的 `Windows 设置` -> `网络和 Internet` -> `代理` 中显示系统代理已经开启，且指向了正确的端口。Clash Verge Rev 的 `设置` -> `系统代理` 小齿轮界面中，当前系统代理的开启状态却显示为未启用。
 
 | ![系统代理状态为false](../assets/faq/windows/sysproxy_enabled.png) | ![系统代理状态为false](../assets/faq/windows/sysproxy_states_false.png) |
-| ---- | ---- |
+| ------------------------------------------------------------------ | ----------------------------------------------------------------------- |
 
 解决办法
 

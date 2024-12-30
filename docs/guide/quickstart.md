@@ -14,10 +14,10 @@
 
 ![verge_proxy](../assets/guide/quickstart/verge_proxy.png)
 
-## 打开代理(或开启Tun模式)
+## 打开代理(或开启 Tun 模式)
 
 ![verge_enable_sysproxy](../assets/guide/quickstart/verge_enable_sysproxy.png)
 
 > **系统代理**：（原理：通过上方开关自动修改操作系统的代理设置）能处理大部分通过浏览器的科学上网需求。
 
-> **Tun模式**：在系统中安装虚拟网卡，以接管不支持“系统代理”的程序（例如游戏和命令行）。
+> **Tun 模式**：在系统中安装虚拟网卡，以接管不支持“系统代理”的程序（例如游戏和命令行）。

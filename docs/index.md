@@ -18,12 +18,12 @@
 - 配置文件管理和增强（Merge 和 Script），配置文件语法提示。
 - 系统代理和守卫、`TUN(虚拟网卡)` 模式。
 - 可视化节点和规则编辑
-- WebDav配置备份和同步
+- WebDav 配置备份和同步
 
 ## 预览
 
-| 深色 | 浅色 |
-| ---- | --- |
+| 深色                               | 浅色                                |
+| ---------------------------------- | ----------------------------------- |
 | ![预览](./assets/preview_dark.png) | ![预览](./assets/preview_light.png) |
 
 ## Promotion
@@ -44,7 +44,7 @@
 
 Clash Verge rev 项目基于/借鉴如下项目:
 
-| 项目地址                                                               | 项目简介                                                                          |
+| 项目地址                                                              | 项目简介                                                                         |
 | --------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
 | [clash-verge](https://github.com/zzzgydi/clash-verge)                 | A Clash GUI based on tauri. Supports Windows, macOS and Linux.                   |
 | [Clash.Meta(mihomo)](https://github.com/MetaCubeX/mihomo)             | A rule-based tunnel in Go.                                                       |

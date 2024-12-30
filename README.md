@@ -1,6 +1,7 @@
 ## Contributing
 
 1. 安装 `Python` 环境
+
 2. `pip` 安装依赖
 
 ```
