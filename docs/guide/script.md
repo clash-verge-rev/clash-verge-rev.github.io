@@ -424,4 +424,4 @@ function main(config) {
 
 ### 3. 使用扩展脚本实现`prependrules`
 
-参考：https://github.com/clash-verge-rev/clash-verge-rev/issues/1437#issuecomment-2395050752
+参考[Issue1437-comment-2395050752](https://github.com/clash-verge-rev/clash-verge-rev/issues/1437#issuecomment-2395050752)

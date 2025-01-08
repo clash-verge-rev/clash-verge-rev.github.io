@@ -1,25 +1,12 @@
-## 找不到 VCRUNTIMEXXX.dll，无法继续执行代码
+## 打开TUN模式后网络异常
 
-- 问题原因：操作系统缺少 VC 运行环境所需的库。
-- 解决方案：下载并安装 VC 运行库。
+问题原因
 
-=== "x64"
+- 系统中可能有多个网卡
 
-    | 运行库 | 下载地址 |
-    | ----- | ------- |
-    | `vc_redist.x64.exe` | [vc_redist.x64.exe](https://aka.ms/vs/17/release/vc_redist.x64.exe) |
+解决方案
 
-=== "x86"
-
-    | 运行库 | 下载地址 |
-    | ----- | ------- |
-    | `vc_redist.x86.exe` | [vc_redist.x86.exe](https://aka.ms/vs/17/release/vc_redist.x86.exe) |
-
-=== "arm64"
-
-    | 运行库 | 下载地址 |
-    | ----- | ------- |
-    | `vc_redist.arm64.exe` | [vc_redist.arm64.exe](https://aka.ms/vs/17/release/vc_redist.arm64.exe) |
+- 打开网络设置，删除多余网卡，参见[Issue#2400](https://github.com/clash-verge-rev/clash-verge-rev/issues/2400)
 
 ## 此应用无法在你的电脑上运行
 
@@ -137,6 +124,7 @@ net start hns
 解决办法
 
 - 下载安装最新版本。或：
+- 打开注册表`HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections`删除乱码名称的条目([引用博客](https://myth.cx/p/windows-proxy/))。
 - **删除**原有的宽带拨号设置，然后**重新创建**宽带拨号设置（<font color="red">连接名称不要使用中文</font>）。
 
 ![连接名称默认中文](../assets/faq/windows/broadband_dialing_setting.png)
@@ -150,3 +138,26 @@ net start hns
 ```bash
 del /A "%userprofile%\AppData\Local\IconCache.db" 2>nul & taskkill /f /im explorer.exe & start explorer.exe
 ```
+
+## 找不到 VCRUNTIMEXXX.dll，无法继续执行代码（2.0版本后安装器会自动检测并安装vc runtime）
+
+- 问题原因：操作系统缺少 VC 运行环境所需的库。
+- 解决方案：下载并安装 VC 运行库。
+
+=== "x64"
+
+    | 运行库 | 下载地址 |
+    | ----- | ------- |
+    | `vc_redist.x64.exe` | [vc_redist.x64.exe](https://aka.ms/vs/17/release/vc_redist.x64.exe) |
+
+=== "x86"
+
+    | 运行库 | 下载地址 |
+    | ----- | ------- |
+    | `vc_redist.x86.exe` | [vc_redist.x86.exe](https://aka.ms/vs/17/release/vc_redist.x86.exe) |
+
+=== "arm64"
+
+    | 运行库 | 下载地址 |
+    | ----- | ------- |
+    | `vc_redist.arm64.exe` | [vc_redist.arm64.exe](https://aka.ms/vs/17/release/vc_redist.arm64.exe) |
