@@ -40,6 +40,7 @@ nav:
       - Linux: faq/linux.md
       - 其他问题: faq/other.md
   - 友情链接: friendship.md
+  - 捐赠: https://github.com/sponsors/clash-verge-rev
 
 # 主题设置
 theme:

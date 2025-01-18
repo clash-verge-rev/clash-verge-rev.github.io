@@ -40,6 +40,10 @@
 - 解锁流媒体及 ChatGPT
 - 官网：[https://狗狗加速.com](https://vergedoc.dginv.click/#/register?code=Lo3NuUK1)
 
+## 捐赠
+
+<iframe src="https://github.com/sponsors/clash-verge-rev/card" title="Sponsor clash-verge-rev" height="100" width="600" style="border: 0;"></iframe>
+
 ## 致谢
 
 Clash Verge rev 项目基于/借鉴如下项目:
