@@ -29,9 +29,10 @@ nav:
       - 自定义主题/样式: guide/css_injection.md
       - URL Schemes: guide/url_schemes.md
       - 使用案例:
-          - 自定义规则: guide/custom_rules.md
-          - 链式代理: guide/proxy_chain.md
+          - 自定义规则: guide/rules.md
       - 历史归档:
+          - 规则分流: guide/custom_rules.md
+          - 链式代理: guide/proxy_chain.md
           - Merge配置: guide/merge.md
           - Script配置: guide/script.md
   - 常见问题:

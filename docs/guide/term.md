@@ -22,7 +22,7 @@
 - 在操作系统中，子进程通常继承其父进程的权限级别，管理员身份启动的服务所“拉起”的子进程也会具有管理员权限。
 - 以管理员身份安装并启动服务模式后，由服务进程“拉起”代理内核程序。代理内核程序便成为服务进程的子进程，运行在管理员权限下。
 - 因此，服务模式的用途是能够以非管理员身份启动 TUN 模式。**如果当前用户已经是管理员或处于管理员分组下，可以不安装服务模式直接启动 TUN 模式**。
-- TUN 模式的默认堆栈是 `Gvisor`，如果需要切换到 `System` 或 `Mixed` 堆栈则需要安装服务模式。不同堆栈的区别详见[TUN Stack](https://wiki.metacubex.one/config/inbound/tun/#stack)。
+- TUN 模式的默认堆栈是 `Gvisor`，如果需要切换到 `System` 或 `Mixed` ，当前版本必须先安装服务模式，并且使用TUN模式需要自行对防火墙放行内核 `verge-mihomo`。不同堆栈的区别详见[TUN Stack](https://wiki.metacubex.one/config/inbound/tun/#stack)。
 
 ## Meta 内核
 
