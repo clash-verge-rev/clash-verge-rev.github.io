@@ -2,7 +2,7 @@
 
 问题原因
 
-- 系统中可能有多个网卡
+- 系统中可能有多个网卡 / 网段与配置中的规则冲突
 
 解决方案
 
@@ -25,8 +25,7 @@
 
 - 如果是利用第三方软件禁用了 `Edge`，请检查是否同时禁用了 `WebView2`，将 `WebView2` 取消禁用。
 - 如果是卸载了 `WebView2`，可以[下载 WebView2 安装包](https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/#download)，重新安装 WebView2。
-- 如果是企业版系统或 Win7 无法安装 WebView2，请尝试在 [Release](https://github.com/clash-verge-rev/clash-verge-rev/releases/latest) 下载内置了 `WebView2` 的版本（带有 `fixed_webview2` 字样的安装包）。
-- 若问题仍然存在，请尝试使用 **Windows 7 兼容模式**启动。
+- 如果是已安装 `WebView2` 但仍无法打开面板，请尝试在 [Release](https://github.com/clash-verge-rev/clash-verge-rev/releases/latest) 下载内置了 `WebView2` 的版本（带有 `fixed_webview2` 字样的安装包）。
 
 ## WebView2 无法正常安装
 
@@ -42,26 +41,8 @@
 
 ## Windows 7 无法使用
 
-解决方案
+- 已不再支持 `Windows7`
 
-借助 [vxiiduu/VxKex](https://github.com/vxiiduu/VxKex) 项目运行，步骤：
-
-- 下载 [Releases](https://github.com/vxiiduu/VxKex/releases) 中的 `KexSetup_Release_x_x_x_xxxx.exe` 并安装。
-
-- 进入 Clash Verge 主程序目录，右键打开下面文件的属性，找到 `VxKex` 选项卡，勾选 `Enable VxKex for this program` 及 `Disable VxKex for child processes` 选项，即可正常运行。
-
-  | 文件清单                          |
-  | --------------------------------- |
-  | Clash Verge.exe                   |
-  | resources\clash-verge-service.exe |
-  | resources\install-service.exe     |
-  | resources\uninstall-service.exe   |
-
-## 升级，卸载、重装、开启的时候“服务模式”相关报错
-
-到 `内核目录` 中找到 `uninstall-service.exe`，以管理员权限执行。
-
-![uninstall-service](../assets/faq/windows/uninstall_service.png)
 
 ## 静默启动失效
 
@@ -69,6 +50,10 @@
 
 - 如果出现任务管理器中有**两个启动项**，或者开机启动时静默启动失效。请用**管理员权限**启动软件后**开关一次**开机启动设置，即可删除多余的启动项。
 - 如果平时一直是使用管理员权限运行的软件，那就用**普通用户权限**运行软件后**开关一次**开机启动设置，删除多余启动项后，后续不会再出现这个问题。
+
+## 自启动失效
+
+- 更新时会自动删除旧版本，一并移除旧的注册项，**关闭自动启动再打开**。
 
 ## 不打开 Clash 无法使用网络
 
