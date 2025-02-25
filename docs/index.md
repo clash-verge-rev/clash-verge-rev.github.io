@@ -4,7 +4,7 @@
   <a href="https://github.com/zzzgydi/clash-verge" target="_blank">Clash Verge</a> 的延续
   <br>
 </h1>
-<h3 align="center">基于 <a href="https://github.com/tauri-apps/tauri" target="_blank">Tauri</a> 的 Clash Meta GUI
+<h3 align="center">基于 <a href="https://github.com/tauri-apps/tauri" target="_blank">Tauri</a> 的 Mihomo GUI
 
 </h3>
 <a href="https://t.me/clash_verge_rev" target="_blank">

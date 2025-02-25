@@ -1,3 +1,9 @@
+## 开启Tun模式系统DNS被修改
+
+- 问题原因：`Tun`无法劫持MacOS发往`LAN`(局域网)的DNS请求，[参考文档MihomoDocs](https://wiki.metacubex.one/config/inbound/tun/#dns-hijack)。
+
+> `Verge`会在启动Tun时修改系统DNS为`223.6.6.6`，以保证Tun正常工作。关闭Tun即恢复原来的系统DNS。Tun下DNS由Mihomo核心代理，因此这个DNS并没有其它意义。
+
 ## 无法正常启动，闪退等
 
 - 问题原因: 公司电脑安装有如下类似的安全软件，禁止软件安装服务

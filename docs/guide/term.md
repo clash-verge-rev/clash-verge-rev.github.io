@@ -21,21 +21,42 @@
 
 - 在操作系统中，子进程通常继承其父进程的权限级别，管理员身份启动的服务所“拉起”的子进程也会具有管理员权限。
 - 以管理员身份安装并启动服务模式后，由服务进程“拉起”代理内核程序。代理内核程序便成为服务进程的子进程，运行在管理员权限下。
-- 因此，服务模式的用途是能够以非管理员身份启动 TUN 模式。**如果当前用户已经是管理员或处于管理员分组下，可以不安装服务模式直接启动 TUN 模式**。
-- TUN 模式的默认堆栈是 `Gvisor`，如果需要切换到 `System` 或 `Mixed` ，当前版本必须先安装服务模式，并且使用TUN模式需要自行对防火墙放行内核 `verge-mihomo`。不同堆栈的区别详见[TUN Stack](https://wiki.metacubex.one/config/inbound/tun/#stack)。
+- 因此，服务模式的用途是能够以非管理员身份启动 TUN 模式。**2.x**版本起服务模式会在首次启动时自动安装。
+- TUN 模式的默认堆栈是 `GVisor` ，**使用TUN模式需要自行对系统防火墙放行内核**`verge-mihomo`和`verge-mihomo-alpha`。不同堆栈的区别详见[TUN Stack](https://wiki.metacubex.one/config/inbound/tun/#stack)。
+- `clash-verge-service`是独立于CVR应用程序之外的进程，给与管理员授权后用于无感拉起其他服务，不会随CVR关闭。当退出CVR后，服务模式进程`clash-verge-service`会继续在后台运行。不会影响系统。
+
+## UA
+
+- 指 `User Agent`，是HTTP请求标头中的一个字段。用于服务端判断客户端类型，从而做出不同的响应。
+- 你的订阅服务商通过请求头中的`UA`字段判断你所使用的代理工具，从而下发不同的配置文件。
+  
+如何下载配置文件
+
+**Windows Powershell**
+```PowerShell
+# 下载到当前目录的config.yaml
+# 末尾是订阅链接
+iwr -UserAgent clash-verge/v2.0.4 -outfile config.yaml https://example.com
+```
+
+**Curl**
+
+```shell
+curl -A clash-verge/v2.0.4 -o config.yaml https://example.com
+```
 
 ## Meta 内核
 
-- 一般指[Clash Meta](https://github.com/MetaCubeX/mihomo/releases/latest)，也称 `Meta`、 `Mihomo` 内核。区别于 `Clash Premium` 为闭源内核，`Clash Meta` 为开源内核。
+- 一般指[Clash Meta](https://github.com/MetaCubeX/mihomo/releases/latest)，也称 `Meta`、 `Mihomo` 内核。区别于 `Clash Premium` 为闭源内核，`Mihomo` 为开源内核。
 
 ## Alpha 内核
 
-- 一般指[Clash Meta Alpha](https://github.com/MetaCubeX/mihomo/releases/tag/Prerelease-Alpha)，是 `Clash Meta` 内核的测试版本。更新频率高，通常可以得到最新的 bug 修复 或 新特性。
+- 一般指[Clash Meta Alpha](https://github.com/MetaCubeX/mihomo/releases/tag/Prerelease-Alpha)，是 `Mihomo` 内核的测试版本。更新频率高，通常可以得到最新的 bug 修复 或 新特性。
 
 ## CFW
 
 - 一般指`Clash For Windows`，是一款的基于 `Clash Premium` 内核的全平台代理软件（虽然叫做 For Windows）。
-- 2023 年 11 月 2 日宣布停止更新，并删除代码库。
+- 2023 年 11 月 2 日宣布停止更新，并删除发布仓库。
 
 ## CFA
 
@@ -44,11 +65,15 @@
 
 ## CMFA
 
-- 一般指[Clash Meta For Andriod](https://github.com/MetaCubeX/ClashMetaForAndroid/releases/latest)，是 Andriod 平台的基于 `Clash Meta` 内核的代理软件。Google Play 已下架。
+- 一般指[Clash Meta For Andriod](https://github.com/MetaCubeX/ClashMetaForAndroid/releases/latest)，是 Andriod 平台的基于 `Mihomo` 内核的代理软件。Google Play 已下架。
 
 ## XD
 
-- 一般指[metacubexd](https://github.com/MetaCubeX/metacubexd)，是一个基于 `Clash Meta` 的 WEB UI 面板。更多面板详见[友情链接](../friendship.md#web-ui)。
+- 一般指[metacubexd](https://github.com/MetaCubeX/metacubexd)，是一个基于 `Mihomo` 的 WEB UI 面板。更多面板详见[友情链接](../friendship.md#web-ui)。
+
+## ZASH
+
+- 一般指[ZashBoard](https://github.com/Zephyruso/zashboard)，是一个使用Clash API的WebUI面板。
 
 ## OC
 
@@ -58,12 +83,13 @@
 
 - 一般指[Shell Crash](https://github.com/juewuy/ShellCrash)，是 嵌入式/Linux 平台的兼容多种内核的面板程序。
 
+## Nikki
+
+- 一般指[OpenWrt-nikki](https://github.com/nikkinikki-org/OpenWrt-nikki)，是 嵌入式/Linux平台的，适用于`OpenWRT`的`Mihomo`内核的面板程序。原名是`Mihomo Tproxy`。
+
 ## WARP
 
 - Cloudflare 旗下的一款免费 VPN 软件。与传统 VPN 不同的是，它结合了 Cloudflare 的全球边缘网络。
 - 使用 Wireguard 协议，是否能直连到 WARP 节点受运营商影响。
 - 对于托管在 Cloudflare 的网站，WARP 并不能隐藏 IP。
 
-## UA
-
-- 指 `User Agent`，是一个请求头字段。服务端会根据 `UA` 判断客户端类型，从而做出不同的响应（例如根据不同的 `UA` 下发不同的配置）。
