@@ -9,6 +9,20 @@
 
 1. 左侧菜单“设置”，右下方找到“配置目录”，删除里面所有文件，重启软件；如果还是不行，则卸载老版本，重新安装。
 2. 如果被杀毒软件误伤，请将文件手动恢复并添加到白名单。
+3. 删除所有数据(**Win**) `rm ~\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev -r -fo`
+
+## 代理后有部分网站无法访问
+
+问题原因：
+
+1. 可能是其它程序占用代理端口，默认代理端口是**7897**。
+2. 用过不正经的加速器(包括但不限于游戏加速器)，篡改系统`hosts`。
+
+解决方案：
+
+- 检查系统`hosts`，删除不正常的条目。
+- Windows： `C:\Windows\System32\drivers\etc\hosts`
+- Linux/MacOS: `/etc/hosts`
 
 ## 日志过大，占满磁盘
 

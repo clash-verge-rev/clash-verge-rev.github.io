@@ -46,3 +46,13 @@
 
 - 问题原因: macOS 键盘的`option key printing special characters`特性导致，不同的键盘布局有不同的转换关系。
 - 解决方案: `系统偏好设置` -> `键盘` -> `输入法` ，添加一种没有配置特殊字符的键盘布局。如何判断键盘布局有没有转换特殊字符？选中某个键盘布局，按下 option(alt)键并观察右侧下半区域**键盘图示上的字母是否发生变化**。挑选一种按下 option（alt）键后字母**变为键盘字母或空白**的键盘布局，如简体中文的`简体笔画`、`五笔型`。
+
+## App Store商店的Telegram无法代理
+
+问题原因：商店版同Telegram For MacOS(Swift版本)默认不遵守系统代理。
+
+1.如图所示，在应用内设置代理，默认代理端口`7897`。
+  
+![Telegram无法代理](../assets/faq/macos/mac_tg.png)
+
+2.下载正常QT版本的Telegram，见[Telegram官方网站：telegram.org](https://telegram.org/moderation)

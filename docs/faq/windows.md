@@ -27,6 +27,16 @@
 - 如果是卸载了 `WebView2`，可以[下载 WebView2 安装包](https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/#download)，重新安装 WebView2。
 - 如果是已安装 `WebView2` 但仍无法打开面板，请尝试在 [Release](https://github.com/clash-verge-rev/clash-verge-rev/releases/latest) 下载内置了 `WebView2` 的版本（带有 `fixed_webview2` 字样的安装包）。
 
+## 闪退
+
+问题原因
+
+- 安装有**360、金山毒霸**等杀毒软件拦截[服务模式](../guide/term.md#服务模式)安装。
+
+解决方案
+
+- 不要使用**中国的杀毒软件**。
+
 ## WebView2 无法正常安装
 
 问题原因
