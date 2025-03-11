@@ -138,8 +138,8 @@
   \--- sysproxy.exe					#系统代理程序
   \--- uninstall-service.exe		#服务模式卸载程序
 \--- clash-verge.exe				#主程序
-\--- verge-mihomo.exe				#Clash Mihomo核心程序
-\--- verge-mihomo-alpha.exe			#Clash Mihomo Alpha
+\--- verge-mihomo.exe				#Mihomo核心程序
+\--- verge-mihomo-alpha.exe			#Mihomo Alpha 版本
 ```
 
 ## 安装问题
