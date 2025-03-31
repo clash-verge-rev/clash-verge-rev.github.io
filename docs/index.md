@@ -4,9 +4,7 @@
   <a href="https://github.com/zzzgydi/clash-verge" target="_blank">Clash Verge</a> 的延续
   <br>
 </h1>
-<h3 align="center">基于 <a href="https://github.com/tauri-apps/tauri" target="_blank">Tauri</a> 的 Mihomo GUI
-
-</h3>
+<h3 align="center">基于 <a href="https://github.com/tauri-apps/tauri" target="_blank">Tauri</a> 的 Mihomo GUI</h3>
 <a href="https://t.me/clash_verge_rev" target="_blank">
 <img src="./assets/icons/telegram.svg" alt="Clash" width="24" style="position: relative;top: 6px;">Telegram 群组:@clash_verge_rev
 </a>
@@ -40,7 +38,7 @@
 - 解锁流媒体及 ChatGPT
 - 官网：[https://狗狗加速.com](https://vergedoc.dginv.click/#/register?code=Lo3NuUK1)
 
-## 捐赠
+## 赞助
 
 <iframe src="https://github.com/sponsors/clash-verge-rev/card" title="Sponsor clash-verge-rev" height="100" width="600" style="border: 0;"></iframe>
 

@@ -1,9 +1,5 @@
 <!-- prettier-ignore -->
 
-!!! danger "Version" 
-
-    - 此例子基于 `v2.0.x` 版本
-
 # 自定义路由规则
 
 不知道规则类型? -> [Clash Mihomo路由规则文档](https://wiki.metacubex.one/config/rules)。
@@ -11,17 +7,6 @@
 不会写JavaScript? -> [菜鸟教程](https://www.runoob.com/js/js-tutorial.html)。
 
 想要更多资料? -> [Script配置](./script.md)
- 
-## 途径
-
-- 右键配置卡片编辑规则
-- 使用配置页的 `全局扩展脚本` (建议)
-
-## 右键配置卡片编辑(最为简单)
-
-> 1. 选择匹配类型和分流策略组
-> 2. 仅添加前置规则
-> 3. (虽然添加后置也可以，但规则模式是 `从上至下` 匹配的，因此不建议)
 
 ## 通过全局扩展脚本
 

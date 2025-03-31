@@ -28,6 +28,11 @@
 
 解决方案: 可以将日志等级设置为 `Silent` 或 `Error`，并在 `杂项设置` 中设置自动清理日志间隔。
 
+```powershell
+# For Windows
+rm ~\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\logs -r -fo
+```
+
 ## 导入订阅报错 401
 
 ![导入订阅报错](../assets/faq/other/subscibe_import_error.png)
@@ -47,7 +52,7 @@
 配置文件添加（版本号不重要，含有 `clash-verge` 字样即可）。
 
 ```yaml
-global-ua: clash-verge/v1.6.0
+global-ua: clash-verge/v2.2.0
 ```
 
 ## 在命令行中使用代理

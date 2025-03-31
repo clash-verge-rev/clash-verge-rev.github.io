@@ -1,7 +1,7 @@
 site_name: Clash Verge Rev Docs
 repo_name: clash-verge-rev
 repo_url: https://github.com/clash-verge-rev/clash-verge-rev
-copyright: Copyright &copy 2023 clash-verge-rev
+copyright: Copyright &copy 2023-2025 clash-verge-rev
 edit_uri: https://github.com/clash-verge-rev/clash-verge-rev.github.io/tree/main/docs
 
 # dev服务器监听地址
@@ -19,29 +19,27 @@ nav:
       - 快速入门: guide/quickstart.md
   - 使用教程:
       - 快速入门: guide/quickstart.md
-      - 常见名词: guide/term.md
-      - 导出日志: guide/log.md
       - 订阅导入: guide/profile.md
-      - 扩展配置/脚本: guide/extend.md
-      - 设置代理绕过: guide/bypass.md
-      - 设置代理组图标: guide/group_icon/group_icon.md
+      - 导出日志: guide/log.md
       - 自定义托盘图标: guide/tray_icon.md
       - 自定义主题/样式: guide/css_injection.md
       - URL Schemes: guide/url_schemes.md
+      - 名词解释: guide/term.md
       - 使用案例:
           - 自定义规则: guide/rules.md
-      - 历史归档:
-          - 规则分流: guide/custom_rules.md
-          - 链式代理: guide/proxy_chain.md
-          - Merge配置: guide/merge.md
-          - Script配置: guide/script.md
+      # - 历史归档:
+      #     - 规则分流: guide/custom_rules.md
+      #     - 链式代理: guide/proxy_chain.md
+      #     - Merge配置: guide/merge.md
+      #     - Script配置: guide/script.md
+  # - 新手教程: guide/start.md
   - 常见问题:
       - Windows: faq/windows.md
       - MacOS: faq/macos.md
       - Linux: faq/linux.md
       - 其他问题: faq/other.md
   - 友情链接: friendship.md
-  - 捐赠: https://github.com/sponsors/clash-verge-rev
+  - 赞助: https://github.com/sponsors/clash-verge-rev
 
 # 主题设置
 theme:
