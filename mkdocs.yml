@@ -32,6 +32,8 @@ nav:
       #     - 链式代理: guide/proxy_chain.md
       #     - Merge配置: guide/merge.md
       #     - Script配置: guide/script.md
+  - 配置案例:
+      - 多订阅合并: guide/config.md
   # - 新手教程: guide/start.md
   - 常见问题:
       - Windows: faq/windows.md
