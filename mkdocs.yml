@@ -14,9 +14,10 @@ nav:
   - 简介: 
       - 简介: index.md
       - 快速入门: guide/quickstart.md
-  - 下载与安装: 
+  - 下载、安装与卸载: 
       - 下载与安装: install.md
       - 快速入门: guide/quickstart.md
+      - 卸载软件: uninstall.md
   - 使用教程:
       - 快速入门: guide/quickstart.md
       - 订阅导入: guide/profile.md
