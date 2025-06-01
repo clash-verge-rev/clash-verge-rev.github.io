@@ -39,7 +39,7 @@
 * 订阅(配置)文件目录：`/Users/你的用户名/Library/Application Support/io.github.clash-verge-rev.clash-verge-rev/profiles/`
 ### Linux
 
-* 窗口状态文件：`~/.config/io.github.clash-verge-rev.clash-rege-rev/.window-state.json`
-* Clash Verge配置文件：`~/.config/io.github.clash-verge-rev.clash-rege-rev/verge.yaml`
-* 配置(软件工作)目录：`~/.local/share/io.github.clash-verge-rev.clash-rege-rev/`
-* 订阅(配置)文件目录：`~/.local/share/io.github.clash-verge-rev.clash-rege-rev/profiles/`
+* 窗口状态文件：`~/.config/io.github.clash-verge-rev.clash-verge-rev/.window-state.json`
+* Clash Verge配置文件：`~/.config/io.github.clash-verge-rev.clash-verge-rev/verge.yaml`
+* 配置(软件工作)目录：`~/.local/share/io.github.clash-verge-rev.clash-verge-rev/`
+* 订阅(配置)文件目录：`~/.local/share/io.github.clash-verge-rev.clash-verge-rev/profiles/`
