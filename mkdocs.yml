@@ -35,6 +35,7 @@ nav:
       #     - Script配置: guide/script.md
   - 配置案例:
       - 多订阅合并: guide/config.md
+      - 策略组图标: guide/group_icon/group_icon.md
   # - 新手教程: guide/start.md
   - 常见问题:
       - Windows: faq/windows.md

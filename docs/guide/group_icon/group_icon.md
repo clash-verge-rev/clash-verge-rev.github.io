@@ -19,15 +19,10 @@ proxy-groups:
 > 支持 `url图片地址` 、`Base64 编码字符串`、`svg文件内容` 三种类型。
 
 <!-- prettier-ignore -->
-!!! warning
-    如果通过 `scoop` 安装Clash Verge Rev，且程序版本低于 `v1.6.3` 。使用 url 指定图片地址的方式会无效，请使用其他方式指定，或升级程序版本。
-
-- 使用 url 指定图片地址（支持常见图片格式，例如: `png`、`jpeg`、`gif` 以及 `svg`）。
-
-<!-- prettier-ignore -->
 !!! tip
+
     - [附录](#_4)有图标集(彩色、亮色、暗色)、常见 `SVG` 图标。
-    - 右键图片可以选择 `复制图片地址` 。
+        - 右键图片可以选择 `复制图片地址` 。
 
 ```yaml
 icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/google.svg
