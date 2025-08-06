@@ -29,21 +29,25 @@
 
 - 指 `User Agent`，是HTTP请求标头中的一个字段。用于服务端判断客户端类型，从而做出不同的响应。
 - 你的订阅服务商通过请求头中的`UA`字段判断你所使用的代理工具，从而下发不同的配置文件。
-  
-如何下载配置文件
+
+如何验证订阅是否正确?
 
 **Windows Powershell**
+
 ```PowerShell
-# 下载到当前目录的config.yaml
-# 末尾是订阅链接
-iwr -UserAgent clash-verge/v2.0.4 -outfile config.yaml https://example.com
+# 第一行粘贴订阅链接
+$sub='在单引号内粘贴订阅链接,input subscription link'
+# 第二行执行HTTP请求
+Invoke-RestMethod -UserAgent 'clash-verge/v2.4.0' -Method get  -FollowRelLink -uri $sub
 ```
 
 **Curl**
 
 ```shell
-curl -A clash-verge/v2.0.4 -o config.yaml https://example.com
+curl -A clash-verge/v2.4.0 ‘引号内粘贴订阅链接’
 ```
+
+若以上命令返回响应正常的以YAML格式的mihomo配置文件即验证正确。
 
 ## Meta 内核
 
