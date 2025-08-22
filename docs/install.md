@@ -70,7 +70,7 @@
     
                 ```bash
                 sudo pacman-key --lsign-key "farseerfc@archlinux.org"
-                sudo pacman -S archlinuxcn-keyring
+                sudo pacman -Sy archlinuxcn-keyring
                 sudo pacman -S paru
                 ```
     
@@ -97,7 +97,7 @@
     
                 ```bash
                 sudo pacman-key --lsign-key "farseerfc@archlinux.org"
-                sudo pacman -S archlinuxcn-keyring
+                sudo pacman -Sy archlinuxcn-keyring
                 sudo pacman -S yay
                 ```
     
