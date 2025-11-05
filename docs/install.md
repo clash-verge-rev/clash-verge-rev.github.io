@@ -49,11 +49,13 @@
         sudo yum localinstall ./Clash.Verge_x.x.x-_xxx.rpm
         ```
     
-    === ":material-arch: ArchLinux/Manjaro/SteamDeck"
-        === "paru"
-    
-            1.  安装 `paru`。
-    
+    === ":material-arch: Arch Linux/Manjaro/SteamOS"
+        !!! warning
+            不建议在 Manjaro、SteamOS 等 Arch 衍生发行版上使用 `[archlinuxcn]` 仓库。
+
+        === "archlinuxcn"
+            1.  添加 `[archlinuxcn]` 仓库。
+
                 1.1.  在 `/etc/pacman.conf` 文件中写入下列内容。
     
                 ```
@@ -67,42 +69,19 @@
                 1.2. 在终端运行下列命令。
     
                 ```bash
-                sudo pacman-key --lsign-key "farseerfc@archlinux.org"
-                sudo pacman -Sy archlinuxcn-keyring
-                sudo pacman -S paru
+                sudo pacman -S archlinuxcn-keyring
                 ```
     
-            2.  安装 `clash-verge-rev-bin`。
+            2.  安装 `clash-verge-rev`。
     
             ```bash
-            paru -S clash-verge-rev-bin
+            sudo pacman -S clash-verge-rev
             ```
-    
-        === "yay"
-            3.  安装 `paru`。
-    
-                1.1.  在 `/etc/pacman.conf` 文件中写入下列内容。
-    
-                ```
-                [archlinuxcn]
-                Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
-                Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
-                Server = https://mirrors.hit.edu.cn/archlinuxcn/$arch
-                Server = https://repo.huaweicloud.com/archlinuxcn/$arch
-                ```
-    
-                1.2. 在终端运行下列命令。
-    
-                ```bash
-                sudo pacman-key --lsign-key "farseerfc@archlinux.org"
-                sudo pacman -Sy archlinuxcn-keyring
-                sudo pacman -S yay
-                ```
-    
-            4.  安装 `clash-verge-rev-bin`。
-    
+
+        === "AUR"
             ```bash
-            yay -S clash-verge-rev-bin
+            paru -S clash-verge-rev-bin # 适用于 paru
+            yay -S clash-verge-rev-bin # 适用于 yay
             ```
 
 === ":material-apple: macOS"
