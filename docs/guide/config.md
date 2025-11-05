@@ -116,7 +116,6 @@ proxy-groups:
     include-all: true
 rules:
   - GEOSITE,CN,DIRECT
-  - GEOIP,CN,DIRECT,no-resolve
+  - GEOIP,CN,DIRECT
   - MATCH,手动选择
 ```
-
