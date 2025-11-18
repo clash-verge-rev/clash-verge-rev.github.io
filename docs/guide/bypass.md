@@ -54,4 +54,3 @@ rules:
 ```
 
 - 规则配置请参考 [规则配置文档](https://wiki.metacubex.one/config/rules/)。
-- 使用方法请参考 [Merge 配置文档](./merge.md)。
