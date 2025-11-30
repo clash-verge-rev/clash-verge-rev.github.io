@@ -2,7 +2,7 @@
 
 === ":material-microsoft-windows: Windows"
 
-    === "官方 Release" 
+    === "GitHub Release" 
 
         <!-- prettier-ignore -->
         !!! warning
@@ -14,11 +14,19 @@
         | -------- | -------- |
         | x64 | <list class="download-list"><item logo="windows" label="安装包" content="x64" keyword="x64-setup.exe" color="0078D7">加载中...</item><item logo="microsoftedge"label="内置 Webview2 安装包" content="x64" keyword="x64_fixed_webview2-setup.exe" color="4CCE66"><item></list> |
         | arm64 | <list class="download-list"><item logo="windows" label="安装包" content="arm64" keyword="arm64-setup.exe" color="8BB2E5">加载中...</item><item logo="microsoftedge"label="内置 Webview2 安装包" content="arm64" keyword="arm64_fixed_webview2-setup.exe" color="A4E4AD"><item></list> |
+    
+    === "WinGet"
+        
+        通过 Windows11 自带的包管理器 WinGet 安装 Clash Verge Rev:
 
-    === "Scoop 便携版"
+        ```powershell
+        winget install ClashVergeRev.ClashVergeRev
+        ```
+
+    === "Scoop"
 
         !!! warning
-            这是社区维护的 Scoop 便携版，我们不会对下游分发出现的问题提供帮助。
+            这是社区维护的 Scoop 分发，我们不为下游渠道产生的问题提供支持。
 
         1. 安装 Scoop:
 
