@@ -106,10 +106,39 @@
             ```
 
         === "AUR"
-            ```bash
-            paru -S clash-verge-rev-bin # 适用于 paru
-            yay -S clash-verge-rev-bin # 适用于 yay
-            ```
+            === "paru"
+                1. 安装 paru:
+                
+                ```bash
+                sudo pacman -S --needed base-devel git
+                git clone https://aur.archlinux.org/paru.git
+                cd paru
+                makepkg -si
+                ```
+
+                2. 使用 paru 安装 Clash Verge Rev:
+
+                ```bash
+                paru -S clash-verge-rev-bin # 正式版
+                paru -S clash-verge-rev-autobuild-bin # 测试版
+                ```
+            
+            === "yay"
+                1. 安装 yay:
+
+                ```bash
+                sudo pacman -S --needed base-devel git
+                git clone https://aur.archlinux.org/yay.git
+                cd yay
+                makepkg -si
+                ```
+
+                2. 使用 yay 安装 Clash Verge Rev:
+
+                ```bash
+                yay -S clash-verge-rev-bin # 正式版
+                yay -S clash-verge-rev-autobuild-bin # 测试版
+                ```
 
 === ":material-apple: macOS"
 
