@@ -28,13 +28,13 @@
         !!! warning
             这是社区维护的 Scoop 分发，我们不为下游渠道产生的问题提供支持。
 
-        1. 安装 Scoop:
+        安装 Scoop:
 
         ```powershell
         Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
         Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
         ```
-        2. 安装 Clash Verge Rev:
+        安装 Clash Verge Rev:
 
         ```powershell
         scoop bucket add extras
@@ -105,7 +105,7 @@
 
         === "AUR"
             === "paru"
-                1. 安装 paru:
+                安装 paru:
                 
                 ```bash
                 sudo pacman -S --needed base-devel git
@@ -114,7 +114,7 @@
                 makepkg -si
                 ```
 
-                2. 使用 paru 安装 Clash Verge Rev:
+                使用 paru 安装 Clash Verge Rev:
 
                 ```bash
                 paru -S clash-verge-rev-bin # 正式版
@@ -122,7 +122,7 @@
                 ```
             
             === "yay"
-                1. 安装 yay:
+                安装 yay:
 
                 ```bash
                 sudo pacman -S --needed base-devel git
@@ -131,7 +131,7 @@
                 makepkg -si
                 ```
 
-                2. 使用 yay 安装 Clash Verge Rev:
+                使用 yay 安装 Clash Verge Rev:
 
                 ```bash
                 yay -S clash-verge-rev-bin # 正式版
