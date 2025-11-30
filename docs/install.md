@@ -2,17 +2,36 @@
 
 === ":material-microsoft-windows: Windows"
 
-    <!-- prettier-ignore -->
-    !!! warning
-        - 如果你不清楚你的电脑系统架构，请下载 `x64` 架构文件（目前多数 Windows 电脑使用该架构）。
-        - 2.0版开始，首次启动软件会自动尝试卸载和安装服务(uninstall-service和install-service)，必须同意安装，否则无法正常运行Mihomo内核。
-        - **Windows 7** 用户请先升级至Win10/11，或改为使用Linux桌面发行版，现版本已经不再支持Windows7。
-        - 带有 `fix_webview2` 字样的安装包为内置 `Webview2` 环境版本（该文件体积比普通安装包大，仅用于当系统缺少且[无法安装WebView2](./faq/windows.md#webview2)环境时使用，当你无法正常打开面板也可以试试这个版本）。
+    === "官方 Release" 
+
+        <!-- prettier-ignore -->
+        !!! warning
+            - 如果你不清楚你的电脑系统架构，请下载 `x64` 架构文件（目前多数 Windows 电脑使用该架构）。
+            - **Windows 7** 用户请先升级至Win10/11，或改为使用Linux桌面发行版，现版本已经不再支持Windows7。
+            - 带有 `fix_webview2` 字样的安装包为内置 `Webview2` 环境版本（该文件体积比普通安装包大，仅用于当系统缺少且[无法安装WebView2](./faq/windows.md#webview2)环境时使用，当你无法正常打开面板也可以试试这个版本）。
     
-    | 系统架构 | 下载地址 |
-    | -------- | -------- |
-    | x64 | <list class="download-list"><item logo="windows" label="安装包" content="x64" keyword="x64-setup.exe" color="0078D7">加载中...</item><item logo="microsoftedge"label="内置 Webview2 安装包" content="x64" keyword="x64_fixed_webview2-setup.exe" color="4CCE66"><item></list> |
-    | arm64 | <list class="download-list"><item logo="windows" label="安装包" content="arm64" keyword="arm64-setup.exe" color="8BB2E5">加载中...</item><item logo="microsoftedge"label="内置 Webview2 安装包" content="arm64" keyword="arm64_fixed_webview2-setup.exe" color="A4E4AD"><item></list> |
+        | 系统架构 | 下载地址 |
+        | -------- | -------- |
+        | x64 | <list class="download-list"><item logo="windows" label="安装包" content="x64" keyword="x64-setup.exe" color="0078D7">加载中...</item><item logo="microsoftedge"label="内置 Webview2 安装包" content="x64" keyword="x64_fixed_webview2-setup.exe" color="4CCE66"><item></list> |
+        | arm64 | <list class="download-list"><item logo="windows" label="安装包" content="arm64" keyword="arm64-setup.exe" color="8BB2E5">加载中...</item><item logo="microsoftedge"label="内置 Webview2 安装包" content="arm64" keyword="arm64_fixed_webview2-setup.exe" color="A4E4AD"><item></list> |
+
+    === "Scoop 便携版"
+
+        !!! warning
+            这是社区维护的 Scoop 便携版，我们不会对下游分发出现的问题提供帮助。
+
+        1. 安装 Scoop:
+
+        ```powershell
+        Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+        Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+        ```
+        2. 安装 Clash Verge Rev:
+
+        ```powershell
+        scoop bucket add extras
+        scoop install extras/clash-verge-rev
+        ```
 
 === ":material-linux: Linux"
 
@@ -56,7 +75,7 @@
         === "archlinuxcn"
             1.  添加 `[archlinuxcn]` 仓库。
 
-                1.1.  在 `/etc/pacman.conf` 文件中写入下列内容。
+                1.1.  在 `/etc/pacman.conf` 文件中写入下列内容:
     
                 ```
                 [archlinuxcn]
@@ -66,13 +85,13 @@
                 Server = https://repo.huaweicloud.com/archlinuxcn/$arch
                 ```
     
-                1.2. 在终端运行下列命令。
+                1.2. 在终端运行下列命令:
     
                 ```bash
                 sudo pacman -S archlinuxcn-keyring
                 ```
     
-            2.  安装 `clash-verge-rev`。
+            2.  安装 Clash Verge Rev:
     
             ```bash
             sudo pacman -S clash-verge-rev
