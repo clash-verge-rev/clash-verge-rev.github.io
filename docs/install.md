@@ -52,7 +52,6 @@
         | 系统架构 | 下载地址 |
         | -------- | --------------------------------------------------------------------------------------------------------------------------------------- |
         | x64      | <list class="download-list"><item logo="debian" label="安装包" content="x64" keyword="amd64.deb" color="A80030">加载中...</item></list>   |
-        | x86      | <list class="download-list"><item logo="debian" label="安装包" content="x86" keyword="i386.deb" color="C02B4A">加载中...</item></list>    |
         | arm64    | <list class="download-list"><item logo="debian" label="安装包" content="arm64" keyword="arm64.deb" color="D44E64">加载中...</item></list> |
         | armv7    | <list class="download-list"><item logo="debian" label="安装包" content="armv7" keyword="armhf.deb" color="E9717E">加载中...</item></list> |
     
@@ -66,7 +65,6 @@
         | 系统架构 | 下载地址 |
         | -------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
         | x64      | <list class="download-list"><item logo="redhat" label="安装包" content="x64" keyword="x86_64.rpm" color="CC0000">加载中...</item></list>    |
-        | x86      | <list class="download-list"><item logo="redhat" label="安装包" content="x86" keyword="i386.rpm" color="E63434">加载中...</item></list>      |
         | arm64    | <list class="download-list"><item logo="redhat" label="安装包" content="arm64" keyword="aarch64.rpm" color="F14D4D">加载中...</item></list> |
         | armv7    | <list class="download-list"><item logo="redhat" label="安装包" content="armv7" keyword="armhfp.rpm" color="FF6868">加载中...</item></list>  |
     
