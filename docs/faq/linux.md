@@ -24,6 +24,12 @@ WEBKIT_DISABLE_DMABUF_RENDERER=1
 WEBKIT_DISABLE_DMABUF_RENDERER=1
 ```
 
+## Failed to create GBM buffer of size xxx: Invalid argument
+
+这是一个已知的[上游问题](https://github.com/tauri-apps/tauri/issues/13493)。暂时的解决方法是手动设置环境变量：
+```
+WEBKIT_DISABLE_DMABUF_RENDERER=1
+```
 ## UI 未响应 / UI 卡顿
 
 尝试手动设置环境变量：
