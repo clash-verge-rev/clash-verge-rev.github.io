@@ -191,7 +191,12 @@ del /A "%userprofile%\AppData\Local\IconCache.db" 2>nul & taskkill /f /im explor
     | ----- | ------- |
     | `vc_redist.arm64.exe` | [vc_redist.arm64.exe](https://aka.ms/vs/17/release/vc_redist.arm64.exe) |
 
-## Phone Link 无法使用
+## Windows 系统开启代理后无法使用 Phone Link 连接手机
 
-- 问题原因：没有对 `dcg.microsoft.com` 正确分流
-- 在系统代理绕过或者分流规则中添加 `dcg.microsoft.com`
+### http 系统代理用户
+
+点击系统代理旁的设置按钮，在当前绕过后添加 `;dcg.microsoft.com`
+
+### 虚拟网卡用户
+
+在规则中添加 dcg.microsoft.com 直连规则
