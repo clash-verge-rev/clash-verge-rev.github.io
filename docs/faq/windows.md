@@ -190,3 +190,8 @@ del /A "%userprofile%\AppData\Local\IconCache.db" 2>nul & taskkill /f /im explor
     | 运行库 | 下载地址 |
     | ----- | ------- |
     | `vc_redist.arm64.exe` | [vc_redist.arm64.exe](https://aka.ms/vs/17/release/vc_redist.arm64.exe) |
+
+## Phone Link 无法使用
+
+- 问题原因：没有对 `dcg.microsoft.com` 正确分流
+- 在系统代理绕过或者分流规则中添加 `dcg.microsoft.com`
