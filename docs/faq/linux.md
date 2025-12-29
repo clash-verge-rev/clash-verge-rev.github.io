@@ -6,13 +6,13 @@ Ubuntu `20.04` 需要额外安装 `libwebkit2gtk` 和 `libjavascriptcoregtk` 依
 
 不能。Clash Verge Rev 是基于 `Webview` 的 GUI 程序，需要图形化界面支持。无图形化界面请下载 [MetaCubeX/Mihomo](https://github.com/MetaCubeX/mihomo/releases/latest) 内核二进制程序，通过命令行的方式使用（参数 `--help` 查看帮助）。
 
-## KDE 窗口标题栏按钮（最小化/最大化/关闭）失效
+## 窗口标题栏按钮（最小化/最大化/关闭）失效
 
-打开设置 -> 界面设置 -> 关闭「优先使用系统标题栏」。
+这是一个已知的[上游问题](https://github.com/tauri-apps/tauri/issues/11856)，打开设置 -> 界面设置 -> 关闭「优先使用系统标题栏」。
 
-## KDE 下启动报错：Failed to parse string `schema`
+## KDE (kioslaverc) 环境下启动时弹出错误提示：Failed to parse string `schema`
 
-开关系统代理即可解决。
+开关一次系统代理触发 kioslaverc 重写即可解决。
 
 ## 启动失败：Error 71 (Protocol error) dispatching to Wayland display. 
 
