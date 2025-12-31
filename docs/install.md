@@ -28,12 +28,18 @@
         !!! warning
             这是社区维护的 Scoop 分发，我们不为下游渠道产生的问题提供支持。
 
-        安装 Scoop:
+        !!! note
+            对于有「修改配置目录」/「便携版」需求的用户适用。
 
+        安装 Scoop:
+        
         ```powershell
-        Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-        Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+        # See https://github.com/ScoopInstaller/Install#readme
+        Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser 
+        irm get.scoop.sh -outfile 'install.ps1'
+        .\install.ps1 -ScoopDir 'D:\Scoop' -ScoopGlobalDir 'D:\ScoopGlobal' # 仅作示例，可根据实际需求调整 
         ```
+
         安装 Clash Verge Rev:
 
         ```powershell
