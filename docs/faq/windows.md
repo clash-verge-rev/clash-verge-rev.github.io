@@ -193,3 +193,9 @@ del /A "%userprofile%\AppData\Local\IconCache.db" 2>nul & taskkill /f /im explor
 ### 虚拟网卡用户
 
 在规则中添加 dcg.microsoft.com 直连规则
+
+## 验证进程异常退出，退出码: -1073741819
+
+- 问题原因：目前 CVR [内置](https://github.com/clash-verge-rev/clash-verge-rev/blob/97133433233f28928f1eb7c2e17e62603c68c59b/scripts/prebuild.mjs#L193)的 mihomo 是 v2 指令集，特别老的 CPU 可能不支持。
+
+- 解决办法：可以[下载](https://wiki.metacubex.one/startup/) mihomo 的 v1 指令集版本手动替换。
