@@ -28,6 +28,7 @@ nav:
       - 名词解释: guide/term.md
       - 使用案例:
           - 自定义规则: guide/rules.md
+          - 链式代理: guide/proxy_chain.md
           - 自定义脚本: guide/script.md
   - 配置案例:
       - 多订阅合并: guide/config.md
