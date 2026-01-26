@@ -52,8 +52,6 @@
     === ":material-debian: Debian/Ubuntu/Deepin"
     
         <!-- prettier-ignore -->
-        !!! warning
-            Ubuntu `24.04` 需要安装额外依赖，详见[常见问题](./faq/linux.md)。
     
         | 系统架构 | 下载地址 |
         | -------- | --------------------------------------------------------------------------------------------------------------------------------------- |
@@ -81,68 +79,22 @@
         ```
     
     === ":material-arch: Arch Linux/Manjaro/SteamOS"
-        !!! warning
-            不建议在 Manjaro、SteamOS 等 Arch 衍生发行版上使用 `[archlinuxcn]` 仓库。
-
-        === "archlinuxcn"
-            1.  添加 `[archlinuxcn]` 仓库。
-
-                1.1.  在 `/etc/pacman.conf` 文件中写入下列内容:
     
-                ```
-                [archlinuxcn]
-                Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
-                Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
-                Server = https://mirrors.hit.edu.cn/archlinuxcn/$arch
-                Server = https://repo.huaweicloud.com/archlinuxcn/$arch
-                ```
-    
-                1.2. 在终端运行下列命令:
-    
-                ```bash
-                sudo pacman -S archlinuxcn-keyring
-                ```
-    
-            2.  安装 Clash Verge Rev:
-    
-            ```bash
-            sudo pacman -S clash-verge-rev
-            ```
+        安装 yay:
 
-        === "AUR"
-            === "paru"
-                安装 paru:
-                
-                ```bash
-                sudo pacman -S --needed base-devel git
-                git clone https://aur.archlinux.org/paru.git
-                cd paru
-                makepkg -si
-                ```
+        ```bash
+        sudo pacman -S --needed base-devel git
+        git clone https://aur.archlinux.org/yay.git
+        cd yay
+        makepkg -si
+        ```
 
-                使用 paru 安装 Clash Verge Rev:
+        使用 yay 安装 Clash Verge Rev:
 
-                ```bash
-                paru -S clash-verge-rev-bin # 正式版
-                paru -S clash-verge-rev-autobuild-bin # 测试版
-                ```
-            
-            === "yay"
-                安装 yay:
-
-                ```bash
-                sudo pacman -S --needed base-devel git
-                git clone https://aur.archlinux.org/yay.git
-                cd yay
-                makepkg -si
-                ```
-
-                使用 yay 安装 Clash Verge Rev:
-
-                ```bash
-                yay -S clash-verge-rev-bin # 正式版
-                yay -S clash-verge-rev-autobuild-bin # 测试版
-                ```
+        ```bash
+        yay -S clash-verge-rev-bin # 正式版
+        yay -S clash-verge-rev-autobuild-bin # 测试版
+        ```
 
 === ":material-apple: macOS"
 
