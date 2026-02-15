@@ -10,10 +10,6 @@ Ubuntu `20.04` 需要额外安装 `libwebkit2gtk` 和 `libjavascriptcoregtk` 依
 
 这是一个已知的[上游问题](https://github.com/tauri-apps/tauri/issues/11856)，打开设置 -> 界面设置 -> 关闭「优先使用系统标题栏」。
 
-## KDE (kioslaverc) 环境下启动时弹出错误提示：Failed to parse string `schema`
-
-开关一次系统代理触发 kioslaverc 重写即可解决。
-
 ## 启动失败：Error 71 (Protocol error) dispatching to Wayland display. 
 
 这是一个已知的[上游问题](https://github.com/tauri-apps/tauri/issues/10702)，可能在 NVIDIA + Wayland 环境出现。可通过设置以下环境变量进行规避：
