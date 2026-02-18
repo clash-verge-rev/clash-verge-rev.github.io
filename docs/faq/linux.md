@@ -30,7 +30,7 @@ WEBKIT_DISABLE_DMABUF_RENDERER=1
 ```
 WEBKIT_DISABLE_DMABUF_RENDERER=1
 ```
-## UI 未响应 / UI 卡顿
+## UI 未响应 / UI 卡顿 / 崩溃：Failed to initialize GTK
 
 尝试设置以下环境变量：
 ```
