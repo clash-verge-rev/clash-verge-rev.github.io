@@ -6,7 +6,7 @@
 
 通过机场或者自建订阅导入节点和配置文件，以下以"[狗狗加速](https://vergepromot.dginv.click/#/register?code=Lo3NuUK1)"订阅演示：
 
-![airport_import](../assets/guide/quickstart/airport_import.png)
+![airport_import](../assets/guide/quickstart/airport_import.webp)
 
 ![verge_import](../assets/guide/quickstart/verge_import.png)
 

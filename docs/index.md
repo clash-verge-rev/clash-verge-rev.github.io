@@ -26,18 +26,31 @@
 
 ## Promotion
 
-[狗狗加速 —— 技术流机场 Doggygo VPN](https://vergedoc.dginv.click/#/register?code=Lo3NuUK1)
+### ✈️ [狗狗加速 —— 技术流机场 Doggygo VPN](https://vergedoc.dginv.click/#/register?code=oaxsAGo6)
 
-- 高性能海外机场，免费试用，优惠套餐，解锁流媒体，全球首家支持 Hysteria 协议。
-- 使用 Clash Verge 专属邀请链接注册送 3 天，每天 1G 流量免费试用：[点此注册](https://vergedoc.dginv.click/#/register?code=Lo3NuUK1)
-- Clash Verge 专属 8 折优惠码: verge20 (仅有 500 份)
-- 优惠套餐每月仅需 15.8 元，160G 流量，年付 8 折
-- 海外团队，无跑路风险，高达 50% 返佣
-- 集群负载均衡设计，高速专线(兼容老客户端)，极低延迟，无视晚高峰，4K 秒开
-- 全球首家 Hysteria 协议机场，现已上线更快的 `Hysteria2` 协议(Clash Verge 客户端最佳搭配)
-- 解锁流媒体及 ChatGPT
-- 官网：[https://狗狗加速.com](https://vergedoc.dginv.click/#/register?code=Lo3NuUK1)
+🚀 高性能海外技术流机场，支持免费试用与优惠套餐，全面解锁流媒体及 AI 服务，全球首家采用 **QUIC 协议**。
 
+🎁 使用 **Clash Verge 专属邀请链接** 注册即送 **3 天免费试用**，每日 **1GB 流量**：👉 [点此注册](https://vergedoc.dginv.click/#/register?code=oaxsAGo6)
+
+#### **核心优势：**
+
+- 📱 自研 iOS 客户端（业内"唯一"）技术经得起考验，极大**持续研发**投入
+- 🧑‍💻 **12小时真人客服**(顺带解决 Clash Verge 使用问题)
+- 💰 优惠套餐每月**仅需 21 元，160G 流量，年付 8 折**
+- 🌍 海外团队，无跑路风险，高达 50% 返佣
+- ⚙️ **集群负载均衡**设计，**负载监控和随时扩容**，高速专线(兼容老客户端)，极低延迟，无视晚高峰，4K 秒开
+- ⚡ 全球首家**Quic 协议机场**，现已上线更快的 Tuic 协议(Clash Verge 客户端最佳搭配)
+- 🎬 解锁**流媒体及 主流 AI**
+
+### 🤖 [GPTKefu —— 与 Crisp 深度整合的 AI 智能客服平台](https://gptkefu.com)
+
+- 🧠 深度理解完整对话上下文 + 图片识别，自动给出专业、精准的回复，告别机械式客服。
+- ♾️ **不限回答数量**，无额度焦虑，区别于其他按条计费的 AI 客服产品。
+- 💬 售前咨询、售后服务、复杂问题解答，全场景轻松覆盖，真实用户案例已验证效果。
+- ⚡ 3 分钟极速接入，零门槛上手，即刻提升客服效率与客户满意度。
+- 🎁 高级套餐免费试用 14 天，先体验后付费：👉 [立即试用](https://gptkefu.com)
+- 📢 智能客服 TG 频道：[@crisp_ai](https://t.me/crisp_ai)
+  
 ## 赞助
 
 <iframe src="https://github.com/sponsors/clash-verge-rev/card" title="Sponsor clash-verge-rev" height="100" width="600" style="border: 0;"></iframe>
