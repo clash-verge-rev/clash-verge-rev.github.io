@@ -59,6 +59,9 @@
 - GEOIP,US,代理策略                  # 美国 IP 走代理
 ```
 
+!!! warning "GEOIP 依赖 DNS 解析，可能被污染影响"
+    对于按域名发起、且未先命中域名规则的连接，`GEOIP` 这类 IP 规则需要先解析域名得到目标 IP，再按 IP 归属地匹配。若上游 DNS 被污染，境外域名可能被解析到国内 IP 段，进而被 `GEOIP,CN,DIRECT` 误判为直连。详见下方 **常用配置示例 → 国内网站直连** 小节中关于陷阱的说明。
+
 #### 端口规则
 
 **DST-PORT** - 目标端口匹配
@@ -126,6 +129,37 @@
 - GEOIP,CN,DIRECT
 - DOMAIN-SUFFIX,cn,DIRECT
 ```
+
+!!! warning "GEOIP,CN 误判陷阱：显式 HTTP 代理下，境外域名可能被误判为直连"
+    上述配置对国内网站友好，但在**显式 HTTP 代理**场景（例如应用直接把 `mixed-port` / `port` 配成 HTTP 代理）下，部分境外域名可能因 DNS 污染被解析到中国大陆 IP，继而命中 `GEOIP,CN,DIRECT`，表现为 TLS 握手超时或 `schannel: failed to receive handshake`、`unexpected EOF during handshake` 等错误。
+
+    **原因**：
+
+    - 对按域名发起的连接，如果前面没有命中域名类规则，`GEOIP` 这类 IP 规则需要先解析域名得到目标 IP，再按 IP 归属地匹配。
+    - 在显式 HTTP 代理场景下，客户端发送 `CONNECT host:port`；Mihomo 仍需自行解析该域名，以继续匹配后续 IP 类规则。
+    - 如果上游 `nameserver` 返回了受污染的大陆 IP，该请求就可能命中 `GEOIP,CN,DIRECT` 后直连失败。
+    - 这不代表应直接删除 `GEOIP,CN,DIRECT`；问题在于需要把明确应走代理的域名规则放在它之前。
+
+    **诊断方式**：
+
+    - 开启 `Debug` 日志，确认目标请求最终命中了哪条规则、使用了哪个策略组。
+    - 同时查看 DNS 解析结果；如果目标域名先被解析到异常的大陆 IP，随后又命中 `GeoIP(CN)` + `DIRECT`，即可判定为该问题。
+    - 也可在命令行直接复现污染：`nslookup chatgpt.com 223.5.5.5`（PowerShell 下 `Resolve-DnsName chatgpt.com -Server 223.5.5.5`），若返回的 A 记录落在国内 IP 段，即佐证上游 DNS 已被污染。
+
+    **推荐处理**：把明确需要代理的域名前置到 `GEOIP,CN,DIRECT` 之前，例如：
+
+    ```yaml
+    - DOMAIN-SUFFIX,chatgpt.com,代理策略
+    - DOMAIN-SUFFIX,openai.com,代理策略
+    - DOMAIN-SUFFIX,oaistatic.com,代理策略
+    - DOMAIN-SUFFIX,oaiusercontent.com,代理策略
+
+    - GEOSITE,cn,DIRECT
+    - GEOIP,CN,DIRECT
+    - DOMAIN-SUFFIX,cn,DIRECT
+    ```
+
+    如需从 DNS 侧缓解，应优先使用 `nameserver-policy`、`fallback` / `fallback-filter`，必要时为直连出口单独配置 `direct-nameserver`。`proxy-server-nameserver` 仅用于代理节点自身域名的解析。
 
 ### 流媒体分流
 ```yaml
