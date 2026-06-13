@@ -64,12 +64,12 @@ curl -A clash-verge/v2.4.0 ‘引号内粘贴订阅链接’
 
 ## CFA
 
-- 一般指`Clash For Andriod`，是 Andriod 平台的基于 `Clash Premium` 内核的代理软件。
+- 一般指`Clash For Android`，是 Android 平台的基于 `Clash Premium` 内核的代理软件。
 - 受`Clash For Windows`删库事件影响，删除代码库并从 Google Play 下架。
 
 ## CMFA
 
-- 一般指[Clash Meta For Andriod](https://github.com/MetaCubeX/ClashMetaForAndroid/releases/latest)，是 Andriod 平台的基于 `Mihomo` 内核的代理软件。Google Play 已下架。
+- 一般指[Clash Meta For Android](https://github.com/MetaCubeX/ClashMetaForAndroid/releases/latest)，是 Android 平台的基于 `Mihomo` 内核的代理软件。Google Play 已下架。
 
 ## XD
 
