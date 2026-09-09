@@ -69,6 +69,10 @@ Clash Verge rev 项目基于/借鉴如下项目:
 | [MUI](https://github.com/mui/material-ui)                             | Ready-to-use foundational React components, free forever.                        |
 | [Vite](https://github.com/vitejs/vite)                                | Next generation frontend tooling. It's fast!                                     |
 
+## 隐私政策
+
+Clash Verge Rev 不收集任何用户数据，配置与日志仅保存在你自己的设备上。应用发起的每一项网络连接见[隐私政策](./privacy.md)。
+
 ## License
 
 GPL-3.0 License. See [License here](https://github.com/clash-verge-rev/clash-verge-rev/blob/main/LICENSE) for details.

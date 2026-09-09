@@ -146,6 +146,10 @@
 | Github Release **正式版** | <img src="https://img.shields.io/github/downloads/clash-verge-rev/clash-verge-rev/latest/total?label=@latest">    | <a href='https://github.com/clash-verge-rev/clash-verge-rev/releases/latest' target="_blank"><img src="https://img.shields.io/github/v/release/clash-verge-rev/clash-verge-rev"></a>    |                                      |
 | Github Release **测试版** | <img src="https://img.shields.io/github/downloads-pre/clash-verge-rev/clash-verge-rev/latest/total?label=@autobuild"> | <a href='https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/autobuild' target="_blank"><img src="https://img.shields.io/github/v/release/clash-verge-rev/clash-verge-rev"></a> |  |
 
+## 隐私政策
+
+Clash Verge Rev 不收集任何用户数据。安装前请阅读[隐私政策](./privacy.md)，其中列出了应用会发起的全部网络连接，以及关闭默认联网行为的方式。
+
 <script>
 const fileList = [];
 const divList = document.querySelectorAll("list item");
