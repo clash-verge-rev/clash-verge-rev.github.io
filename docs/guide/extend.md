@@ -1,3 +1,5 @@
+# 扩展配置与脚本
+
 <!-- prettier-ignore -->
 !!! danger "Changelog"
     - `v1.7.x` 版本的 `Merge配置` 改名为 `扩展配置` ，且prepend/append功能移动至订阅右键菜单中的可视化编辑器中实现（例如：prepend-rules移动至订阅右键菜单的 `编辑规则` 中的 `prepend`）。扩展配置仅用于配置项覆写/合并。
