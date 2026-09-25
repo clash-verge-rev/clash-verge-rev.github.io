@@ -469,3 +469,86 @@ function main(config) {
 ### 3. 使用扩展脚本实现`prependrules`
 
 参考[Issue1437-comment-2395050752](https://github.com/clash-verge-rev/clash-verge-rev/issues/1437#issuecomment-2395050752)
+
+### 4. 避开被目标站点封锁的节点
+
+> 如下是一个修正「自动测速组总是选中测速正常、实际打不开的节点」的 Script 脚本示例（可点击复制按钮）。
+
+<!-- prettier-ignore -->
+!!! info
+    - 适用于 `url-test` 类型的自动测速组：组里显示某个节点延迟最低，但实际访问目标站点时打不开。
+    - 原因：mihomo 的健康检查发送的是 `HEAD` 请求，而部分 CDN（如 Cloudflare）对 `HEAD` 不执行地区限制，
+      于是**被目标站点封锁的节点依然返回 2xx、被判为「健康」**；这类节点又往往物理延迟最低，便一直被选中。
+    - 换健康检查地址解决不了这个问题：以 ChatGPT 为例，实测把地址换成
+      `https://chatgpt.com/api/auth/session` 或 `https://chatgpt.com/backend-api/models`，
+      香港节点依然全部「通过」。应当改为**把这类节点从候选集合里排除**。
+
+```javascript
+// 需要修正的分流组
+var TARGETS = [
+  {
+    // 组名，改成订阅里实际的名字
+    name: "ChatGPT最低延迟",
+    // 从候选里排除的节点名关键字（正则），按自己机场的命名习惯调整
+    exclude: "香港|HK|Hong ?Kong",
+    // 候选集合干净后，改用标准端点测速，比用目标站点更能反映真实网络质量
+    url: "http://www.gstatic.com/generate_204",
+    // 健康检查间隔（秒）。默认 120 太长，节点掉线后要等两分钟才切走
+    interval: 60
+  }
+];
+
+// 订阅里常见的信息节点，一并排除
+var BASE_EXCLUDE = "剩余|套餐|到期|官网";
+
+function mergeExclude(current, add) {
+  var base = typeof current === "string" && current.length > 0 ? current : BASE_EXCLUDE;
+  return base.indexOf(add) >= 0 ? base : base + "|" + add;
+}
+
+function main(config) {
+  var groups = config["proxy-groups"];
+  if (!groups || typeof groups.length !== "number") {
+    return config;
+  }
+  for (var i = 0; i < groups.length; i++) {
+    var g = groups[i];
+    if (!g) {
+      continue;
+    }
+    for (var j = 0; j < TARGETS.length; j++) {
+      var t = TARGETS[j];
+      if (g.name !== t.name) {
+        continue;
+      }
+      g["type"] = "url-test";
+      g["url"] = t.url;
+      g["interval"] = t.interval;
+      g["timeout"] = 5000;
+      g["tolerance"] = 0;
+      g["lazy"] = false;
+      g["max-failed-times"] = 2;
+      g["include-all"] = true;
+      g["exclude-type"] = "Direct|Reject";
+      g["exclude-filter"] = mergeExclude(g["exclude-filter"], t.exclude);
+      // 清掉可能存在的静态名单，让 include-all 生效
+      delete g["proxies"];
+      delete g["expected-status"];
+      delete g["include-all-proxies"];
+      delete g["include-all-providers"];
+    }
+  }
+  return config;
+}
+```
+
+**如何查出哪些节点真的被封锁**
+
+逐个把节点切到 `GLOBAL`（模式切换为「全局」），再用本机混合端口请求目标站点的接口：
+
+```bash
+curl -x http://127.0.0.1:7897 -A "Mozilla/5.0" -i https://chatgpt.com/api/auth/session
+```
+
+返回 `200` 表示可用；`403` 且响应体含 `blocked-ico` 表示被该站点地区封锁。
+把封锁节点的名字关键字填进上面的 `exclude` 即可。
