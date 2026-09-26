@@ -5,6 +5,7 @@
     - `v1.7.x` 版本的 `Merge配置` 改名为 `扩展配置` ，且prepend/append功能移动至订阅右键菜单中的可视化编辑器中实现（例如：prepend-rules移动至订阅右键菜单的 `编辑规则` 中的 `prepend`）。扩展配置仅用于配置项覆写/合并。
     - `v1.7.x` 版本的 `Script配置` 改名为 `扩展脚本` 。
     - `v1.6.x` 版本请参考 [Script配置](./script.md)。
+    - `v2.5.5` 起，扩展配置中写出的 `dns` 字段和 `hosts` 会整体替换原有的值，不再逐条合并，全局扩展配置与订阅扩展配置之间也是如此，详见下文「扩展配置的合并规则」。
 
 ## 扩展分类
 
@@ -16,6 +17,39 @@
 flowchart LR
   S["订阅原文"] --> G["应用设置"] --> A["全局扩展配置"] --> B["全局扩展脚本"] --> C["订阅扩展配置"] --> D["订阅扩展脚本"] --> E["应用设置回写"]
 
+```
+
+## 扩展配置的合并规则
+
+扩展配置只改写出的字段，没写的字段保持不变。写出的字段按类型处理：
+
+- 列表和普通值（如 `rules`、`dns.nameserver`、`tcp-concurrent`）：整体替换。
+- 其他嵌套对象（如 `tun`、`sniffer`）：逐项合并，只替换写出的子字段。
+- `dns` 下写出的字段和顶层的 `hosts`：整体替换，`nameserver-policy`、`fallback-filter` 这类表也不例外；`dns` 中没写的字段保留。
+
+每一层扩展配置都在上一步的结果上按这个规则执行。所以订阅扩展配置写了 `dns.nameserver-policy` 时，全局扩展配置写入的那一份会被整个换掉，而不是逐条合并。例如：
+
+```yaml
+# 全局扩展配置
+dns:
+  nameserver-policy:
+    "geosite:cn": https://dns.alidns.com/dns-query
+
+# 订阅扩展配置
+dns:
+  nameserver-policy:
+    "+.example.com": https://1.1.1.1/dns-query
+```
+
+最终的 `nameserver-policy` 只有 `+.example.com` 一条。需要两条都生效时，把 `geosite:cn` 也写进订阅扩展配置；或者把订阅专属的条目放到订阅扩展脚本里逐条追加（订阅扩展脚本最后执行）：
+
+```javascript
+function main(config) {
+  config.dns = config.dns || {};
+  config.dns["nameserver-policy"] = config.dns["nameserver-policy"] || {};
+  config.dns["nameserver-policy"]["+.example.com"] = "https://1.1.1.1/dns-query";
+  return config;
+}
 ```
 
 ## 与应用设置的优先级
