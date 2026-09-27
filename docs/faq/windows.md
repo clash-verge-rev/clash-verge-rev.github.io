@@ -231,9 +231,13 @@ del /A "%userprofile%\AppData\Local\IconCache.db" 2>nul & taskkill /f /im explor
 
 ### 复制出的原始报错指向 C:\ 时
 
-如果第 1 步粘贴出的内容包含 `core path "\\?\C:\" is writable by an account other than SYSTEM, Administrators or TrustedInstaller`，表示检查未通过的位置是 **C 盘根目录**，不代表应用一定安装在根目录。`\\?\` 是 Windows 路径前缀。
+如果第 1 步粘贴出的内容包含 `core path "\\\\?\\C:\\"`，例如 `verge-mihomo.exe: core path "\\\\?\\C:\\" has an untrusted write ACE: ace_index=5, sid=S-1-5-11, ...`（旧版本为 `core path "\\\\?\\C:\\" is writable by an account other than SYSTEM, Administrators or TrustedInstaller`），表示检查未通过的位置是 **C 盘根目录**，不代表应用一定安装在根目录。报错中的反斜杠经过转义，实际路径为 `\\?\C:\`，其中 `\\?\` 是 Windows 路径前缀。
 
-服务会一直检查到磁盘根目录，因此只修改安装文件夹，或反复重装服务，可能无法解决。请让系统管理员在「此电脑 → 本地磁盘 (C:) → 属性 → 安全 → 高级」检查允许普通账户删除子项、更改权限或完全控制等权限条目，并结合系统原有设置修复。
+报错中的 `sid` 是触发拦截的权限条目所属的用户或组：`S-1-5-11` 为 Authenticated Users，`S-1-5-32-545` 为 Users，`S-1-1-0` 为 Everyone，以 `S-1-5-21-` 开头的是本机或域中的某个用户或组。
+
+如果报错同时包含 `dangerous=0x00010000`（只涉及「删除」），通常是根目录本身带有「修改」权限。新版服务不再因卷根目录的「删除」权限拦截：先更新 Clash Verge Rev，在「设置 → 服务模式」重新安装服务，无需为这条报错修改根目录权限；若仍被拒绝，按新的原始报错继续检查。
+
+服务会一直检查到磁盘根目录，因此只修改安装文件夹，或反复重装服务，可能无法解决。请让系统管理员在「此电脑 → 本地磁盘 (C:) → 属性 → 安全 → 高级」找到该用户或组的权限条目，检查作用于根目录本身（「应用于」为「只有该文件夹」或以「此文件夹」开头）的条目是否允许删除子文件夹及文件、更改权限、取得所有权或完全控制，并结合系统原有设置修复。Windows 默认只允许 Authenticated Users 在根目录本身创建文件夹，其「修改」权限仅应用于「仅子文件夹和文件」。
 
 !!! warning
     不要对整个 C 盘递归执行权限重置、接管所有权或删除用户组权限。不要勾选「使用可从此对象继承的权限项目替换所有子对象的权限项目」。这些操作可能破坏 Windows 和其他应用的权限。普通账户正常的读取权限，以及仅允许在根目录创建文件夹的权限，不必一并删除。
