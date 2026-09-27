@@ -1,0 +1,144 @@
+site_name: Clash Verge Rev Docs
+site_url: https://clash-verge-rev.github.io/
+copyright: Copyright &copy 2023-2026 clash-verge-rev
+repo_url: https://github.com/clash-verge-rev/clash-verge-rev
+repo_name: clash-verge-rev
+edit_uri: https://github.com/clash-verge-rev/clash-verge-rev.github.io/tree/main/docs
+dev_addr: 127.0.0.1:7788
+use_directory_urls: false
+
+# 不启用 Service Worker / PWA 离线缓存
+offline:
+  mode: none
+
+# 不启用隐私模式（外部资源保持外链，构建时不下载）
+privacy: false
+extra:
+  generator: false
+  social:
+  - icon: fontawesome/brands/github
+    link: https://github.com/clash-verge-rev/clash-verge-rev
+  - icon: material/file-document
+    link: https://github.com/clash-verge-rev/clash-verge-rev.github.io
+markdown_extensions:
+- admonition
+- md_in_html
+- pymdownx.details
+- pymdownx.tilde
+- pymdownx.magiclink
+- pymdownx.highlight:
+    anchor_linenums: true
+- pymdownx.tabbed:
+    alternate_style: true
+- toc:
+    permalink: true
+    toc_depth: 3
+    anchorlink: true
+- pymdownx.superfences:
+    custom_fences:
+    - name: mermaid
+      class: mermaid
+      format: !!python/name:pymdownx.superfences.fence_code_format ''
+- pymdownx.emoji:
+    emoji_index: !!python/name:docsforge.emoji.twemoji ''
+    emoji_generator: !!python/name:docsforge.emoji.to_svg ''
+nav:
+- title: 简介
+  children:
+  - title: 简介
+    path: index.md
+  - title: 快速入门
+    path: guide/quickstart.md
+- title: 下载、安装与卸载
+  children:
+  - title: 下载与安装
+    path: install.md
+  - title: 快速入门
+    path: guide/quickstart.md
+  - title: 卸载软件
+    path: uninstall.md
+- title: 使用教程
+  children:
+  - title: 快速入门
+    path: guide/quickstart.md
+  - title: 订阅导入
+    path: guide/profile.md
+  - title: 导出日志
+    path: guide/log.md
+  - title: 自定义托盘图标
+    path: guide/tray_icon.md
+  - title: 自定义主题/样式
+    path: guide/css_injection.md
+  - title: URL Schemes
+    path: guide/url_schemes.md
+  - title: 名词解释
+    path: guide/term.md
+  - title: 使用案例
+    children:
+    - title: 自定义规则
+      path: guide/rules.md
+    - title: 链式代理
+      path: guide/proxy_chain.md
+    - title: 扩展配置与脚本
+      path: guide/extend.md
+    - title: 自定义脚本
+      path: guide/script.md
+- title: 配置案例
+  children:
+  - title: 多订阅合并
+    path: guide/config.md
+  - title: 策略组图标
+    path: guide/group_icon/group_icon.md
+- title: 常见问题
+  children:
+  - title: Windows
+    path: faq/windows.md
+  - title: MacOS
+    path: faq/macos.md
+  - title: Linux
+    path: faq/linux.md
+  - title: 其他问题
+    path: faq/other.md
+- title: 友情链接
+  path: friendship.md
+- title: 隐私政策
+  path: privacy.md
+- title: 赞助
+  path: https://github.com/sponsors/clash-verge-rev
+plugins:
+- search:
+    separator: '[\s\u200b\-]'
+- blog:
+    enabled: false
+theme:
+  name: material
+  palette:
+  - media: '(prefers-color-scheme: light)'
+    scheme: default
+    primary: white
+    accent: blue
+    toggle:
+      icon: material/brightness-7
+      name: 切换至深色模式
+  - media: '(prefers-color-scheme: dark)'
+    scheme: slate
+    primary: indigo
+    accent: deep purple
+    toggle:
+      icon: material/brightness-4
+      name: 切换至亮色模式
+  features:
+  - search.highlight
+  - navigation.tracking
+  - navigation.instant
+  - navigation.expand
+  - navigation.path
+  - navigation.indexes
+  - navigation.top
+  - navigation.tabs
+  - navigation.sections
+  - toc.follow
+  - content.action.edit
+  - content.code.copy
+  logo: assets/logo.png
+  favicon: assets/favicon.ico

@@ -1,4 +1,3 @@
-# Material for MkDocs
-mkdocs-material
-# Chinese text segmentation library
-jieba
+# DocsForge — self-contained documentation engine
+# (vendored Material theme, plugins, CJK-aware search — no extra packages needed)
+docsforge

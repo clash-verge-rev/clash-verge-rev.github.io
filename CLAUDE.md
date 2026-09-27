@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is the documentation repository for **Clash Verge Rev**, a cross-platform GUI client for Mihomo (Clash.Meta) built with Tauri. The documentation is built using **MkDocs Material** and is primarily written in **Chinese**.
+This is the documentation repository for **Clash Verge Rev**, a cross-platform GUI client for Mihomo (Clash.Meta) built with Tauri. The documentation is built using **[DocsForge](https://github.com/QQSHI13/docsforge)** (self-contained engine with the built-in Material theme) and is primarily written in **Chinese**.
 
 The main application repository is at: https://github.com/clash-verge-rev/clash-verge-rev
 
@@ -19,14 +19,14 @@ pip install -r requirements.txt
 ### Local Development
 ```bash
 # Start local development server
-# Listens on http://127.0.0.1:7788 (configured in mkdocs.yml)
-mkdocs serve
+# Listens on http://127.0.0.1:7788 (configured in docsforge.yml)
+docsforge serve
 ```
 
 ### Build
 ```bash
 # Build static site (generates site/ directory)
-mkdocs build
+docsforge build
 ```
 
 ## Documentation Structure
@@ -53,13 +53,13 @@ mkdocs build
     - `windows.md`, `macos.md`, `linux.md`, `other.md`
   - `assets/` - Images and static resources organized by guide/FAQ sections
 
-### MkDocs Configuration (`mkdocs.yml`)
+### DocsForge Configuration (`docsforge.yml`)
 - **Site name**: Clash Verge Rev Docs
 - **Dev server**: Configured to listen on 127.0.0.1:7788
-- **Theme**: Material for MkDocs with custom configuration
+- **Theme**: Material theme (built into DocsForge) with custom configuration
   - Light/dark mode support
   - Navigation tabs and sections
-  - Search with Chinese text segmentation (jieba)
+  - Search with CJK-aware indexing (built-in Marz engine)
   - Code syntax highlighting
   - Mermaid diagram support
 - **Navigation**: Organized by feature area (Introduction, Installation, Guides, Configuration, FAQ)
@@ -67,7 +67,7 @@ mkdocs build
 
 ## Key Technical Details
 
-### MkDocs Material Features in Use
+### DocsForge Material Features in Use
 - **Markdown extensions**:
   - `admonition` - Warning/info boxes
   - `md_in_html` - Embedded HTML support
@@ -75,7 +75,7 @@ mkdocs build
   - `pymdownx.highlight` - Code highlighting
   - `pymdownx.tabbed` - Tabbed content
   - `pymdownx.superfences` - Mermaid diagrams and code fences
-  - `pymdownx.emoji` - Emoji support using Twemoji
+  - `pymdownx.emoji` - Emoji and Material icon support (`docsforge.emoji`)
 - **Navigation features**:
   - Instant loading
   - Navigation tracking and expansion
@@ -97,14 +97,13 @@ Automated deployment via GitHub Actions (`.github/workflows/deploy.yml`):
 1. Triggers on push to `main` or `master` branch
 2. Sets up Python 3.x environment
 3. Installs dependencies from `requirements.txt`
-4. Runs `mkdocs build`
+4. Runs `docsforge build`
 5. Deploys to GitHub Pages
 
 ## VSCode Configuration
 
 The repository includes VSCode workspace settings (`.vscode/settings.json`):
-- YAML schema validation for `mkdocs.yml` against MkDocs Material schema
-- Custom YAML tags for Python name references
+- Custom YAML tags for Python name references in `docsforge.yml`
 - Prettier formatting configuration (double quotes, no trailing commas)
 
 ## Content Guidelines
@@ -113,5 +112,5 @@ When editing documentation:
 - Maintain Chinese language throughout (this is Chinese-language documentation)
 - Follow existing image path conventions: `../assets/[section]/[subsection]/[filename]`
 - YAML code blocks for Clash/Mihomo configuration should use proper indentation
-- Navigation structure is defined in `mkdocs.yml` - update both when adding new pages
-- Use Material for MkDocs admonitions for warnings/tips/notes
+- Navigation structure is defined in `docsforge.yml` - update both when adding new pages
+- Use Material admonitions (admonition syntax) for warnings/tips/notes

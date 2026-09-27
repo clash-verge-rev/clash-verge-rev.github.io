@@ -5,7 +5,7 @@
       "name": "serve",
       "type": "node-terminal",
       "request": "launch",
-      "command": "mkdocs serve",
+      "command": "docsforge serve",
       "cwd": "${workspaceFolder}"
     }
   ]

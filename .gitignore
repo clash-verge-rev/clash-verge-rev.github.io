@@ -1,3 +1,5 @@
 site
 .obsidian
 .idea
+# DocsForge build cache
+.docsforge
