@@ -24,6 +24,15 @@
 - Windows： `C:\Windows\System32\drivers\etc\hosts`
 - Linux/MacOS: `/etc/hosts`
 
+## 节点测速超时或直连网站打不开时检查 DNS
+
+如果节点测速超时，或某个网站绕过 Clash Verge Rev 时能打开、经过应用却打不开，可以先在日志中查看是否有 `dns resolve failed` 等域名解析错误。进入「设置 → Verge 高级设置 → 当前配置」，核对生效的 `dns`。订阅、DNS 覆写和扩展都可能影响这里的值。[扩展配置与脚本](../guide/extend.md)
+
+- **使用域名的节点测速超时。** 检查 `proxy-server-nameserver` 和匹配的 `proxy-server-nameserver-policy` 所选的解析服务器能否从当前网络访问。如果系统 DNS 能解析该节点域名，可以在对应的 DNS 配置中使用 `system`。
+- **网站命中 `DIRECT` 规则后仍打不开。** 当 `direct-nameserver` 已配置且 `direct-nameserver-follow-policy` 为 `true` 时，若域名匹配 `nameserver-policy`，就会使用该策略选定的解析服务器。若这个服务器在当前网络不可达，而系统 DNS 能解析该域名，可以把该域名对应的策略改为 `system`。
+
+修改后重新测试受影响的节点或网站。各字段的含义见 [Mihomo DNS 配置文档](https://wiki.metacubex.one/config/dns/)。
+
 ## 日志过大，占满磁盘
 
 解决方案: 可以将日志等级设置为 `Silent` 或 `Error`，并在 `杂项设置` 中设置自动清理日志间隔。
