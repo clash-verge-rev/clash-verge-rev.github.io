@@ -48,6 +48,8 @@ Set-NetIPInterface -InterfaceIndex $ifIndex -AddressFamily IPv4 -Forwarding Disa
 
 检查 Windows 网络设置中是否有多余的网卡或重叠的网段。确认是多余网卡引起的冲突后，可以在网络设置中移除对应网卡。参见 [Issue #2400](https://github.com/clash-verge-rev/clash-verge-rev/issues/2400)。
 
+装过 VMware 的用户也可以检查 `VMware Network Adapter VMnet1`、`VMware Network Adapter VMnet8` 等虚拟网卡。如果怀疑其中一张网卡有冲突，可以在虚拟机未使用该网络时暂时禁用它，只开 TUN 再访问刚才打不开的网站。测完重新启用这张网卡，再检查下一张。
+
 ## 此应用无法在你的电脑上运行
 
 ![can_not_run](../assets/faq/windows/can_not_run.png)
