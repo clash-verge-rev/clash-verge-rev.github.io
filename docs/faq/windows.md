@@ -18,6 +18,32 @@
 
 - 打开网络设置，删除多余网卡，参见[Issue#2400](https://github.com/clash-verge-rev/clash-verge-rev/issues/2400)
 
+### 系统代理能用，只开 TUN 就打不开网页
+
+可以先检查上网网卡的 IPv4 转发状态。[Issue #8117](https://github.com/clash-verge-rev/clash-verge-rev/issues/8117) 中有用户关闭这项设置后恢复了连接。
+
+暂时关闭 TUN，在 PowerShell 中查看有 IPv4 默认网关的网卡：
+
+```powershell
+Get-NetIPConfiguration | Where-Object IPv4DefaultGateway | Select-Object InterfaceAlias, InterfaceIndex
+```
+
+找到正在使用的 Wi-Fi 或以太网网卡。如果配置里指定了 `interface-name`，请核对对应的网卡。输入该网卡的编号，查看转发状态：
+
+```powershell
+$ifIndex = Read-Host 'InterfaceIndex'
+Get-NetIPInterface -InterfaceIndex $ifIndex -AddressFamily IPv4 | Select-Object InterfaceAlias, Forwarding
+```
+
+如果显示 `Disabled`，可以跳过这一步。如果显示 `Enabled`，且这台电脑不需要通过该网卡为其他设备转发 IPv4 流量，可以在**管理员 PowerShell** 中输入同一编号，关闭转发，再单独开启 TUN 测试：
+
+```powershell
+$ifIndex = Read-Host 'InterfaceIndex'
+Set-NetIPInterface -InterfaceIndex $ifIndex -AddressFamily IPv4 -Forwarding Disabled
+```
+
+需要恢复原来的转发设置时，将命令末尾的 `Disabled` 换成 `Enabled`。切换网络后如果问题再现，先确认当前使用的网卡。
+
 ## 此应用无法在你的电脑上运行
 
 ![can_not_run](../assets/faq/windows/can_not_run.png)
