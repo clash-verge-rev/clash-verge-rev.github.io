@@ -10,32 +10,32 @@
 
 ## 打开TUN模式后网络异常
 
-问题原因
-
-- 系统中可能有多个网卡 / 网段与配置中的规则冲突
-
-解决方案
-
-- 打开网络设置，删除多余网卡，参见[Issue#2400](https://github.com/clash-verge-rev/clash-verge-rev/issues/2400)
-
-### 系统代理能用，只开 TUN 就打不开网页
-
-可以先检查上网网卡的 IPv4 转发状态。[Issue #8117](https://github.com/clash-verge-rev/clash-verge-rev/issues/8117) 中有用户关闭这项设置后恢复了连接。
-
-暂时关闭 TUN，在 PowerShell 中查看有 IPv4 默认网关的网卡：
+先暂时关闭 TUN，在 PowerShell 中查看有 IPv4 默认网关的网卡。记下当前上网所用 Wi-Fi 或以太网网卡的名称（`InterfaceAlias`）和编号（`InterfaceIndex`）。
 
 ```powershell
 Get-NetIPConfiguration | Where-Object IPv4DefaultGateway | Select-Object InterfaceAlias, InterfaceIndex
 ```
 
-找到正在使用的 Wi-Fi 或以太网网卡。如果配置里指定了 `interface-name`，请核对对应的网卡。输入该网卡的编号，查看转发状态：
+### 日志反复出现 `reject loopback address connection`
+
+开启 TUN 后网页打不开，同时出现这条日志，可以先查出口网卡。比如从 Wi-Fi 切到网线后，配置还绑定着原来的 Wi-Fi，出站连接就可能绕回 TUN。
+
+- 手动指定过出口网卡：检查配置顶层的 `interface-name`，把它改成上一步看到的当前网卡名称。
+- 使用自动选择：如果 Wi-Fi 和以太网同时在线，自动选择可能选错出口。可以关闭 `tun.auto-detect-interface`，再用顶层的 `interface-name` 指定实际使用的网卡。参见 [Mihomo 的出口网卡设置](https://wiki.metacubex.one/config/inbound/tun/#auto-detect-interface)。
+
+应用配置，重新开启 TUN，再访问刚才打不开的网站，看看这次请求是否还会触发同一条日志。
+
+### 系统代理能用，只开 TUN 就打不开网页
+
+如果出口网卡已经选对，仍然打不开网页，可以检查这张网卡的 IPv4 转发状态。[Issue #8117](https://github.com/clash-verge-rev/clash-verge-rev/issues/8117) 中有用户关闭该网卡的转发后恢复了连接。输入前面查到的网卡编号：
 
 ```powershell
 $ifIndex = Read-Host 'InterfaceIndex'
 Get-NetIPInterface -InterfaceIndex $ifIndex -AddressFamily IPv4 | Select-Object InterfaceAlias, Forwarding
 ```
 
-如果显示 `Disabled`，可以跳过这一步。如果显示 `Enabled`，且这台电脑不需要通过该网卡为其他设备转发 IPv4 流量，可以在**管理员 PowerShell** 中输入同一编号，关闭转发，再单独开启 TUN 测试：
+- **`Disabled`**：这张网卡的 IPv4 转发已关闭，可以跳过下面的命令。
+- **`Enabled`**：如果这台电脑需要通过该网卡为其他设备转发 IPv4 流量，请保留当前设置。否则，可以在**管理员 PowerShell** 中输入同一编号，关闭转发，再单独开启 TUN 测试。
 
 ```powershell
 $ifIndex = Read-Host 'InterfaceIndex'
@@ -43,6 +43,10 @@ Set-NetIPInterface -InterfaceIndex $ifIndex -AddressFamily IPv4 -Forwarding Disa
 ```
 
 需要恢复原来的转发设置时，将命令末尾的 `Disabled` 换成 `Enabled`。切换网络后如果问题再现，先确认当前使用的网卡。
+
+### 多个网卡或网段与规则冲突
+
+检查 Windows 网络设置中是否有多余的网卡或重叠的网段。确认是多余网卡引起的冲突后，可以在网络设置中移除对应网卡。参见 [Issue #2400](https://github.com/clash-verge-rev/clash-verge-rev/issues/2400)。
 
 ## 此应用无法在你的电脑上运行
 
